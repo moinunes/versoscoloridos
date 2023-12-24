@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function () {
    const autoresLista = document.getElementById('autores-lista');
 
@@ -11,3 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
        autoresLista.appendChild(listItem);
    });
 });
+=======
+
+>>>>>>> ff338d7fd07e1fb7b0634451f3112b76dd5952d5
