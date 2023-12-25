@@ -16,23 +16,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-light">
 
     <!-- Incluir o cabeçalho (header.html) -->
     <header>
-        <div class="container bg-light fixed-top">
+        <div class="container-fluid bg-white">
+         <div class="container bg-white"> 
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 ">
                     <!-- Incluir o conteúdo do header.html -->
                     <div id="header-placeholder"></div>
                 </div>
             </div>
         </div>
+      </div>
     </header>
 
     <!-- Conteúdo do corpo do site -->
     <div class="container mt-5 text-left"> <!-- Centralizar o conteúdo -->
-        <div id="content1" class="content active">
+        <div id="content1" class="content active ">
             <h2>Colhe O Dia, Porque És Ele</h2>
             <div id="page1-content"></div>
         </div>
@@ -41,13 +43,15 @@
             <div id="page2-content"></div>
         </div>
 
+        
+
         <div id="content3" class="content">
             <div id="page3-content"></div>
         </div>
 
         <!-- Paginação -->
         <ul class="pagination">
-            <li class="page-item page-link active-page" onclick="changePage(1)" id="page1">Colhe O Dia, Porque És Ele</li>
+            <li class="page-item page-link active-page" onclick="changePage(1)" id="page1">1</li>
             <li class="page-item page-link" onclick="changePage(2)" id="page2">2</li>
             <li class="page-item page-link" onclick="changePage(3)" id="page3">3</li>
         </ul>
