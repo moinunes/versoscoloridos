@@ -1,17 +1,27 @@
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function () {
-   const autoresLista = document.getElementById('autores-lista');
+   const poemasLista = document.getElementById('poemas-lista');
 
-   // Array de autores
-   const autores = ['autor1', 'autor2', /* adicione mais autores conforme necessário */];
+   // Estrutura de dados: Poemas
+   const poemas = [
+       { author: 'Fernando Pessoa', title: 'O Que Me Dói Não É', file: 'poemas/fernando_pessoa_oquemedoi.txt' },
+       { author: 'Fernando Pessoa', title: 'O Que Me Dói Não É', file: 'poemas/fernando_pessoa_oquemedoi.txt' },
 
-   // Popula a lista de autores
-   autores.forEach(function (autor) {
-       const listItem = document.createElement('li');
-       listItem.innerHTML = `<a href="poems/${autor}/">${autor}</a>`;
-       autoresLista.appendChild(listItem);
-   });
+       // Adicione mais poemas conforme necessário
+   ];
+
+   // Função para carregar e exibir os poemas
+   function loadAndDisplayPoems(poemas) {
+       poemas.forEach(poema => {
+           fetch(poema.file)
+               .then(response => response.text())
+               .then(text => {
+                   const poemaElement = document.createElement('div');
+                   poemaElement.innerHTML = `<h2>${poema.author} - ${poema.title}</h2><p>${text}</p>`;
+                   poemasLista.appendChild(poemaElement);
+               });
+       });
+   }
+
+   // Carregar e exibir os poemas
+   loadAndDisplayPoems(poemas);
 });
-=======
-
->>>>>>> ff338d7fd07e1fb7b0634451f3112b76dd5952d5

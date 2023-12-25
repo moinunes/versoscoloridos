@@ -1,7 +1,10 @@
-<<<<<<< HEAD
 body {
-   font-family: 'Arial', sans-serif;
-   margin: 20px;
+   /* Adicione a classe de cor desejada do Bootstrap */
+   background-color: #260b9e; /* ou use a classe bg-light ou outra classe de cor Bootstrap */
+}
+
+header {
+   padding: 10px;
 }
 
 h1 {
@@ -21,6 +24,3 @@ ul {
 li {
    margin-bottom: 8px;
 }
-=======
-
->>>>>>> ff338d7fd07e1fb7b0634451f3112b76dd5952d5

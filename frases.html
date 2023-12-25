@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exemplo de Paginação</title>
+    <style>
+        .content {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .pagination {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .page-link {
+            margin: 0 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid red; /* Adiciona uma borda vermelha */
+        }
+
+        .active-page {
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .next-btn {
+            cursor: pointer;
+            border: 1px solid red; /* Adiciona uma borda vermelha */
+            padding: 5px 10px;
+            display: inline-block;
+            margin-left: 10px; /* Adiciona um espaço entre a numeração e o botão */
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+      <!-- Incluir o cabeçalho (header.html) -->
+      <header>
+         <!-- Conteúdo do cabeçalho aqui -->
+         <div class="container bg-light fixed-top">
+            <div class="row">
+               <div class="col-12">
+                     <!-- Incluir o conteúdo do header.html -->
+                     <div id="header-placeholder"></div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- Bootstrap JavaScript (coloque no final do corpo para otimizar o carregamento) -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+   <!-- Popper.js -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+
+   <!-- Bootstrap JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Conteúdo do corpo do site -->
+    <div class="container mt-5">
+
+      <div id="content1" class="content active">
+         <h2>Página 1</h2>
+         <p>E sempre que eu pensar no meu bem
+            Vou colorir o dia</p>
+      </div>
+
+      <div id="content2" class="content">
+         <h2>Página 2</h2>
+         <p>Com o pensamento lá em cima que nem pipa</p>
+      </div>
+
+      <div id="content3" class="content">
+         <h2>Página 3</h2>
+         <p>Não tenho medo de errar, só medo de desistir</p>
+      </div>
+
+      <!-- Paginação -->
+      <ul class="pagination">
+         <li class="page-link active-page" onclick="changePage(1)" id="page1">1</li>
+         <li class="page-link" onclick="changePage(2)" id="page2">2</li>
+         <li class="page-link" onclick="changePage(3)" id="page3">3</li>
+      </ul>
+
+      <!-- Botão de Próxima Página -->
+      <div class="next-btn" onclick="nextPage()">Próxima Página</div>
+
+   </div>
+
+<script>
+    var currentPage = 1;
+
+    function changePage(pageNumber) {
+        // Esconde todos os conteúdos
+        var contents = document.querySelectorAll('.content');
+        contents.forEach(function (content) {
+            content.classList.remove('active');
+        });
+
+        // Remove a classe de destaque de todas as páginas
+        var pages = document.querySelectorAll('.page-link');
+        pages.forEach(function (page) {
+            page.classList.remove('active-page');
+        });
+
+        // Mostra o conteúdo da página selecionada
+        var selectedContent = document.getElementById('content' + pageNumber);
+        if (selectedContent) {
+            selectedContent.classList.add('active');
+        }
+
+        // Adiciona a classe de destaque à página clicada
+        var selectedPage = document.getElementById('page' + pageNumber);
+        if (selectedPage) {
+            selectedPage.classList.add('active-page');
+        }
+
+        currentPage = pageNumber;
+    }
+
+    function nextPage() {
+        var nextPage = currentPage + 1;
+        if (nextPage <= 3) {
+            changePage(nextPage);
+        }
+    }
+</script>
+
+<script>
+   $(document).ready(function(){ 
+      // Carregar o conteúdo do header.html e inserir no #header-placeholder
+      $("#header-placeholder").load("header.html", function(response, status, xhr) {
+         if (status == "error") {
+               console.log("Erro ao carregar o header.html:", xhr.statusText);
+         }
+      });
+   });
+</script> 
+
+
+</body>
+</html>
