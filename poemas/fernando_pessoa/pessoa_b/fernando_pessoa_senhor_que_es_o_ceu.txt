@@ -1,7 +1,8 @@
-Senhor, que és o céu e a terra, e que és a vida e a morte! 
-O sol és tu, 
-e a lua és tu 
-e o vento és tu! 
+<strong>
+Senhor, que és o céu e a terra, e que és a vida e a morte!
+</strong>
+Senhor, que és o céu e a terra, e que és a vida e a morte!
+O sol és tu, e a lua és tu e o vento és tu! 
 Tu és os nossos corpos e as nossas almas 
 e o nosso amor és tu também. 
 
@@ -36,3 +37,5 @@ e rezar-te e adorar-te.
 Senhor, protege-me e ampara-me.
 Dá-me que eu me sinta teu. 
 Senhor, livra-me de mim.
+
+

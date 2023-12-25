@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Versos Coloridos</title>    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+   <!-- Incluir o cabeçalho (header.html) -->   
+   <div class="container-fluid bg-white">
+      <div class="container bg-white"> 
+         <div class="row">
+            <div class="col-12">
+               <!-- Incluir o conteúdo do header.html -->
+               <div id="header-placeholder"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+    
+
+   <!-- Conteúdo do corpo do site -->
+   <div class="container mt-1 text-left   "> <!-- Centralizar o conteúdo -->
+
+
+
+      <div class="row">
+         <div id="content1" class="content col-md-8 active">               
+
+            <div class="row">
+               <div class="col-3">                    
+                  <img src="foto_fernando_pessoa.png" alt="Descrição da imagem" class="img-fluid" style="max-width: 90px; height: auto;">
+               </div>
+               <div class="col-9">
+                  <h4 class="p-0 m-0">Fernando Pessoa</h4>
+                  <h5>Poeta português</h5>                     
+               </div>
+            </div>                
+                
+            <div class="row">
+               <div class="col-md-12">
+                   <a href="/poemas/fernando_pessoa/pessoa_a/index.html" class="border m-1 rounded btn btn-primary">A</a>
+                   <a href="/poemas/fernando_pessoa/pessoa_b/index.html" class="border m-1 rounded btn">B</a>
+                   <a href="/poemas/fernando_pessoa/pessoa_c/index.html" class="border m-1 rounded btn">C</a>
+                   <br>
+      
+                   <label for="poemaSelect">Escolha um poema:</label>
+                   <select class="form-control" id="poemaSelector">
+                     
+                           <option value="fernando_pessoa_acordo_de_noite_muito">Acordo de noite, muito de noite, no silêncio todo.</option>
+                           <option value="fernando_pessoa_senhor_que_es_o_ceu">Senhor, que és o céu e a terra...</option>
+                           <option value="fernando_pessoa_o_que_me_doi">O Que Me Dói Não É</option>
+                           <option value="fernando_pessoa_colhe_o_dia_porque">Colhe O Dia, Porque És Ele</option>
+                           <option value="fernando_pessoa_o_amor_quando_se_revela">O Amor Quando Se Revela</option>
+                   </select>  
+               </div>                  
+            </div>
+
+            <div id="poema-content"></div>
+
+         </div>            
+            
+         <!-- Conteúdo da coluna da direita -->
+         <div class="col-md-4">
+               <a href="https://www.youtube.com/watch?v=NNbPgLlN2XQ"  target="_blank">
+                  <img src="capa_o_amor_quando_se_revela.png"  alt="Descrição da imagem" class="img-fluid">
+                  O Amor Quando Se Revela
+               </a></br></br>
+
+               <a href="https://www.youtube.com/watch?v=OMkxdzNTz20&t=11s"  target="_blank">
+                  <img src="capa_colhe_o_dia.png" alt="Descrição da imagem" class="img-fluid">
+                  Colhe O Dia, Porque És Ele
+               </a></br></br>
+
+               <a href="https://www.youtube.com/watch?v=oahs1DMvUDc"  target="_blank">
+                  <img src="capa_adeus_sr_antonio.png" alt="Descrição da imagem" class="img-fluid">
+                  Adeus Senhor António
+               </a></br></br>
+         </div>
+
+      </div>
+         
+
+        <!-- Incluir o rodapé -->
+      <div id="footer-placeholder"></div>
+       
+    </div>
+
+    <!-- Bootstrap JavaScript (coloque no final do corpo para otimizar o carregamento) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Seu JavaScript aqui... -->
+   <script>
+
+      //.. carrega o header.html ( logo e menu)
+      $(document).ready(function() {
+         // Carregar o conteúdo do header.html e inserir no #header-placeholder
+         $("#header-placeholder").load("/header.html", function(response, status, xhr) {
+            if (status == "error") {
+                  console.log("Erro ao carregar o header.html:", xhr.statusText);
+            }
+         });        
+      });
+ 
+      // Função para carregar o o poema(arquivo .txt) com base na opção selecionada
+      function carregarPoema() {
+         var select = document.getElementById('poemaSelector');
+         var selectedOption = select.options[select.selectedIndex].value; 
+
+         // Montar o caminho do arquivo de texto
+         var txtFilePath = selectedOption + '.txt';
+
+         // Carregar o conteúdo do arquivo de texto
+         fetch(txtFilePath)
+            .then(response => response.text())
+            .then(data => {
+                  // Substituir quebras de linha por <br> tags
+                  data = data.replace(/\n/g, '<br>');
+                  // Exibir o conteúdo do poema na área designada
+                  document.getElementById('poema-content').innerHTML = data;
+            })
+            .catch(error => {
+               console.error('Erro ao carregar o arquivo de texto:', error);
+            });
+      }
+
+      // Função para carregar o rodapé
+      function carregar_rodape() {
+         $("#footer-placeholder").load("/rodape.html", function(response, status, xhr) {
+            if (status == "error") {
+               console.log("Erro ao carregar o rodapé:", xhr.statusText);
+            }
+         });
+      }
+
+      // carrega o primeiro poema automaticamente
+      window.onload = function() {
+         carregarPoema();
+         carregar_rodape();
+      };
+      
+      // Adicionar um ouvinte de evento de mudança ao seletor
+      document.getElementById('poemaSelector').addEventListener('change', carregarPoema);
+
+   </script> 
+
+</body>
+</html>
