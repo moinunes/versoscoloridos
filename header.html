@@ -1,36 +1,21 @@
 <!-- components/header.html -->
-<div class="container-fluid bg-white">
+<div class="container-fluid bg-white h-200">
    <div class="row align-items-center bg-white">
        <!-- Logotipo e Versos Coloridos -->
-       <div class="col-12 col-md-4">           
+       <div class="col-md-4">
            <div class="d-flex align-items-center">
-               <img src="/images/logo.png" alt="Logotipo" height="30">
+               <a href="index.html"><img src="/images/logo.png" alt="Logotipo" height="30"></a>
                <span class="h4 font-weight-bold ml-2">Versos Coloridos</span>
            </div>
        </div>
 
        <!-- Menu -->
-       <div class="col-12 col-md-8">
-           <nav class="navbar navbar-expand-lg navbar-light bg-white">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-               </button>
-
-               <!-- Itens do Menu -->
-               <div class="collapse navbar-collapse bg-white" id="navbarNav">
-                   <ul class="navbar-nav ml-auto">                       
-                       <li class="nav-item active">
-                          <a class="nav-link" href="/poemas.html">Poemas</a>
-                       </li>                      
-                       <li class="nav-item">
-                           <a class="nav-link" href="/frases.html">Frases</a>
-                       </li>
-                       <li class="nav-item active">
-                        <a class="nav-link" href="/videos.html">Vídeos</a>
-                       </li>                   
-                   </ul>
-               </div>
-           </nav>
+       <div class="col-md-8">
+           <div class="d-flex justify-content-between">
+               <a href="poemas.html" class="text-center">Autores</a>
+               <a href="poemas.html" class="text-center">Poemas</a>
+               <a href="/colaborar" class="text-center">Frases</a>
+           </div>
        </div>
    </div>
 </div>

@@ -1,26 +1,15 @@
-body {
-   /* Adicione a classe de cor desejada do Bootstrap */
-   background-color: #260b9e; /* ou use a classe bg-light ou outra classe de cor Bootstrap */
+
+
+.font_poema_1 { 
+   text-align: left;   
+   white-space: pre-line;
+   font-family: 'EB Garamond', 'Times New Roman', Times, serif;  
+   font-size: 1.4rem;   
 }
 
-header {
-   padding: 10px;
-}
-
-h1 {
-   color: #333;
-}
-
-a {
-   text-decoration: none;
-   color: #007BFF;
-}
-
-ul {
-   list-style-type: none;
-   padding: 0;
-}
-
-li {
-   margin-bottom: 8px;
+.font_poema_2 { 
+   text-align: left;
+   white-space: pre-line;
+   font-family: 'EB Garamond', 'Times New Roman', Times, serif;  
+   font-size: 1.2rem;   
 }

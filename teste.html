@@ -1,74 +1,82 @@
-Se você deseja carregar automaticamente o conteúdo do arquivo de texto fernando_pessoa_senhor_que_es_o_ceu.txt quando a página é carregada pela primeira vez, você pode modificar o script JavaScript para incluir essa funcionalidade. Aqui está o código atualizado:
-
-html
-Copy code
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Exemplo de Carregamento de Texto</title>
-
+    <title>Versos Coloridos</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Adicione estilos personalizados aqui, se necessário */
+        .poema-div {
+            display: none;
+        }
+    </style>
 </head>
 <body class="bg-light">
 
-    <!-- Conteúdo do corpo do site -->
-    <div class="container mt-5 text-left"> <!-- Centralizar o conteúdo -->
-        <div class="row">
-            <div class="col-md-12">
-                <!-- Seletor (select) -->
-                <label for="poemaSelector">Selecione um poema:</label>
-                <select id="poemaSelector" class="form-control">
-                    <option value="fernando_pessoa_senhor_que_es_o_ceu">Fernando Pessoa - Senhor, Que És o Céu</option>
-                    <option value="poema2">Poema 2</option>
-                    <option value="poema3">Poema 3</option>
-                </select>
+   <!-- Conteúdo do corpo do site -->
+   <div class="container mt-1 text-left"> <!-- Centralizar o conteúdo -->
+      <div class="container">
+         <label for="poemaSelect"><b>Escolha um poema:</b></label>
 
-                <!-- Área para exibir o conteúdo do poema -->
-                <div id="poema-content" class="mt-3"></div>
-            </div>
-        </div>
-        
-        <!-- Bootstrap JavaScript (coloque no final do corpo para otimizar o carregamento) -->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            
+         <ul class="list-group">
+            <li class="list-group-item" style="line-height: 1; margin:0;">
+               <a href="#" data-poema-div="poema-div-1">Poema 1</a>
+               <div id="poema-div-1" class="poema-div">
+                  <b>Poema:</b> <i>Poema 1</i><br>
+                  <b>Este é o primeiro poema.</b><br>
+                  Ele é curto e simples.
+               </div>
+            </li>
+            <li class="list-group-item" style="line-height: 1; margin:0;">
+               <a href="#" data-poema-div="poema-div-2">Poema 2</a>
+               <div id="poema-div-2" class="poema-div" style="display: none;">
+                  <b>Poema:</b> <i>Poema 2</i><br>
+                  Este é o segundo poema.<br>
+                  Ele também é curto e simples.
+               </div>
+            </li>
 
-        <!-- Seu JavaScript aqui... -->
-        <script>
-            // Função para carregar o conteúdo do poema com base na opção selecionada
-            function carregarPoema() {
-                var select = document.getElementById('poemaSelector');
-                var selectedOption = select.options[select.selectedIndex].value;
+            <li class="list-group-item" style="line-height: 1; margin:0;">
+               <a href="#" data-poema-div="poema-div-3">Poema 3</a>
+               <div id="poema-div-3" class="poema-div" style="display: none;">
+                  <b>Poema:</b> <i>Poema 3</i><br>
+                  Este é o segundo poema.<br>
+                  Ele também é curto e simples.
+               </div>
+            </li>
 
-                // Montar o caminho do arquivo de texto
-                var txtFilePath = selectedOption + '.txt';
+         </ul>
+      </div>
 
-                // Carregar o conteúdo do arquivo de texto
-                fetch(txtFilePath)
-                    .then(response => response.text())
-                    .then(data => {
-                        // Substituir quebras de linha por <br> tags
-                        data = data.replace(/\n/g, '<br>');
+      <div class="my-3"></div> <!-- pular linha -->
+   </div>
 
-                        // Exibir o conteúdo do poema na área designada
-                        document.getElementById('poema-content').innerHTML = data;
-                    })
-                    .catch(error => {
-                        console.error('Erro ao carregar o arquivo de texto:', error);
-                    });
-            }
+   <!-- Bootstrap JavaScript (coloque no final do corpo para otimizar o carregamento) -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-            // Carregar automaticamente o conteúdo do poema ao carregar a página
-            window.onload = function() {
-                carregarPoema();
-            };
+   <!-- Seu JavaScript aqui... -->
+   <script>
+      $(document).ready(function() {
+         // Adiciona um ouvinte de eventos de clique a todos os links dentro da lista de poema
+         $(".list-group-item a").click(function(e) {
+            // Evita o comportamento padrão de clicar em um link
+            e.preventDefault();
 
-            // Adicionar um ouvinte de evento de mudança ao seletor
-            document.getElementById('poemaSelector').addEventListener('change', carregarPoema);
-        </script>
-    </div>
+            // Obtém o ID da div do poema associado ao link
+            var poemaDivID = $(this).data("poema-div");
+
+            // Esconde todas as divs de poemas
+            $(".poema-div").hide();
+
+            // Mostra apenas a div do poema associada ao link clicado
+            $("#" + poemaDivID).show();
+         });
+      });
+   </script>
 </body>
 </html>
