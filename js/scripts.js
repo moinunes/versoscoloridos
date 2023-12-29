@@ -20,17 +20,24 @@ function carregar_cabecalho() {
 *
 */
 $(".list-group-item a").click(function(e) {
-   //.. Evita o comportamento padrão de clicar em um link
+   // Evita o comportamento padrão de clicar em um link
    e.preventDefault();
-   //.. Obtém o ID da div do poema associado ao link
+   
+   // Obtém o ID da div do poema associado ao link
    var poemaDivID = $(this).data("poema-div");
-   //.. Esconde todas as divs de poemas
+   
+   // Esconde todas as divs de poemas
    $(".poema-div").hide();
-   //.. Mostra apenas a div do poema associada ao link clicado
+   
+   // Mostra apenas a div do poema associada ao link clicado
    $("#" + poemaDivID).show();
-   //.. Move a tela para o topo da div do poema selecionado
+   
+   // Move a tela para o topo da div do poema selecionado, ajustando para 10 pixels acima do topo
+   var targetDiv = $("#" + poemaDivID);
+   var targetPosition = targetDiv.offset().top - 40;
+
    $('html, body').animate({
-      scrollTop: $("#" + poemaDivID).offset().top
+      scrollTop: targetPosition
    }, 700);
 });
 
