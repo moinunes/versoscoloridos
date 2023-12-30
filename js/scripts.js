@@ -20,24 +20,26 @@ function carregar_cabecalho() {
 *
 */
 $(".list-group-item a").click(function(e) {
-   // Evita o comportamento padrão de clicar em um link
-   e.preventDefault();
-   
-   // Obtém o ID da div do poema associado ao link
-   var poemaDivID = $(this).data("poema-div");
-   
-   // Esconde todas as divs de poemas
-   $(".poema-div").hide();
-   
-   // Mostra apenas a div do poema associada ao link clicado
-   $("#" + poemaDivID).show();
-   
-   // Move a tela para o topo da div do poema selecionado, ajustando para 10 pixels acima do topo
-   var targetDiv = $("#" + poemaDivID);
-   var targetPosition = targetDiv.offset().top - 40;
+   if (!$(this).hasClass('ignore-click')) {
+      // Evita o comportamento padrão de clicar em um link
+      e.preventDefault();
+      
+      // Obtém o ID da div do poema associado ao link
+      var poemaDivID = $(this).data("poema-div");
+      
+      // Esconde todas as divs de poemas
+      $(".poema-div").hide();
+      
+      // Mostra apenas a div do poema associada ao link clicado
+      $("#" + poemaDivID).show();
+      
+      // Move a tela para o topo da div do poema selecionado, ajustando para 10 pixels acima do topo
+      var targetDiv = $("#" + poemaDivID);
+      var targetPosition = targetDiv.offset().top - 40;
 
-   $('html, body').animate({
-      scrollTop: targetPosition
-   }, 700);
+      $('html, body').animate({
+         scrollTop: targetPosition
+      }, 700);
+   }
 });
 
