@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Os melhores poemas e versos de Carlos Drummond de Andrade">
+    <meta name="description" content="As melhores frases e versos de Carlos Drummond de Andrade">
 
      <!-- Meta tags Open Graph -->
-     <meta property="og:title" content="No meio do caminho tinha uma pedra.">
-     <meta property="og:description" content="Frase de Carlos Drummond de Andrade">
+     <meta property="og:title" content="Poeta Carlos Drummond de Andrade">
+     <meta property="og:description" content="As melhores frases de Carlos Drummond de Andrade">
      <meta property="og:url" content="http://www.versoscoloridos.com.br">
   
      
@@ -435,14 +435,12 @@
 
       
 
-      document.addEventListener('DOMContentLoaded', function() {
-            function compartilharFacebook(id) {
-                var frase = encodeURIComponent(document.getElementById(id).textContent.trim());
-                var url = encodeURIComponent(window.location.href);
-                var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
-                window.open(linkDeCompartilhamento, '_blank');
-            }
-      });
+      function compartilharFacebook(id) {
+            var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
+            var url = encodeURIComponent(window.location.href);
+            var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
+            window.open(linkDeCompartilhamento, '_blank');
+      }
 
 
 </script>
