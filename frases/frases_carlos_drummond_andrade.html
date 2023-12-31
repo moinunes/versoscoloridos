@@ -19,6 +19,7 @@
 
     <!-- Inclua a SDK do Facebook -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    
 
    <style>
       /* Adicione estilos personalizados aqui, se necessário */
@@ -439,6 +440,25 @@
         $("#poema-div-0").show();
       });  
      
+      // Função chamada quando o SDK do Facebook é carregado
+      window.fbAsyncInit = function() {
+         FB.init({
+            appId      : '3091300787669269',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v12.0'
+         });
+      };
+
+      // Carregue o SDK do Facebook assincronamente
+      (function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
 
       function compartilharFacebook(id) {
             var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
