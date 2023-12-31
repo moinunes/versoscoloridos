@@ -456,6 +456,24 @@
          window.open(linkDeCompartilhamento, '_blank');
       }
 
+      function compartilharFacebook(id, novaFrase) {
+         // Atualizar a meta tag de título
+         document.querySelector('meta[property="og:title"]').setAttribute('content', novaFrase);
+
+         // Atualizar a meta tag de descrição
+         document.querySelector('meta[property="og:description"]').setAttribute('content', novaFrase);
+
+         // Obter a frase da div com o ID fornecido
+         var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
+         var url = encodeURIComponent(window.location.href);
+
+         // Criar o link de compartilhamento do Facebook
+         var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
+
+         // Abrir a janela de compartilhamento do Facebook
+         window.open(linkDeCompartilhamento, '_blank');
+      }
+
   
    </script>
    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
