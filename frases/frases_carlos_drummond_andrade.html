@@ -438,16 +438,8 @@
         carregar_rodape();
         $("#poema-div-0").show();
       });  
-
-      
-
-      function compartilharFacebook_xxxx(id) {
-            var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
-            var url = encodeURIComponent(window.location.href);
-            var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
-            window.open(linkDeCompartilhamento, '_blank');
-      }
-
+     
+ 
       function compartilharFacebook____(id) {
          // Obtenha o conteúdo da div
          var conteudoDiv = document.getElementById(id).innerText;
@@ -460,34 +452,16 @@
          }, function(response){});
       }
 
+      function compartilharNoFacebook() {
+        // Exemplo de compartilhamento usando a API do Facebook com feed
+        var url = "https://www.facebook.com/dialog/feed?app_id=3091300787669269&display=popup&quote=Texto a ser compartilhado&href=" + encodeURIComponent(window.location.href);
+
+  window.open(url, "_blank");
+}
       
-    // Inicialize a SDK do Facebook
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '3091300787669269',
-        cookie     : true,
-        xfbml      : true,
-        version    : 'v10.0'
-      });
-    };
+   
 
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-    function compartilharFacebook(id) {
-      // Exemplo de compartilhamento usando a API do Facebook
-      var conteudoDiv = document.getElementById(id).innerText;
-      FB.ui({
-        method: 'share',
-        href: window.location.href,
-        quote: conteudoDiv
-      }, function(response){});
-    }
+  
   </script>
 
 
