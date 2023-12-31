@@ -440,35 +440,28 @@
         $("#poema-div-0").show();
       });  
      
-      // Função chamada quando o SDK do Facebook é carregado
+      // Função chamada quando o SDK do Facebook é carregado 
       window.fbAsyncInit = function() {
          FB.init({
-            appId      : '3091300787669269',
-            cookie     : true,
-            xfbml      : true,
-            version    : 'v12.0'
+            appId            : '3091300787669269',
+            xfbml            : true,
+            version          : 'v18.0'
          });
       };
 
-      // Carregue o SDK do Facebook assincronamente
-      (function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-
-
       function compartilharFacebook(id) {
-            var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
-            var url = encodeURIComponent(window.location.href);
-            var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
-            window.open(linkDeCompartilhamento, '_blank');
+         var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
+         var url = encodeURIComponent(window.location.href);
+         var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
+         window.open(linkDeCompartilhamento, '_blank');
       }
 
   
-  </script>
+   </script>
+   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+      
+     
 
 
  
