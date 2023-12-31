@@ -60,15 +60,18 @@
 
     <!-- Seu script JavaScript -->
     <script>
-        function compartilharFacebook(id, novaFrase) {
-            // Atualizar a meta tag de título
-            document.querySelector('meta[property="og:title"]').setAttribute('content', novaFrase);
-
-            // Atualizar a meta tag de descrição
-            document.querySelector('meta[property="og:description"]').setAttribute('content', novaFrase);
-
+        function compartilharFacebook(id) {
             // Obter a frase da div com o ID fornecido
             var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
+            var title = 'As melhores frases de Carlos Drummond de Andrade';
+
+            // Atualizar a meta tag de título
+            document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+
+            // Atualizar a meta tag de descrição
+            document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
+
+           
             var url = encodeURIComponent(window.location.href);
 
             // Criar o link de compartilhamento do Facebook
