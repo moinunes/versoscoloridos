@@ -433,12 +433,16 @@
         $("#poema-div-0").show();
       });  
 
-      function compartilharFacebook(id) {
-         var frase = encodeURIComponent(document.getElementById(id).innerText);
-         var url = encodeURIComponent(window.location.href);
-         var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
-         window.open(linkDeCompartilhamento, '_blank');
-      }
+      
+
+      document.addEventListener('DOMContentLoaded', function() {
+            function compartilharFacebook(id) {
+                var frase = encodeURIComponent(document.getElementById(id).textContent.trim());
+                var url = encodeURIComponent(window.location.href);
+                var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
+                window.open(linkDeCompartilhamento, '_blank');
+            }
+      });
 
 
 </script>
