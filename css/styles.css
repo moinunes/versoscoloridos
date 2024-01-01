@@ -24,6 +24,14 @@
    font-family: 'Courier New', Courier, monospace;   
 }
 
+.font_poema_tit_1 { 
+   text-align: left;
+   font-family: 'EB Garamond', 'Times New Roman', Times, serif;  
+   font-size: 1.2rem;   
+}
+
+
+
 .clicavel {
    color: blue; /* Cor do texto quando não clicado */
    text-decoration: underline; /* Adiciona um sublinhado */
