@@ -33,16 +33,14 @@
 .font_1 { 
    text-align: left;
    font-family: 'Times New Roman', Times, serif;  
-   font-size: 1.1rem;
-   font-style: italic;
-    font-weight: bold;
+   font-size: 1.1rem; 
 }
 .font_2 { 
    text-align: left;
    font-family: 'Times New Roman', Times, serif;  
    font-size: 0.9rem;
    font-style: italic;
-    font-weight: bold;
+   font-weight: bold;
 }
 
 .clicavel {
