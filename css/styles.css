@@ -18,13 +18,13 @@
    font-family: 'Courier New', Courier, monospace;
    font-size: 1.1rem;
    font-weight: bold;
-     
+   margin-right:3px;
 }
 .tit2 { 
    font-family: 'Courier New', Courier, monospace;   
 }
 
-.font_poema_tit_1 { 
+.font_poema_1 { 
    text-align: left;
    font-family: 'EB Garamond', 'Times New Roman', Times, serif;  
    font-size: 1.2rem;   
