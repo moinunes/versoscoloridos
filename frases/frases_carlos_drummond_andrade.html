@@ -81,8 +81,10 @@
                               O mar é grande e cabe na cama e no colchão de amar.
                             </p>
                         </div>
-                        <div class="card-footer bg-white p-0">
-                            <a href="javascript:void(0)" onclick="compartilharFacebook('frase1')" class="ml-3"><i>facebook</i></a>
+                        <div class="card-footer bg-white p-0">                      
+                           <a href="javascript:void(0)" onclick="compartilharWhatsApp('frase1')" class="ml-3">
+                              <img src="/images/whatsapp.png" alt="Compartilhar no WhatsApp">
+                           </a>
                         </div>
                      </div>
 
@@ -95,7 +97,9 @@
                            </p>
                         </div>
                         <div class="card-footer bg-white p-0">                    
-                           <a href="javascript:void(0)" onclick="compartilharFacebook('frase2')" class="ml-3"><i>facebook</i></a>
+                           <a href="javascript:void(0)" onclick="compartilharWhatsApp('frase2')" class="ml-3">
+                              <img src="/images/whatsapp.png" alt="Compartilhar no WhatsApp">
+                           </a>
                         </div>
                      </div>
 
@@ -440,23 +444,23 @@
       });  
            
 
-      function compartilharFacebook(id) {
-            var titulo = 'Frases de Bob Marley';
-            var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
+      function compartilharWhatsApp(id) {
+         var elemento = document.getElementById(id);
+
+         // Verificar se o elemento com o ID fornecido existe
+         if (elemento) {
+            var mensagem = encodeURIComponent(elemento.innerText.trim());
             var url = encodeURIComponent(window.location.href);
-            var imagemCompartilhavel = 'https://www.versoscoloridos.com.br/images/fotos/foto_cora_coralina.png'; // Substitua pela URL da imagem desejada
 
-            // Atualizar as meta tags Open Graph
-            document.querySelector('meta[property="og:title"]').setAttribute('content', titulo);
-            document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
-            document.querySelector('meta[property="og:image"]').setAttribute('content', imagemCompartilhavel);
+            // Criar o link de compartilhamento do WhatsApp para texto
+            var linkDeCompartilhamento = "https://api.whatsapp.com/send?text=" + mensagem + "%0A" + url;
 
-            // Criar o link de compartilhamento do Facebook
-            var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
-
-            // Abrir a janela de compartilhamento do Facebook
+            // Abrir a janela de compartilhamento do WhatsApp
             window.open(linkDeCompartilhamento, '_blank');
-        }
+         } else {
+            console.error("Elemento não encontrado com o ID: " + id);
+         }
+      }
 
    </script>
  
