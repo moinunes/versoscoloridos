@@ -1,15 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Frase Compartilhável">
+    <meta property="og:description" content="Essa é uma frase para compartilhar.">
+    <title>Compartilhamento de Frases</title>
+</head>
+<body>
 
+<div class="frase">
+    <p id="frase1">A vida é como uma bicicleta para manter o equilíbrio, você deve continuar em movimento.</p>
+    <button onclick="compartilharFacebook('frase1')">Compartilhar no Facebook</button>
+</div>
 
-<meta property="og:url"   content="https://www.versoscoloridos.com.br/frases/frases_carlos_drummond_andrade.html">
-<meta property="og:type"  content="website" />
-<meta property="og:title" content="Versos Coloridos">
-<meta property="og:description" content="As melhores frases de Carlos Drummond de Andrade">
+<div class="frase">
+    <p id="frase2">A simplicidade é a sofisticação máxima.</p>
+    <button onclick="compartilharFacebook('frase2')">Compartilhar no Facebook</button>
+</div>
 
+<script>
+    function compartilharFacebook(id) {
+        var titulo = 'Frase Compartilhável';
+        var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
+        var url = encodeURIComponent(window.location.href);
 
-var titulo = 'teste';
-var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
-var url = encodeURIComponent(window.location.href);
+        // Atualizar as meta tags Open Graph
+        document.querySelector('meta[property="og:title"]').setAttribute('content', titulo);
+        document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
 
-??? não tá atualizando no javascript ! está mantendo os valores originais
-document.querySelector('meta[property="og:title"]').setAttribute('content', titulo);
-document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
+        // Criar o link de compartilhamento do Facebook
+        var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
+
+        // Abrir a janela de compartilhamento do Facebook
+        window.open(linkDeCompartilhamento, '_blank');
+    }
+</script>
+
+</body>
+</html>
