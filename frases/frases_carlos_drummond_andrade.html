@@ -434,7 +434,7 @@
     
     
    <script>
-      
+
       $(document).ready(function() {        
         carregar_cabecalho();
         carregar_rodape();
@@ -449,23 +449,21 @@
             version          : 'v18.0'
          });
       };
-
-      function compartilharFacebook(id, novaFrase) {
-
+   
+      function compartilharFacebook(id) {
          var titulo = 'teste';
-         var frase  = encodeURIComponent(document.getElementById(id).innerText.trim());
-         var url    = encodeURIComponent(window.location.href);
-         
-         document.querySelector('meta[property="og:title"]'      ).setAttribute('content', titulo);
-         document.querySelector('meta[property="og:description"]').setAttribute('content', frase );
+         var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
+         var url = encodeURIComponent(window.location.href);
+
+         document.querySelector('meta[property="og:title"]').setAttribute('content', titulo);
+         document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
 
          // Criar o link de compartilhamento do Facebook
-         var linkDeCompartilhamento = "https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}";
-         
+         var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
+
          // Abrir a janela de compartilhamento do Facebook
          window.open(linkDeCompartilhamento, '_blank');
       }
-  
    </script>
  
 </body>
