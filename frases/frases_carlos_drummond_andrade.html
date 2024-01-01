@@ -6,8 +6,8 @@
     <meta name="description" content="As melhores frases e versos de Carlos Drummond de Andrade">
 
    <!-- Meta tags Open Graph -->
-   <meta property="og:url"   content="https://www.versoscoloridos.com.br/frases/frases_carlos_drummond_andrade.html">
-   <meta property="og:type"  content="website" />
+   <meta property="og:url" content="https://www.versoscoloridos.com.br/frases/frases_carlos_drummond_andrade.html">
+   <meta property="og:type" content="website" />
    <meta property="og:title" content="Versos Coloridos">
    <meta property="og:description" content="As melhores frases de Carlos Drummond de Andrade">
      
@@ -20,7 +20,8 @@
     <!-- Inclua a SDK do Facebook -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     
-
+    
+   
    <style>
       /* Adicione estilos personalizados aqui, se necessário */
       .poema-div {
@@ -445,25 +446,24 @@
       window.fbAsyncInit = function() {
          FB.init({
             appId            : '3091300787669269',
+            autoLogAppEvents : true,
             xfbml            : true,
             version          : 'v18.0'
          });
       };
-   
+
       function compartilharFacebook(id) {
-         var titulo = 'teste';
-         var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
-         var url = encodeURIComponent(window.location.href);
+         var frase = document.getElementById(id).innerText.trim();
+         var url = window.location.href;
 
-         document.querySelector('meta[property="og:title"]').setAttribute('content', titulo);
-         document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
-
-         // Criar o link de compartilhamento do Facebook
-         var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
-
-         // Abrir a janela de compartilhamento do Facebook
-         window.open(linkDeCompartilhamento, '_blank');
+         FB.ui({
+            method: 'share',
+            href: url,
+            quote: frase,
+         }, function(response){});
       }
+   
+  
    </script>
  
 </body>
