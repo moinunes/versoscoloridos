@@ -10,6 +10,7 @@
    <meta property="og:type" content="website" />
    <meta property="og:title" content="Versos Coloridos">
    <meta property="og:description" content="As melhores frases de Carlos Drummond de Andrade">
+   <meta property="og:image"        content="https://www.versoscoloridos.com.br/images/fotos/foto_cecilia_meireles.png" />
      
      
     <title>Poemas de Carlos Drummond de Andrade</title>    
@@ -440,37 +441,41 @@
         carregar_cabecalho();
         carregar_rodape();
         $("#poema-div-0").show();
+
+
+        // Função chamada quando o SDK do Facebook é carregado 
+         window.fbAsyncInit = function() {
+            FB.init({
+               appId            : '3091300787669269',
+               autoLogAppEvents : true,
+               xfbml            : true,
+               version          : 'v18.0'
+            });
+         };
+
       });  
      
-      // Função chamada quando o SDK do Facebook é carregado 
-      window.fbAsyncInit = function() {
-         FB.init({
-            appId            : '3091300787669269',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v18.0'
-         });
-      };
+      
 
       function compartilharFacebook(id) {
          title = 'Moisa';
          var frase = document.getElementById(id).innerText.trim();        
          var url = window.location.href;   
          
-                  // Atualizar a meta tag de título
-    document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+         // Atualizar a meta tag de título
+         document.querySelector('meta[property="og:title"]').setAttribute('content', title);
 
-// Atualizar a meta tag de descrição
-document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
+         // Atualizar a meta tag de descrição
+         document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
 
          FB.ui({
             method: 'share',
             href: url,
             quote: frase,
          }, function(response){});
+         
       }
-   
-  
+
    </script>
  
 </body>
