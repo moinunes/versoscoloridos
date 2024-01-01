@@ -446,15 +446,22 @@
            
 
       function compartilharFacebook(id) {
-         var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
-         var url = encodeURIComponent(window.location.href);
+            var titulo = 'Frases de Bob Marley';
+            var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
+            var url = encodeURIComponent(window.location.href);
+            var imagemCompartilhavel = 'https://www.versoscoloridos.com.br/images/fotos/foto_cora_coralina.png'; // Substitua pela URL da imagem desejada
 
-         // Criar o link de compartilhamento do Facebook com as novas meta tags
-         var linkDeCompartilhamento = "https://www.facebook.com/sharer/sharer.php?quote=" + frase + "&u=" + url;
+            // Atualizar as meta tags Open Graph
+            document.querySelector('meta[property="og:title"]').setAttribute('content', titulo);
+            document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
+            document.querySelector('meta[property="og:image"]').setAttribute('content', imagemCompartilhavel);
 
-         // Abrir a janela de compartilhamento do Facebook
-         window.open(linkDeCompartilhamento, '_blank');
-      }
+            // Criar o link de compartilhamento do Facebook
+            var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
+
+            // Abrir a janela de compartilhamento do Facebook
+            window.open(linkDeCompartilhamento, '_blank');
+        }
 
    </script>
  
