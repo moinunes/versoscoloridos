@@ -32,7 +32,7 @@ function compartilharWhatsApp(id, imagem) {
         var url = encodeURIComponent(window.location.href);
 
         // Criar o link de compartilhamento do WhatsApp para texto e imagem
-        var linkDeCompartilhamento = "https://wa.me/?text=" + mensagem + "%0A" + url + "&img=" + imagem;
+        var linkDeCompartilhamento = "https://api.whatsapp.com/send?text=" + mensagem + "%0A" + url + "&img=" + imagem;
 
         // Abrir a janela de compartilhamento do WhatsApp
         window.open(linkDeCompartilhamento, '_blank');
