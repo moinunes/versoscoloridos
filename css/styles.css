@@ -30,7 +30,13 @@
    font-size: 1.2rem;   
 }
 
-
+.font_1 { 
+   text-align: left;
+   font-family: 'Times New Roman', Times, serif;  
+   font-size: 0.9rem;
+   font-style: italic;
+    font-weight: bold;
+}
 
 .clicavel {
    color: blue; /* Cor do texto quando não clicado */
