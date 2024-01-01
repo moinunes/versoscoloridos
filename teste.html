@@ -1,41 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://www.versoscoloridos.com.br/frases/frases_carlos_drummond_andrade.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Frases Inspiradoras">
-    <meta property="og:description" content="Compartilhe uma frase inspiradora!">
-    <meta property="og:image" content="https://www.versoscoloridos.com.br/images/fotos/foto_cecilia_meireles.png">
 
-    <title>Frases Inspiradoras</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compartilhar Frases</title>
+  <!-- Substitua 'URL_DA_FRASE' pela URL da frase específica que você deseja compartilhar -->
+  <meta property="og:url" content="https://www.versoscoloridos.com.br/frases/frases_carlos_drummond_andrade.html">
+  <!-- Substitua 'TÍTULO_DA_FRASE' pelo título da frase que você deseja compartilhar -->
+  <meta property="og:title" content="Frases Inspiradoras">
+  <!-- Substitua 'DESCRIÇÃO_DA_FRASE' pela própria frase que você deseja compartilhar -->
+  <meta property="og:description" content="Compartilhe uma frase inspiradora!">
 </head>
 <body>
 
-    <div class="frase" id="frase1">
-        <p>O mundo é grande e cabe nesta janela sobre o mar. O mar é grande e cabe na cama e no colchão de amar.</p>
-        <button onclick="compartilharFacebook('frase1')">Compartilhar no Facebook</button>
-    </div>
-
-    <script>
-        function compartilharFacebook(id) {
-            var frase = encodeURIComponent(document.getElementById(id).innerText.trim());
-            var url = encodeURIComponent(window.location.href);
-            var imagem = encodeURIComponent("https://www.versoscoloridos.com.br/images/fotos/foto_fernando_pessoa.png"); // Substitua pela URL da imagem desejada
-
-            // Atualizar as meta tags do Facebook
-            document.querySelector('meta[property="og:title"]').setAttribute('content', 'Frases Inspiradoras 123');
-            document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
-            document.querySelector('meta[property="og:image"]').setAttribute('content', imagem);
-
-            // Criar o link de compartilhamento do Facebook
-            var linkDeCompartilhamento = `https://www.facebook.com/sharer/sharer.php?quote=${frase}&u=${url}`;
-
-            // Abrir a janela de compartilhamento do Facebook
-            window.open(linkDeCompartilhamento, '_blank');
-        }
-    </script>
-
+  <!-- Botão para compartilhar no Facebook -->
+  <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL), 'Compartilhar no Facebook moisa', 'width=600, height=400');">Compartilhar no Facebook 123</button>
+  <!-- Botão para compartilhar no Twitter -->
+  
 </body>
 </html>
