@@ -200,30 +200,8 @@
             }
          });        
       });
- 
-      // Função para carregar o o poema(arquivo .txt) com base na opção selecionada
-      function carregarPoema() {
-         var select = document.getElementById('poemaSelector');
-         var selectedOption = select.options[select.selectedIndex].value; 
+     
 
-         // Montar o caminho do arquivo de texto
-         var txtFilePath = selectedOption + '.txt';
-
-         // Carregar o conteúdo do arquivo de texto
-         fetch(txtFilePath)
-            .then(response => response.text())
-            .then(data => {
-                  // Substituir quebras de linha por <br> tags
-                  data = data.replace(/\n/g, '<br>');
-                  // Exibir o conteúdo do poema na área designada
-                  document.getElementById('poema-content').innerHTML = data;
-            })
-            .catch(error => {
-               console.error('Erro ao carregar o arquivo de texto:', error);
-            });
-      }
-
-      // Função para carregar o rodapé
       function carregar_rodape() {
          $("#footer-placeholder").load("rodape.html", function(response, status, xhr) {
             if (status == "error") {
@@ -232,13 +210,9 @@
          });
       }
 
-      // carrega o primeiro poema automaticamente
       window.onload = function() { 
          carregar_rodape();
-      };
-      
-      // Adicionar um ouvinte de evento de mudança ao seletor
-      document.getElementById('poemaSelector').addEventListener('change', carregarPoema);
+      };            
 
    </script> 
 
