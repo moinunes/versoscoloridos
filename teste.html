@@ -7,21 +7,38 @@
 </head>
 <body>
 
-<!-- Substitua 'Sua%20mensagem%20aqui' pela mensagem desejada e 'url_da_sua_imagem.jpg' pela URL da sua imagem -->
-<a href="#" onclick="compartilharWhatsApp('a vida é bela', 'https://www.versoscoloridos.com.br/images/fotos/foto_cora_coralina.png');">
-    Compartilhar no WhatsApp
-</a>
+<div class="card bg-white mt-2 mb-2">
+    <div class="card-body m-0 p-3">
+        <!-- Corpo -->
+        <p class="card-text" id="frase1">
+            O mundo é grande e cabe nesta janela sobre o mar.<br>
+            O mar é grande e cabe na cama e no colchão de amar.
+        </p>
+    </div>
+    <div class="card-footer bg-white p-0">
+        <a href="#" onclick="compartilharWhatsApp('frase1', 'https://www.versoscoloridos.com.br/images/fotos/foto_cora_coralina.png');">
+            Compartilhar no WhatsApp
+        </a>
+    </div>
+</div>
 
 <script>
 function compartilharWhatsApp(id, imagem) {
-    var mensagem = encodeURIComponent(document.getElementById(id).innerText.trim());
-    var url = encodeURIComponent(window.location.href);
+    var elemento = document.getElementById(id);
 
-    // Criar o link de compartilhamento do WhatsApp
-    var linkDeCompartilhamento = "https://api.whatsapp.com/send?text=" + mensagem + "%20" + url + "&image=" + imagem;
+    // Verificar se o elemento com o ID fornecido existe
+    if (elemento) {
+        var mensagem = encodeURIComponent(elemento.innerText.trim());
+        var url = encodeURIComponent(window.location.href);
 
-    // Abrir a janela de compartilhamento do WhatsApp
-    window.open(linkDeCompartilhamento, '_blank');
+        // Criar o link de compartilhamento do WhatsApp
+        var linkDeCompartilhamento = "https://api.whatsapp.com/send?text=" + mensagem + "%20" + url + "&image=" + imagem;
+
+        // Abrir a janela de compartilhamento do WhatsApp
+        window.open(linkDeCompartilhamento, '_blank');
+    } else {
+        console.error("Elemento não encontrado com o ID: " + id);
+    }
 }
 </script>
 
