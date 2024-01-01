@@ -453,8 +453,15 @@
       };
 
       function compartilharFacebook(id) {
-         var frase = document.getElementById(id).innerText.trim();
-         var url = window.location.href;
+         title = 'Moisa';
+         var frase = document.getElementById(id).innerText.trim();        
+         var url = window.location.href;   
+         
+                  // Atualizar a meta tag de título
+    document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+
+// Atualizar a meta tag de descrição
+document.querySelector('meta[property="og:description"]').setAttribute('content', frase);
 
          FB.ui({
             method: 'share',
