@@ -37,6 +37,13 @@
    font-style: italic;
     font-weight: bold;
 }
+.font_2 { 
+   text-align: left;
+   font-family: 'Times New Roman', Times, serif;  
+   font-size: 0.9rem;
+   font-style: italic;
+    font-weight: bold;
+}
 
 .clicavel {
    color: blue; /* Cor do texto quando não clicado */
