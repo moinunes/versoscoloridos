@@ -8,9 +8,22 @@
 <body>
 
 <!-- Substitua 'Sua%20mensagem%20aqui' pela mensagem desejada e 'url_da_sua_imagem.jpg' pela URL da sua imagem -->
-<a href="https://api.whatsapp.com/send?text=Sua%20mensagem%20aqui%20https%3A%2F%2Fwww.versoscoloridos.com.br%2Fteste.html" target="_blank">
-    <img src="url_da_sua_imagem.jpg" alt="Imagem para compartilhar">
+<a href="#" onclick="compartilharWhatsApp('a vida é bela', 'https://www.versoscoloridos.com.br/images/fotos/foto_cora_coralina.png');">
+    Compartilhar no WhatsApp
 </a>
+
+<script>
+function compartilharWhatsApp(id, imagem) {
+    var mensagem = encodeURIComponent(document.getElementById(id).innerText.trim());
+    var url = encodeURIComponent(window.location.href);
+
+    // Criar o link de compartilhamento do WhatsApp
+    var linkDeCompartilhamento = "https://api.whatsapp.com/send?text=" + mensagem + "%20" + url + "&image=" + imagem;
+
+    // Abrir a janela de compartilhamento do WhatsApp
+    window.open(linkDeCompartilhamento, '_blank');
+}
+</script>
 
 </body>
 </html>
