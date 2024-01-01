@@ -10,7 +10,7 @@
    <meta property="og:type" content="website" />
    <meta property="og:title" content="Versos Coloridos">
    <meta property="og:description" content="As melhores frases de Carlos Drummond de Andrade">
-   <meta property="og:image"        content="https://www.versoscoloridos.com.br/images/fotos/foto_carlos_drummond.png" />
+   <meta property="og:image" content="https://www.versoscoloridos.com.br/images/fotos/foto_carlos_drummond.png" />
      
      
     <title>Poemas de Carlos Drummond de Andrade</title>    
@@ -478,26 +478,7 @@
         carregar_rodape();
         $("#poema-div-0").show();
 
-      });  
-           
-
-      function compartilharWhatsApp(id) {
-         var elemento = document.getElementById(id);
-
-         // Verificar se o elemento com o ID fornecido existe
-         if (elemento) {
-            var mensagem = encodeURIComponent(elemento.innerText.trim());
-            var url = encodeURIComponent(window.location.href);
-
-            // Criar o link de compartilhamento do WhatsApp para texto
-            var linkDeCompartilhamento = "https://api.whatsapp.com/send?text=" + mensagem + "%0A" + url;
-
-            // Abrir a janela de compartilhamento do WhatsApp
-            window.open(linkDeCompartilhamento, '_blank');
-         } else {
-            console.error("Elemento não encontrado com o ID: " + id);
-         }
-      }
+      });      
 
    </script>
  

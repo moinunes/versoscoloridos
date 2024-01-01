@@ -43,3 +43,21 @@ $(".list-group-item a").click(function(e) {
    }
 });
 
+function compartilharWhatsApp(id) {
+   var elemento = document.getElementById(id);
+
+   // Verificar se o elemento com o ID fornecido existe
+   if (elemento) {
+      var mensagem = encodeURIComponent(elemento.innerText.trim());
+      var url = encodeURIComponent(window.location.href);
+
+      // Criar o link de compartilhamento do WhatsApp para texto
+      var linkDeCompartilhamento = "https://api.whatsapp.com/send?text=" + mensagem + "%0A" + url;
+
+      // Abrir a janela de compartilhamento do WhatsApp
+      window.open(linkDeCompartilhamento, '_blank');
+   } else {
+      console.error("Elemento não encontrado com o ID: " + id);
+   }
+}
+
