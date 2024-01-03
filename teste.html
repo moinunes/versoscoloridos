@@ -1,45 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Compartilhar no WhatsApp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Copiar para Área de Transferência</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
 
-<div class="card bg-white mt-2 mb-2">
-    <div class="card-body m-0 p-3">
-        <!-- Corpo -->
-        <p class="card-text" id="frase1">
-            O mundo é grande e cabe nesta janela sobre o mar.<br>
-            O mar é grande e cabe na cama e no colchão de amar.
-        </p>
-    </div>
-    <div class="card-footer bg-white p-0">
-        <a href="#" onclick="compartilharWhatsApp('frase1', 'https://www.versoscoloridos.com.br/images/fotos/foto_cora_coralina.png');">
-            Compartilhar no WhatsApp
-        </a>
-    </div>
+<div id="poema-div-1" class="poema-div">
+  <p>Além da Terra, além do Céu,<br>
+   no trampolim do sem-fim das estrelas,<br>
+   no rastro dos astros,<br>
+   na magnólia das nebulosas.<br>
+   Além, muito além do sistema solar,<br>
+   até onde alcançam o pensamento e o coração,<br>
+   <br></p>
+  <button class="botao-copiar">Copiar</button>
 </div>
 
+<div id="poema-div-2" class="poema-div">
+  <p>Conteúdo do poema 2.
+   <img src="/images/capas/capa_drummond_alem_terra.png"  alt="video youtube do poema: Além da Terra, além do Céu" class="img-fluid">
+
+  </p>
+  <button class="botao-copiar">Copiar</button>
+</div>
+
+<textarea id="area-copia" style="display: none;"></textarea>
+
 <script>
-function compartilharWhatsApp(id, imagem) {
-    var elemento = document.getElementById(id);
+  $(document).ready(function () {
+    $('.botao-copiar').on('click', function () {
+      var poemaDivID = $(this).closest('.poema-div').attr('id');
+      var poemaConteudo = $('#' + poemaDivID + ' p').html();
 
-    // Verificar se o elemento com o ID fornecido existe
-    if (elemento) {
-        var mensagem = encodeURIComponent(elemento.innerText.trim());
-        var url = encodeURIComponent(window.location.href);
+      var $tempTextArea = $('<textarea>');
+      $tempTextArea.val(poemaConteudo);
+      $('body').append($tempTextArea);
 
-        // Criar o link de compartilhamento do WhatsApp para texto e imagem
-        var linkDeCompartilhamento = "https://api.whatsapp.com/send?text=" + mensagem + "%0A" + url + "&img=" + imagem;
+      // Selecione o texto na área de transferência
+      $tempTextArea.select();
 
-        // Abrir a janela de compartilhamento do WhatsApp
-        window.open(linkDeCompartilhamento, '_blank');
-    } else {
-        console.error("Elemento não encontrado com o ID: " + id);
-    }
-}
+      try {
+        // Copie o texto usando a API Clipboard
+        document.execCommand('copy');
+        alert('Conteúdo copiado com sucesso! Agora você pode colar usando Ctrl+V.');
+      } catch (err) {
+        alert('Erro ao copiar o conteúdo. Utilize Ctrl+C para copiar manualmente.');
+      } finally {
+        // Remova a área de transferência temporária
+        $tempTextArea.remove();
+      }
+    });
+  });
 </script>
 
 </body>

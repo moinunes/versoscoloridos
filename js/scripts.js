@@ -61,3 +61,49 @@ function compartilharWhatsApp(id) {
    }
 }
 
+/*
+* Ao Clicar nos botoes <copiar>, copia  conteudo das div 
+*/ 
+ $(document).ready(function () {
+   $('.btn_copiar').on('click', function () {
+     var poemaDiv = $(this).closest('.poema-div'); 
+     if (poemaDiv.length > 0) {
+       // Obter o link e o texto associado
+       var linkPoema = poemaDiv.prev('.clicavel').text().trim(); 
+       // Obter o título do autor
+       var autorTitulo = poemaDiv.find('.font_poema_titulo').text().replace('Autor:', '').trim(); 
+       // Obter o conteúdo do poema dentro da div usando a classe .font_poema_1
+       var poemaConteudo = poemaDiv.find('.font_poema_1').clone(); 
+       // Substituir <br> por \n e pular linha onde há uma tag <br> isolada
+       var poemaTexto = poemaConteudo.html().replace(/<br>\s*<br>/g, '<br>\n').replace(/<br>$/g, ''); 
+       // Remover espaços à esquerda de cada linha
+       var linhas = poemaTexto.split('\n');
+       for (var i = 0; i < linhas.length; i++) {
+         linhas[i] = linhas[i].trim();
+       } 
+       // Formatar o poema com quebras de linha e adicionar uma quebra de linha no final
+       var poemaFormatado = linhas.join('\n') + '\n';
+       // Substituir <br> por '' no conteúdo do poema
+       poemaFormatado = poemaFormatado.replace(/<br>/g, ''); 
+       // Obter a URL da página atual
+       var urlPagina = window.location.href; 
+       // Combinação do link, título, autor e poema
+       var conteudoCompleto = linkPoema + '\nAutor: ' + autorTitulo + '\n' + poemaFormatado + 'Poemas: ' + urlPagina;
+        var $tempTextArea = $('<textarea>');
+       $tempTextArea.val(conteudoCompleto);
+       $('body').append($tempTextArea); 
+       $tempTextArea.select(); 
+       try {
+         document.execCommand('copy');
+         alert('Conteúdo copiado com sucesso! \n Agora você pode colar usando Ctrl+V.');
+       } catch (err) {
+         alert('Erro ao copiar o conteúdo. Utilize Ctrl+C para copiar manualmente.');
+       } finally {
+         $tempTextArea.remove();
+       }
+     } else {
+       console.error('Div .poema-div não encontrada.');
+     }
+   });
+ });
+ 
