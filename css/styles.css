@@ -48,8 +48,17 @@
    text-decoration: underline; /* Adiciona um sublinhado */
    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
-
 .clicavel:hover {
+   color: rgb(11, 117, 34); /* Cor do texto quando hover (passar o mouse sobre) */
+}
+
+.btn_video {
+   color: blue;
+   text-decoration: underline;
+   cursor: pointer;
+   margin-left:20px;
+}
+.btn_video:hover {
    color: rgb(11, 117, 34); /* Cor do texto quando hover (passar o mouse sobre) */
 }
 
