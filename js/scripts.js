@@ -63,9 +63,9 @@ function compartilharWhatsApp(id) {
    }
 }
 
-/*
-* Ao Clicar nos botoes <copiar>, copia  conteudo das div 
-*/ 
+/*-------------------------------------------------------------
+* Ao Clicar nos botoes <copiar>, copia  conteudo das div - "copia  POEMA"
+*-------------------------------------------------------------*/ 
  $(document).ready(function () {
    $('.btn_copiar').on('click', function () {
      var poemaDiv = $(this).closest('.poema-div'); 
@@ -77,17 +77,12 @@ function compartilharWhatsApp(id) {
        var linhas = poemaTexto.split('\n');
        for (var i = 0; i < linhas.length; i++) {
          linhas[i] = linhas[i].trim();
-       } 
- 
+       }
        var poemaFormatado = linhas.join('\n') + '\n';
        var mensagemSpan = poemaDiv.find('.mensagem');
-       poemaFormatado = poemaFormatado.replace(/<br>/g, ''); 
-    
-       var urlPagina = window.location.href; 
-       //var conteudoCompleto = linkPoema + '\nAutor: ' + autorTitulo + '\n' + poemaFormatado + 'Poemas: ' + urlPagina;
+       poemaFormatado = poemaFormatado.replace(/<br>/g, '');
+       var urlPagina = window.location.href;
        var conteudoCompleto = linkPoema + '\nAutor: ' + autorTitulo + poemaFormatado + 'Poemas: ' + urlPagina;
-
-       
        var $tempTextArea = $('<textarea>');
        $tempTextArea.val(conteudoCompleto);
        $('body').append($tempTextArea); 
@@ -106,5 +101,28 @@ function compartilharWhatsApp(id) {
        console.error('Div .poema-div não encontrada.');
      }
    });
- });
- 
+}); 
+
+/*-------------------------------------------------------------
+* Ao Clicar nos botoes <copiar>, "copia  VERSO"
+*-------------------------------------------------------------*/ 
+$(document).ready(function () {
+   $('.btn_copiar_verso').on('click', function () {
+       var blocoTexto = $(this).closest('.card-body').find('.card-text');
+       var linhas = blocoTexto.text().trim().split('\n');
+       var urlPagina = window.location.href;
+       for (var i = 0; i < linhas.length; i++) {
+           linhas[i] = linhas[i].trimLeft(); // Use trimLeft para remover espaços à esquerda
+       }
+       var textoFormatado = linhas.join('\n');
+       var tempInput = $('<textarea>');
+       tempInput.val(textoFormatado+ '\n\n' + urlPagina);
+       $('body').append(tempInput);
+       tempInput.select();
+       document.execCommand('copy');
+       tempInput.remove();
+       $('.mensagem').empty();
+       var mensagem = $(this).closest('.card-body').find('.mensagem');
+       mensagem.html('<span class="text-success">Conteúdo copiado com sucesso! <br> Agora você pode colar usando Ctrl+V.</span>');
+   });
+});

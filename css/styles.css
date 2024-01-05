@@ -79,11 +79,27 @@
    background-color: #06ce92;
    color: #fff;
    margin-top:5px !important; 
-   padding: 3px;
+   padding:0px;
    width: 58px;
-   height:35px; 
+   height:25px;
+   font-size:0.9rem;  
 }
 .btn_copiar:hover {
+   background-color: #055c42;
+   color: #fff;
+   margin-top:5px !important; 
+}
+
+.btn_copiar_verso {
+   background-color: #06ce92;
+   color: #fff;
+   margin-top:5px !important; 
+   padding:0px;
+   width: 58px;
+   height:25px;
+   font-size:0.9rem;  
+}
+.btn_copiar_verso:hover {
    background-color: #055c42;
    color: #fff;
    margin-top:5px !important; 
