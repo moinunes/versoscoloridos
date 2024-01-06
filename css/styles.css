@@ -52,6 +52,15 @@
    color: rgb(11, 117, 34); /* Cor do texto quando hover (passar o mouse sobre) */
 }
 
+.link_1 {
+   color: blue; /* Cor do texto quando não clicado */
+   text-decoration: underline; /* Adiciona um sublinhado */
+   cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+.link_1:hover {
+   color: rgb(11, 117, 34); /* Cor do texto quando hover (passar o mouse sobre) */
+}
+
 .btn_video {
    color: blue;
    text-decoration: underline;
