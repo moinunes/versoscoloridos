@@ -115,3 +115,33 @@
 }
 
  
+.btn_pf1 {
+   text-decoration: underline;
+   background-color: #06ce92;
+   color: #fff;
+   padding:3px;
+   width: 95px;
+   height:35px; 
+   font-size:16px
+}
+.btn_pf1:hover {
+   text-decoration: underline;
+   font-size:18px;
+   color: #fff;
+}
+
+.btn_pf2 {
+   text-decoration: underline;  
+   border: 1px solid #28a745;
+   color:  #28a745;
+   padding:3px; 
+   width: 95px;
+   height:35px; 
+   font-size:16px
+}
+.btn_pf2:hover {
+   text-decoration: underline;
+   color:  #28a745;
+   font-size:18px; 
+}
+
