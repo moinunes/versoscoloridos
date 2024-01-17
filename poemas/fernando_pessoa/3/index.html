@@ -77,12 +77,34 @@
                      </div>
 
                      <ul class="list-group">
-
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-a">Passa uma borboleta por diante de mim</a>
+                           <div id="poema-div-a" class="poema-div" style="display: none;">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:</span>Fernando Pessoa 🦋
+                              </span> 
+                              <span class="font_poema_1">
+                                 <br>
+                                 Passa uma borboleta por diante de mim<br>
+                                 E pela primeira vez no Universo eu reparo<br>
+                                 Que as borboletas não têm cor nem movimento,<br>
+                                 Assim como as flores não têm perfume nem cor.<br>
+                                 <br>
+                                 A cor é que tem cor nas asas da borboleta,<br>
+                                 No movimento da borboleta o movimento é que se move.<br>
+                                 O perfume é que tem perfume no perfume da flor.<br>
+                                 A borboleta é apenas borboleta<br>
+                                 E a flor é apenas flor.<br>
+                              </span>
+                              <button class="btn btn_copiar">Copiar</button>
+                               <p class="mensagem"></p>
+                           </div>
+                        </li>     
                         <li class="list-group-item" style="line-height: 1; margin:0;">
                            <a href="#" class="clicavel" data-poema-div="poema-div-1">Colhe O Dia, Porque És Ele</a>
                            <div id="poema-div-1" class="poema-div">
                               <span class="font_poema_titulo">
-                                 <span class="tit1">Autor:</span>Fernando Pessoa
+                                 <span class="tit1">Autor:</span>Fernando Pessoa 🌸
                               </span> 
                               <span class="font_poema_1">
                                  <br>
@@ -498,7 +520,7 @@
       $(document).ready(function() {        
         carregar_cabecalho();
       carregar_rodape();
-        $("#poema-div-1").show();
+        $("#poema-div-a").show();
       });       
    </script>
 </body>
