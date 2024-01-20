@@ -149,3 +149,9 @@
    padding:0px; 
    margin: 0px;   
 }
+
+.fundo_site {
+   background-image: url("/images/fundo_site.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+}

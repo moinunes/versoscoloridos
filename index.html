@@ -25,20 +25,18 @@
     
 </head>
 <body class="bg-light">
-
-   <!-- Incluir o cabeçalho (header.html) -->   
-   <div class="container-fluid bg-white">
-      <div class="container bg-white"> 
+   
+   <div class="container-fluid fundo_site">
+      <div class="container"> 
          <div class="row">
             <div class="col-12">
                <!-- Incluir o conteúdo do header.html -->
-               <div id="header-placeholder"></div>
+               <div id="div_cabecalho"></div>
             </div>
          </div>
       </div>
    </div>
-    
-
+   
    <!-- Conteúdo do corpo do site -->
    <div class="container mt-1 text-left   "> <!-- Centralizar o conteúdo -->      
 
@@ -272,12 +270,9 @@
 
       </div>
    </div> 
-  
-
-   <!-- Conteúdo do corpo do site -->
-   <div class="container-fluid"> <!-- Centralizar o conteúdo -->    
-         <!-- Incluir o rodapé -->
-         <div id="footer-placeholder"></div>  
+   
+   <div class="container-fluid fundo_site"> 
+         <div id="div_rodape"></div>  
    </div>
 
     <!-- Bootstrap JavaScript (coloque no final do corpo para otimizar o carregamento) -->
@@ -288,26 +283,10 @@
     <!-- Seu JavaScript aqui... -->
    <script>
 
-      //.. carrega o header.html ( logo e menu)
-      $(document).ready(function() {
-         // Carregar o conteúdo do header.html e inserir no #header-placeholder
-         $("#header-placeholder").load("/header.html", function(response, status, xhr) {
-            if (status == "error") {
-                  console.log("Erro ao carregar o header.html:", xhr.statusText);
-            }
-         });        
-      });
-     
-
-      function carregar_rodape() {
-         $("#footer-placeholder").load("rodape.html", function(response, status, xhr) {
-            if (status == "error") {
-               console.log("Erro ao carregar o rodapé:", xhr.statusText);
-            }
-         });
-      }
+       
 
       window.onload = function() { 
+         carregar_cabecalho();
          carregar_rodape();
       };            
 
