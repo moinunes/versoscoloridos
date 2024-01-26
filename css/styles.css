@@ -156,5 +156,35 @@
    background-size: cover;
 }
 
-/*------------ banner --------------*/
-  
+.sombra_1 {
+   box-shadow: 0 0 10px rgba(184, 80, 149, 0.9); 
+}
+.sombra_2 {   
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.sombra_3 {
+   box-shadow: 5px 5px 10px #333333;
+}
+.sombra_4 {
+   box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+}
+.sombra_5 {
+   box-shadow: 5px 5px 3px #333333, -5px -5px 5px #333333; 
+}
+.sombra_6 { 
+   background-color: #590ad8;
+   box-shadow: inset 0 0 15px hsl(32, 40%, 51%);
+}
+.sombra_7 { 
+   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.bg_cor_1{
+   
+   /* 
+   background-color: #ece5e5;
+
+    */
+   background: linear-gradient(to bottom, #deeeca 70%, #ece5e5 30%);
+}
+ 
