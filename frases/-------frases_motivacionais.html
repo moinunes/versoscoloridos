@@ -587,7 +587,12 @@
         carregar_cabecalho();
       carregar_rodape();
         $("#poema-div-0").show();
-      });       
+      });   
+      document.addEventListener("DOMContentLoaded", function() { 
+         var divFrase = document.getElementById("div_frase"); 
+         var frase = obterFrase(); 
+         divFrase.innerText = frase;
+      });    
    </script>
 </body>
 </html>

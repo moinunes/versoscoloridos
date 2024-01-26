@@ -573,11 +573,8 @@
    
    <div class="container mt-3 p-0 ">
       <div class="card  border-0 d-none d-sm-block"> <!-- Esta div será ocultada em dispositivos pequenos -->
-         <div class="card-header border-0 text-center">
-               <h5 class="card-title p-0 m-0">
-                  &nbsp;Sua autenticidade é sua beleza. <br>
-                  Abrace quem você é, pois você é único e especial.
-               </h5>
+         <div class="card-header border-0 text-center bg-light">
+            <div class="h5" id="div_frase"></div>
          </div>
          <div class="card-body bg-light">            
             <div class="row">      
@@ -651,9 +648,14 @@
    <script>
       $(document).ready(function() {        
         carregar_cabecalho();
-      carregar_rodape();
+        carregar_rodape();
         $("#poema-div-0").show();
-      });       
+      }); 
+      document.addEventListener("DOMContentLoaded", function() { 
+         var divFrase = document.getElementById("div_frase"); 
+         var frase = obterFrase(); 
+         divFrase.innerText = frase;
+      });      
    </script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 
+
 function carregar_rodape() {
    $("#div_rodape").load("/rodape.html", function(response, status, xhr) {
       if (status == "error") {
@@ -126,3 +127,85 @@ $(document).ready(function () {
        mensagem.html('<span class="text-success">Conteúdo copiado com sucesso! <br> Agora você pode colar usando Ctrl+V.</span>');
    });
 });
+
+ 
+/*-------------------------------------------------------------
+* obter a frase com base no segundo fornecido
+*-------------------------------------------------------------*/ 
+function obterFrase() {
+   // Obter o segundo atual
+   var segundoAtual = new Date().getSeconds();
+
+   // Formatando o segundo para duas casas decimais
+   var segundoFormatado = ("0" + segundoAtual).slice(-2);
+ 
+   // Definindo o array de frases
+   var frases = [
+      "Acredite em você mesmo e tudo será possível.",
+      "O que você faz hoje pode melhorar todos os amanhãs.",
+      "Nunca é tarde demais para ser quem você poderia ter sido.",
+      "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+      "Seja a mudança que você deseja ver no mundo.",  
+      "A vida é feita de escolhas, faça escolhas que te façam feliz.",
+      "O sucesso não é a chave para a felicidade.\n A felicidade é a chave para o sucesso.",
+      "Nunca desista do que você realmente quer fazer.\n A pessoa com grandes sonhos é mais poderosa do que aquela com todos os fatos.",
+      "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
+      "A vida reserva surpresas maravilhosas para todos aqueles que cultivam a gratidão!",
+      "O melhor momento para plantar uma árvore foi há 20 anos.\n O segundo melhor momento é agora.",
+      "A mente é tudo.\n Você se torna aquilo que você pensa.",
+      "O único lugar onde o sucesso vem antes do trabalho é no dicionário.",
+      "A gratidão transforma o que temos em suficiente.",
+      "Seja o arco-íris na nuvem de alguém.",
+      "A paciência é amarga, mas seu fruto é doce.",
+      "Não espere por circunstâncias ideais, tome decisões e torne-as ideais.",
+      "A persistência é o caminho do êxito.",
+      "O otimismo é a fé em ação.",
+      "Quem cultiva gratidão é capaz de realizar sonhos que parecem inalcançáveis!",
+      "A verdadeira medida do sucesso não reside nas vitórias fáceis, \n mas sim em quantas vezes você consegue se recuperar do fracasso. \n Cada revés é uma oportunidade de crescimento e superação.",
+      "A verdadeira sorte consiste em ter algo pelo que lutar.",
+      "Não há substituto para o trabalho árduo.",
+      "A vida é 10% do que acontece conosco e 90% como reagimos a isso.",
+      "O único modo de fazer um excelente trabalho é amar o que você faz.",
+      "Sua vida só melhora quando você faz.\n Trabalhe em si mesmo e o resto seguirá.",
+      "A felicidade é uma jornada, não um destino.", 
+      "Seja você mesmo; todos os outros já estão ocupados.",
+      "Não importa o quão devagar você vá, desde que você não pare.",
+      "A mente é um antídoto para a dor.",
+      "O sucesso não é final, o fracasso não é fatal: é a coragem de continuar que conta.",
+      "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo.",
+      "A única maneira de fazer um excelente trabalho é amar o que você faz.",
+      "Se você está indo pela estrada certa e está disposto a continuar andando, eventualmente você chegará lá.",
+      "A única limitação que você possui é aquela que você escolhe impor a si mesmo.\n Liberte-se das barreiras autoimpostas e abra caminho para suas verdadeiras capacidades.",
+      "Não há atalhos para qualquer lugar que valha a pena.",
+      "Quanto mais você se elogia e celebra sua vida, mais há na vida para celebrar.",
+      "A chave para o sucesso é começar antes de estar pronto.",
+      "A única coisa no caminho do seu sucesso é a sua mente.",
+      "Você nunca falhará até parar de tentar.",
+      "O sucesso é encontrar satisfação no próprio trabalho.",
+      "A vida é 10% do que acontece conosco e 90% como reagimos a isso.",
+      "A única maneira de alcançar o impossível é acreditar que é possível.", 
+      "Sua vida não melhora apenas por esperar.", 
+      "A felicidade não é algo pronto. \n Ela vem de suas próprias ações.",
+      "Você não pode atravessar o mar simplesmente parando e olhando para a água.",
+      "O fracasso é o condimento que dá sabor ao sucesso.",
+      "A diferença entre uma pessoa bem-sucedida e outras não é falta de força,\n não é falta de conhecimento, mas sim falta de vontade.",
+      "Não seja uma versão mais fraca de você mesmo. \n Seja uma versão mais forte de você mesmo.",
+      "Você nunca é velho demais para definir outro objetivo ou sonhar um novo sonho.",
+      "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+      "O que você faz hoje pode melhorar todos os amanhãs.", 
+      "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+      "A persistência, aliada à determinação, é a fórmula mágica que transforma o impossível em realizações extraordinárias.", 
+      "A vida é feita de escolhas, faça escolhas que te façam feliz.",
+      "O sucesso não é a chave para a felicidade.\n A felicidade é a chave para o sucesso.",
+      "Nunca desista do que você realmente quer fazer.\n A pessoa com grandes sonhos é mais poderosa do que aquela com todos os fatos.",
+      "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
+      "Acreditar que você pode é o primeiro passo para alcançar seus objetivos. \n A confiança em si mesmo é metade do caminho para o sucesso.",
+   ];
+
+   // Obtendo a frase correspondente ao segundo
+   var frase_padrao ="Sua autenticidade é sua beleza.\n Abrace quem você é, pois você é único e especial."; 
+   var fraseCorrespondente = frases[Number(segundoFormatado) - 1] || frase_padrao ;
+   
+
+   return fraseCorrespondente;
+}

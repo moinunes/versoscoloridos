@@ -403,14 +403,8 @@
 
    <div class="container mt-3 p-0 ">
       <div class="card  border-0 d-none d-sm-block"> <!-- Esta div será ocultada em dispositivos pequenos -->
-         <div class="card-header border-0 text-center">
-               <h6 class="card-title p-0 m-0">
-                  &nbsp;Acorde todas as manhãs com um sorriso. <br>
-                  Esta é mais uma oportunidade que você tem para ser feliz. <br>
-                  Seja seu próprio motor de ignição. O dia de hoje jamais voltará...<br>  
-                   Não o desperdice!!! <span class="font_2"> Roberto Shinyashiki</span>  <br>
-
-               </h6>
+         <div class="card-header border-0 text-center bg-light">
+            <div class="h5" id="div_frase"></div>
          </div>
          <div class="card-body bg-light">            
             <div class="row">      
@@ -489,7 +483,12 @@
         carregar_cabecalho();
       carregar_rodape();
         $("#poema-div-0").show();
-      });       
+      }); 
+      document.addEventListener("DOMContentLoaded", function() { 
+         var divFrase = document.getElementById("div_frase"); 
+         var frase = obterFrase(); 
+         divFrase.innerText = frase;
+      });      
    </script>
 </body>
 </html>
