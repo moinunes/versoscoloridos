@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
    <!-- Google analytics  -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNGPR198V4"></script>
@@ -19,7 +20,8 @@
       /* Adicione estilos personalizados aqui, se necessário */
       .poema-div {
           display: none;
-      }
+      } 
+      .sombra_0 { background-color: #e7f7fd; box-shadow: inset 0 0 15px hsl(250, 6%, 80%);}
    </style>
 </head>
 <body class="bg-light">
@@ -114,6 +116,14 @@
                      e a cada dia adicionamos novos poemas.<br> 
                  </div>
                </div>
+            </div> 
+
+            <div class="card p-2 m-0  sombra_0"> 
+               <div class="card-body p-1 m-0 text-left" >
+                  <p class="p-0 m-2 ">
+                     <div class="h6" id="div_mens"> </div>
+                  </p>                 
+              </div>
             </div> 
 
             <div class="card bg-white mt-0 mb-0">
@@ -232,6 +242,7 @@
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <script src="/js/scripts.js"></script>
+   <script src="/js/mens.js"></script>
     
    <script>
      
@@ -244,6 +255,10 @@
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 
          divFrase.innerText = frase;
+         //...............
+         var divMens = document.getElementById("div_mens"); 
+         var frase = obterMens(); 
+         divMens.innerText = frase;
       }); 
    </script>
 </body>
