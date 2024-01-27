@@ -27,6 +27,8 @@
       .poema-div {
           display: none;
       }
+      .sombra_0 { background-color: #fff; box-shadow: inset 0 0 15px hsl(246, 94%, 37%);}
+      .sombra_1 { background-color: #fff; box-shadow: inset 0 0 15px hsl(140, 94%, 19%);}
    </style>
 
 </head>
@@ -54,22 +56,20 @@
                </div>
                <div class="col-md-9 p-2 m-0">
                   <h6 class="text-center text-md-left text-lg">
-                     Desbrave a magia das palavras, habilmente entrelaçadas pelos grandes poetas de todos os tempos.
+                     Poemas variados - Grandes poetas de todos os tempos.
                   </h6>                 
                </div>
             </div>                     
                 
+            <div class="border-0 p-0 mt-1">
+               <a href="#" class="btn btn_pf1">Poemas</a>  
+               <br> 
+            </div>
+
             <div class="row">
                <div class="col-md-12 justify-content-center">
                
-                  <div class="container p-0">                        
-                     <div class="border p-0 m-0">
-                        <a href="/poemas/selecao_poetica/1/index.html" class="border m-1 rounded btn btn-primary">1</a>
-                           <!-- acrescentar frases....
-                               <a href="/poemas/selecao_poetica/2/index.html" class="border m-1 rounded btn">2</a>
-                           --> 
-                              <br> 
-                     </div>
+                  <div class="container p-0 mt-2"> 
 
                      <ul class="list-group">
                         <li class="list-group-item" style="line-height: 1; margin:0;">
@@ -875,21 +875,22 @@
          <div class="col-md-4">
             
             <div class="container mt-3 p-0">
-               <div class="card">
-                 <div class="card-header ">
-                     <h5 class="card-title p-0 m-0">&nbsp;Bem-vindo ao <strong>Versos Coloridos</strong>!</h5>
+               <div class="card sombra_0 m-0 p-0"> 
+                  <div class="card-header ">
+                     <h5 class="card-title p-0 m-0">&nbsp;<strong>Versos Coloridos</strong> </h5>
                  </div>
-                 <div class="card-body alert alert-warning">
-                     Nosso acervo de poesias <strong>está em constante crescimento,</strong> 
-                     e a cada dia adicionamos novos poemas.<br> 
+                  <div class="card-body m-2 p-2" >
+                     <p class="m-0 p-0">
+                        <div class="h6" id="div_mens"> </div>
+                     </p>                 
                  </div>
-               </div>
-            </div> 
+               </div>  
+            </div>  
 
-            <div class="card bg-white mt-0 mb-0">
-               <div class="card-body m-0 p-3">
+            <div class="card bg-white mt-2 mb-0">
+               <div class="card-body m-0 p-3 sombra_1">
                   <!-- Corpo -->
-                  <p class="card-text font_1 m-0" id="frase4">
+                  <p class="card-text font_1 m-0 " id="frase4">
                      É preciso ser um realista para descobrir a realidade. É preciso ser um romântico para criá-la.<br>                             
                      <span class="font_2">Fernando Pessoa</span> 👁️‍🗨️
                   </p> 
@@ -898,7 +899,7 @@
                </div> 
             </div> 
             <div class="card bg-white mt-2 mb-0">
-               <div class="card-body m-0 p-3 sombra_0" >
+               <div class="card-body m-0 p-3 sombra_1" >
                   <!-- Corpo -->
                   <p class="card-text font_1 m-0" id="frase4">
                      se você não é o suficiente para você mesma 
@@ -915,11 +916,12 @@
       </div>
    </div>
       
+   <div class="container-fluid bg-light mt-2 mb-2 border">
+      <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+   </div>
    <div class="container mt-3 p-0 ">
       <div class="card  border-0 d-none d-sm-block"> <!-- Esta div será ocultada em dispositivos pequenos -->
-         <div class="card-header border-0 text-center bg-light">
-            <div class="h5" id="div_frase"></div>
-         </div>
+ 
          <div class="card-body bg-light">   
         
             <div class="row">
@@ -997,7 +999,7 @@
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <script src="/js/scripts.js"></script>
-    
+   <script src="/js/mens.js"></script>
    <script>
       $(document).ready(function() {        
         carregar_cabecalho();
@@ -1008,6 +1010,10 @@
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 
          divFrase.innerText = frase;
+         //...............
+         var divMens = document.getElementById("div_mens"); 
+         var frase = obterMens(); 
+         divMens.innerText = frase;
       });       
    </script>
 </body>

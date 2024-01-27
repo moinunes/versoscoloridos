@@ -198,6 +198,12 @@ function obterFrase() {
       "🚀 Nunca desista do que você realmente quer fazer.\n A pessoa com grandes sonhos é mais poderosa do que aquela com todos os fatos.",
       "❤️ A única maneira de fazer um ótimo trabalho é amar o que você faz.",
       "➡️ Acreditar que você pode é o primeiro passo para alcançar seus objetivos. \n A confiança em si mesmo é metade do caminho para o sucesso.",
+      "➡️ Não deixe que o ruído da opinião alheia \n impeça que você escute a sua voz interior. \n - Steve Jobs",
+      "➡️ Explore livremente, copie os versos que ressoarem em seu coração e compartilhe. \n Vamos espalhar a poesia juntos!",
+      "➡️ ",
+      "➡️ ",
+      "➡️ ",
+   
    ];
 
    // Obtendo a frase correspondente ao segundo
