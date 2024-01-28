@@ -44,24 +44,71 @@ function obterMens() {
        frases1 = [
          "🤔 Enquanto houver um louco, um poeta e um amante haverá sonho, amor e fantasia. E enquanto houver sonho, amor e fantasia, haverá esperança. <br><span class='small'>- William Shakespeare</span>",
    
-      ];
-       
-      // <br><span class='small'>- xxxxxxxxx</span>",
-     
-    
+      ];     
 
    var frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
- 
-   // Obter o segundo atual
-   var segundoAtual = new Date().getSeconds();
-   // Calcula o índice de forma cíclica
+    var segundoAtual = new Date().getSeconds();
    var indiceFrase = segundoAtual % frases.length;   
-   // Obtém a frase correspondente ao índice calculado
-   var fraseCorrespondente = frases[indiceFrase] || frase_padrao;
+   var fraseCorrespondente = frases[indiceFrase] || frase_padrao;   
+   return fraseCorrespondente;
+}
 
-   //var emojis = ["🌟", "📚", "📜", "📖", "🎨", "➡️", "🌹", "🌼", "📄", "✨", "💬", "🌺", "🌸", "📝", "↪️",  "🧑"];
-   //var emojiEscolhido = emojis[Math.floor(Math.random() * emojis.length)];
-   // fraseCorrespondente = emojiEscolhido + " " + fraseCorrespondente;
+
+/*-------------------------------------------------------------
+* obter a  mensans Motivacionais de forma cíclica
+*-------------------------------------------------------------*/ 
+function obterMens_motivacional() {
    
+   var frases = [
+      "Ame o que faz, faça o que ama. ✨<br>" +
+      "Paixão no trabalho, sucesso na jornada.<br>" +
+      "Encontre alegria no labor diário.<br>" +
+      "O amor pelo trabalho é a chama do êxito.<br>" +
+      "Cada tarefa é uma expressão de amor.<br>" +
+      "<span class='small'>- Desconhecido</span>",
+  
+      "Agradeça por cada momento 💖<br>" +
+      "Celebre as pequenas vitórias <br>" +
+      "Cultive a gratidão e nutra o seu coração de alegria. Na apreciação, descobrimos a riqueza da vida. <br>" +
+      "A Gratidão transforma o comum em extraordinário.  🙏<br>", 
+      
+      "Coloque seu coração,  mente e alma até mesmo nas menores   coisas que você fizer.<br>" +
+      "Esse é o segredo para o sucesso. <br> <span class='small'>- Guilherme Ávila</span>",
+  
+      "O homem não teria alcançado o <b>possível</b> se, repetidas vezes,  não tivesse tentado <br>" +
+      "o <b>impossível.</b>  <br> <span class='small'>- Max Weber</span>",
+
+      "Suba o primeiro degrau com fé. <br> Não é necessário que você veja toda a escada. " +
+      "Apenas dê o primeiro passo.  <br> <span class='small'>- Martin Luther King</span>",
+
+      "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo. " +
+      " <br> <span class='small'>- Winston Churchill</span>",
+
+      "Persista, conquiste, brilhe! ✨ <br> Recomece, alcance, inspire! <br> Cresça, vença, sorria!<br> " +
+      "Acredite, evolua, transforme! <br> Supere, realize, celebre! ",
+
+      "Ação gera mudança. Inspire-se. ✨<br> Caminhe, sonhe, conquiste. <br> Foco, força, gratidão. <br>" +
+      "Desafie-se, supere, realize. <br> Persistência, crescimento, vitória. ",
+
+      "Todos os dias, sob todos os pontos de vista, eu vou cada vez melhor 🌟" +
+      " <br> <span class='small'>- Émile Coué</span>",
+
+      "Segue o teu destino, <br> Rega as tuas plantas, <br> Ama as tuas rosas. <br> " +
+      "O resto é a sombra <br> " +       
+      "De árvores alheias. <br> <span class='small'>- Fernando Pessoa ✨</span>",
+
+      "Vamos inventar o amanhã e parar de nos preocupar com o passado. <br> " + 
+      "<span class='small'>- Steve Jobs ✨</span>",
+   ];   
+   
+   var frases1  = [ 
+      
+        
+  ];    
+
+   var frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
+    var segundoAtual = new Date().getSeconds();
+   var indiceFrase = segundoAtual % frases.length;   
+   var fraseCorrespondente = frases[indiceFrase] || frase_padrao;   
    return fraseCorrespondente;
 }
