@@ -75,7 +75,78 @@
                         <a href="/frases/manoel_de_barros/1/index.html" class="border m-1 rounded btn btn-primary">1</a> 
                         <br> 
                      </div>
-                     
+                     <div class="card bg-white mt-0 mb-0">
+                        <div class="card-body m-0 p-3">
+                           <!-- Corpo -->
+                           <p class="card-text font_1 m-0" id="frase4">
+                              Poderoso pra mim não é aquele que descobre ouro.<br>
+                              Para mim poderoso é aquele que descobre<br>
+                              as insignificâncias (do mundo e as nossas)<br>
+                              Por essa pequena sentença me elogiaram de imbecil.<br>
+                              Fiquei emocionado e chorei.<br>
+                              Sou fraco para elogios.<br>
+                              <span class="font_2">Manoel de Barros</span> 
+                           </p>   
+                           <span><button class="btn btn_copiar_verso">Copiar</button></span>
+                           <p class="mensagem"></p>
+                        </div> 
+                     </div>
+                     <div class="card bg-white mt-0 mb-0">
+                        <div class="card-body m-0 p-3">
+                           <!-- Corpo -->
+                           <p class="card-text font_1 m-0" id="frase4">
+                              Meu fado é de não entender quase tudo.<br>
+                              Sobre o nada eu tenho profundidades.<br>
+                              <span class="font_2">Manoel de Barros</span> 
+                           </p>   
+                           <span><button class="btn btn_copiar_verso">Copiar</button></span>
+                           <p class="mensagem"></p>
+                        </div> 
+                     </div>
+                     <div class="card bg-white mt-0 mb-0">
+                        <div class="card-body m-0 p-3">
+                           <!-- Corpo -->
+                           <p class="card-text font_1 m-0" id="frase4">
+                              Poesia é voar fora da asa.<br>
+                              <span class="font_2">Manoel de Barros</span> 
+                           </p>   
+                           <span><button class="btn btn_copiar_verso">Copiar</button></span>
+                           <p class="mensagem"></p>
+                        </div> 
+                     </div>
+                     <div class="card bg-white mt-0 mb-0">
+                        <div class="card-body m-0 p-3">
+                           <!-- Corpo -->
+                           <p class="card-text font_1 m-0" id="frase4">
+                              Um fim de mar colore os horizontes.<br>
+                              <span class="font_2">Manoel de Barros</span> 
+                           </p>   
+                           <span><button class="btn btn_copiar_verso">Copiar</button></span>
+                           <p class="mensagem"></p>
+                        </div> 
+                     </div>
+                     <div class="card bg-white mt-0 mb-0">
+                        <div class="card-body m-0 p-3">
+                           <!-- Corpo -->
+                           <p class="card-text font_1 m-0" id="frase4">
+                              Prezo insetos mais que aviões.<br>
+                              Prezo a velocidade<br>
+                              das tartarugas<br>
+                              mais que a dos mísseis.<br>
+                              Tenho em mim<br>
+                              esse atraso de nascença.<br>
+                              Eu fui aparelhado<br>
+                              para gostar de passarinhos.<br>
+                              Tenho abundância<br>
+                              de ser feliz por isso.<br>
+                              Meu quintal<br>
+                              É maior do que o mundo.<br>
+                              <span class="font_2">Manoel de Barros</span> 
+                           </p>   
+                           <span><button class="btn btn_copiar_verso">Copiar</button></span>
+                           <p class="mensagem"></p>
+                        </div> 
+                     </div>
                      <div class="card bg-white mt-0 mb-0">
                         <div class="card-body m-0 p-3">
                            <!-- Corpo -->
@@ -297,9 +368,6 @@
             
             <div class="container mt-3 p-0">
                <div class="card sombra_0 m-0 p-0"> 
-                  <div class="card-header ">
-                     <h5 class="card-title p-0 m-0">&nbsp;<strong>Versos Coloridos</strong> </h5>
-                 </div>
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
                         <div class="h6" id="div_mens"> </div>
@@ -409,11 +477,11 @@
       document.addEventListener("DOMContentLoaded", function() { 
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 
-         divFrase.innerText = frase;
+         divFrase.innerHTML = frase;
          //...............
          var divMens = document.getElementById("div_mens"); 
          var frase = obterMens(); 
-         divMens.innerText = frase;
+         divMens.innerHTML = frase;
       });      
    </script>
 </body>

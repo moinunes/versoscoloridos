@@ -1,63 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-adsense-account" content="ca-pub-2582645504069233">
-  
-  <title>Exemplo de Copiar para Área de Transferência</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Os melhores poemas e versos de William Shakespeare">
+    <meta name="google-adsense-account" content="ca-pub-2582645504069233">
+   <!-- Meta tags Open Graph -->
+   <meta property="og:url" content="https://www.versoscoloridos.com.br/poemas/william_shakespeare/1">
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="Versos Coloridos">
+   <meta property="og:description" content="Poemas de William Shakespeare">
+   <meta property="og:image" content="https://www.versoscoloridos.com.br/images/fotos/foto_william_shakespeare.png" />
+     
+    <title>Poemas de William Shakespeare</title>    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-</head>
-<body>
-
-<div id="poema-div-1" class="poema-div">
-  <p>Além da Terra, além do Céu,<br>
-   no trampolim do sem-fim das estrelas,<br>
-   no rastro dos astros,<br>
-   na magnólia das nebulosas.<br>
-   Além, muito além do sistema solar,<br>
-   até onde alcançam o pensamento e o coração,<br>
-   <br></p>
-  <button class="botao-copiar">Copiar</button>
-</div>
-
-<div id="poema-div-2" class="poema-div">
-  <p>Conteúdo do poema 2.
-   <img src="/images/capas/capa_drummond_alem_terra.png"  alt="video youtube do poema: Além da Terra, além do Céu" class="img-fluid">
-
-  </p>
-  <button class="botao-copiar">Copiar</button>
-</div>
-
-<textarea id="area-copia" style="display: none;"></textarea>
-
-<script>
-  $(document).ready(function () {
-    $('.botao-copiar').on('click', function () {
-      var poemaDivID = $(this).closest('.poema-div').attr('id');
-      var poemaConteudo = $('#' + poemaDivID + ' p').html();
-
-      var $tempTextArea = $('<textarea>');
-      $tempTextArea.val(poemaConteudo);
-      $('body').append($tempTextArea);
-
-      // Selecione o texto na área de transferência
-      $tempTextArea.select();
-
-      try {
-        // Copie o texto usando a API Clipboard
-        document.execCommand('copy');
-        alert('Conteúdo copiado com sucesso! Agora você pode colar usando Ctrl+V.');
-      } catch (err) {
-        alert('Erro ao copiar o conteúdo. Utilize Ctrl+C para copiar manualmente.');
-      } finally {
-        // Remova a área de transferência temporária
-        $tempTextArea.remove();
+   <!-- Google analytics  -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNGPR198V4"></script>
+   <script src="/js/analytics.js"></script>
+     
+   <style>
+      /* Adicione estilos personalizados aqui, se necessário */
+      .poema-div {
+          display: none;
       }
-    });
-  });
-</script>
+      .sombra_0 { background-color: #fff; box-shadow: inset 0 0 15px hsl(250, 41%, 71%);}
+   </style>
 
+</head>
+<body class="bg-light">
+
+   <div class="container-fluid fundo_site">
+      <div class="container"> 
+         <div class="row">
+            <div class="col-12">
+               <div id="div_cabecalho"></div>
+            </div>
+         </div>
+      </div>
+   </div> 
+
+   <!-- corpo do site -->
+   <div class="container mt-2 text-left">
+
+      <div class="row">
+         <div class="col-md-8">            
+
+            <div class="row justify-content-center border p-0 m-0">
+               <div class="col-md-3 p-1 m-0">
+                  <img src="/images/fotos/foto_william_shakespeare.png" alt="Poeta William Shakespeare" class="img-fluid" style="max-width: 90px; height: auto;">
+               </div>
+               <div class="col-md-9 p-2 m-0">
+                  <h5 class="">William Shakespeare</h5>
+                  <h6>Poeta e Dramaturgo Inglês</h6>
+               </div>
+            </div>           
+                
+            <div class="row">
+               <div class="col-md-12 justify-content-center">
+               
+                  <div class="container p-0">
+
+                     <div class="border p-0 m-0">
+                        <a href="/poemas/william_shakespeare/1/index.html" class="btn btn_pf1">Poemas</a> 
+                        <a href="/frases/william_shakespeare/1/index.html" class="btn btn_pf2">Frases</a> 
+                        <br> 
+                     </div>    
+
+                     <!-- usar qdo tiver mais CONTEUDO
+                     <div class="border p-0 m-0">
+                        <a href="/poemas/william_shakespeare/1/index.html" class="border m-1 rounded btn btn-primary">1</a>
+                        <a href="/poemas/william_shakespeare/2/index.html" class="border m-1 rounded btn">2</a>
+                        <br> 
+                     </div>
+                      -->
+
+                     <ul class="list-group">
+
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-0">Soneto 18</a>
+                           <div id="poema-div-0" class="poema-div">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:&nbsp;</span>William Shakespeare
+                              </span> 
+                              <span class="font_poema_1">
+                                 <br>
+                                 Se te comparo a um dia de verão <br>
+                                 És por certo mais belo e mais ameno <br>
+                                 O vento espalha as folhas pelo chão <br>
+                                 E o tempo do verão é bem pequeno. <br>
+                                 <br>
+                                 Às vezes brilha o Sol em demasia<br>
+                                 Outras vezes desmaia com frieza;<br>
+                                 O que é belo declina num só dia,<br>
+                                 Na terna mutação da natureza.<br>
+                                 <br>
+                                 Mas em ti o verão será eterno,<br>
+                                 E a beleza que tens não perderás;<br>
+                                 Nem chegarás da morte ao triste inverno:<br>
+                                 <br>
+                                 Nestas linhas com o tempo crescerás.<br>
+                                 E enquanto nesta terra houver um ser,<br>
+                                 Meus versos vivos te farão viver.<br>                                                          
+                              </span>
+                              <button class="btn btn_copiar">Copiar</button>
+                              <p class="mensagem"></p>
+                           </div>                            
+                        </li>
+
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-1">Soneto 116</a>
+                           <div id="poema-div-1" class="poema-div">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:&nbsp;</span>William Shakespeare
+                              </span> 
+                              <span class="font_poema_1">
+                                 <br>
+                                 De almas sinceras a união sincera<br>
+                                 Nada há que impeça: amor não é amor<br>
+                                 Se quando encontra obstáculos se altera,<br>
+                                 Ou se vacila ao mínimo temor.<br>
+                                 <br>
+                                 Amor é um marco eterno, dominante,<br>
+                                 Que encara a tempestade com bravura;<br>
+                                 É astro que norteia a vela errante,<br>
+                                 Cujo valor se ignora, lá na altura.<br>
+                                 <br>
+                                 Amor não teme o tempo, muito embora<br>
+                                 Seu alfange não poupe a mocidade;<br>
+                                 Amor não se transforma de hora em hora,<br>
+                                 <br>
+                                 Antes se afirma para a eternidade.<br>
+                                 Se isso é falso, e que é falso alguém provou,<br>
+                                 Eu não sou poeta, e ninguém nunca amou.<br>
+                              </span>
+                              <button class="btn btn_copiar">Copiar</button>
+                              <p class="mensagem"></p>
+                           </div>
+                        </li>
+
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-2">Soneto 52</a>
+                           <div id="poema-div-2" class="poema-div" style="display: none;">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:&nbsp;</span>William Shakespeare
+                              </span> 
+                              <span class="font_poema_1"> 
+                                 <br>                                
+                                 Serei como o rico, cuja abençoada chave<br>
+                                 Conduz ao seu doce e bem guardado tesouro,<br>
+                                 Que nem sempre vem admirar<br>
+                                 Para não perder o prazer de vê-lo.<br>
+                                 Por isso, as festas são tão solenes e raras<br>
+                                 Esparsamente marcadas ao longo do ano,<br>
+                                 Como pedras valiosas, delicadamente dispostas,<br>
+                                 Ou suntuosas joias incrustadas na tiara.<br>
+                                 Assim é o tempo que a mantém junto ao meu peito,<br>
+                                 Ou como o guarda-roupa que esconde o vestido,<br>
+                                 Para transformar o instante em mais especial ainda<br>
+                                 Ao desfolhar novamente seu orgulho aprisionado.<br>
+                                 Abençoada sejas, cujo valor ressalta,<br>
+                                 Ao ter-te, o triunfo; ao perder-te, a esperança.<br>
+                              </span>    
+                              <button class="btn btn_copiar">Copiar</button>
+                              <p class="mensagem"></p>                     
+                           </div>
+                        </li>                        
+         
+                       
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-3">Soneto 5</a>
+                           <div id="poema-div-3" class="poema-div" style="display: none;">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:&nbsp;</span>William Shakespeare 
+                              </span> 
+                              <span class="font_poema_1">
+                                 <br>
+                                 As horas que suavemente emolduraram<br>
+                                 O olhar amoroso onde repousam os olhos<br>
+                                 Serão eles o seu próprio tirano,<br>
+                                 E com a injustiça que justamente se excede;<br>
+                                 Pois o Tempo incansável arrasta o verão<br>
+                                 Ao terrível inverno, e ali o detém,<br>
+                                 Congelando a seiva, banindo as folhas verdes,<br>
+                                 Ocultando a beleza, desolada, sob a neve.<br>
+                                 Então, os fluidos do estio não restaram<br>
+                                 Retidos nas paredes de vidro,<br>
+                                 O belo rosto de sua beleza roubada,<br>
+                                 Sem deixar resquícios nem lembranças do que fora;<br>
+                                 Mas as flores destilaram, sobreviveram ao inverno,<br>
+                                 Ressurgindo, renovadas, com o frescor de sua seiva.<br>
+                              </span> 
+                              <button class="btn btn_copiar">Copiar</button>
+                              <p class="mensagem"></p>
+                           </div>
+                        </li>
+
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-4">SONETO CV</a>
+                           <div id="poema-div-4" class="poema-div" style="display: none;">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:&nbsp;</span>William Shakespeare
+                              </span> 
+                              <span class="font_poema_1">
+                                 <br>
+                                 Não chame o meu amor de idolatria<br>
+                                 Nem de ídolo realce a quem eu amo,<br>
+                                 Pois todo o meu cantar a um só se alia,<br>
+                                 E de uma só maneira eu o proclamo.<br>
+                                 É hoje e sempre o meu amor galante,<br>
+                                 Inalterável, em grande excelência;<br>
+                                 Por isso a minha rima é tão constante<br>
+                                 A uma só coisa e exclui a diferença.<br>
+                                 'Beleza, Bem, Verdade', eis o que exprimo;<br>
+                                 'Beleza, Bem, Verdade', todo o acento;<br>
+                                 E em tal mudança está tudo o que primo,<br>
+                                 Em um, três temas, de amplo movimento.<br>
+                                 'Beleza, Bem, Verdade' sós, outrora;<br>
+                                 Num mesmo ser vivem juntos agora.<br>
+                              </span> 
+                              <button class="btn btn_copiar">Copiar</button>
+                              <p class="mensagem"></p>
+                           </div>
+                        </li>
+
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-5">Soneto 88</a>
+                           <div id="poema-div-5" class="poema-div" style="display: none;">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:&nbsp;</span>William Shakespeare
+                              </span> 
+                              <span class="font_poema_1">
+                                 <br>
+                                 Quando me tratas mau e, desprezado,<br>
+                                 Sinto que o meu valor vês com desdém,<br>
+                                 Lutando contra mim, fico a teu lado<br>
+                                 E, inda perjuro, provo que és um bem.<br>
+                                 <br>
+                                 Conhecendo melhor meus próprios erros,<br>
+                                 A te apoiar te ponho a par da história <br>
+                                 De ocultas faltas, onde estou enfermo;<br>
+                                 Então, ao me perder, tens toda a glória.<br>
+                                 <br>
+                                 Mas lucro também tiro desse ofício:<br>
+                                 Curvando sobre ti amor tamanho,<br>
+                                 Mal que me faço me traz benefício,<br>
+                                 <br>
+                                 Pois o que ganhas duas vezes ganho.<br>
+                                 Assim é o meu amor e a ti o reporto:<br>
+                                 Por ti todas as culpas eu suporto.<br>
+                              </span>
+                              <button class="btn btn_copiar">Copiar</button>                              
+                              <p class="mensagem"></p>
+                           </div>
+                        </li>
+
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-6">Soneto 130</a>
+                           <div id="poema-div-6" class="poema-div" style="display: none;">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:&nbsp;</span>William Shakespeare
+                              </span> 
+                              <span class="font_poema_1">
+                                 <br>
+                                 Os olhos de minha amada não são como o sol;<br>
+                                 Seus lábios são menos rubros que o coral;<br>
+                                 Se a neve é branca, seus seios são escuros;<br>
+                                 Se os cabelos são de ouro, negros fios cobrem-lhe a cabeça.<br>
+                                 <br>
+                                 Já vi rosas adamascadas, vermelhas e brancas,<br>
+                                 Mas jamais vi essas cores em seu rosto;<br>
+                                 E alguns perfumes me dão mais prazer<br>
+                                 Do que o hálito da minha amada.<br>
+                                 Amo-a quando ela fala, embora eu bem saiba<br>
+                                 Que a música tenha um som muito mais agradável.<br>
+                                 <br>
+                                 Confesso nunca ter visto uma deusa passar –<br>
+                                 Minha senhora, quando caminha, pisa no chão.<br>
+                                 Mesmo assim, eu juro, minha amada é tão rara<br>
+                                 Que torna falsa toda e qualquer comparação.<br>
+                              </span>
+                              <button class="btn btn_copiar">Copiar</button>                              
+                              <p class="mensagem"></p>
+                           </div>
+                        </li>   
+                        
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-7">Soneto 154</a>
+                           <div id="poema-div-7" class="poema-div" style="display: none;">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:&nbsp;</span>William Shakespeare
+                              </span> 
+                              <span class="font_poema_1">
+                                 <br>
+                                 O pequeno deus do amor certa vez dormia<br>
+                                 Deixando ao lado sua flecha amorosa,<br>
+                                 Enquanto várias ninfas, jurando-se sempre castas,<br>
+                                 Vieram, pé ante pé, mas, em sua mão virginal,<br>
+                                 A mais bela tomou o fogo<br>
+                                 Que incendiara legiões de corações verdadeiros;<br>
+                                 Assim, a lança do desejo ardente<br>
+                                 Dormia desarmada ao lado da mão desta jovem.<br>
+                                 A flecha, ela mergulhou em um poço de água fria,<br>
+                                 Que se acendeu com o eterno fogo do Amor,<br>
+                                 Criando um banho e um bálsamo<br>
+                                 Para os enfermos; mas eu, jugo de minha senhora,<br>
+                                 Vim para me curar, e isto, assim, eu provo,<br>
+                                 O fogo do amor aquece a água, mas a água não esfria o amor.<br>
+                              </span>
+                              <button class="btn btn_copiar">Copiar</button>                              
+                              <p class="mensagem"></p>
+                           </div>
+                        </li>    
+
+                     </ul> 
+                     
+                     <!-- link apos ultimo poema -->
+                     <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="col-12">                               
+                                <a href="/frases/william_shakespeare/1/" class="btn btn-primary btn-block">Frases de William Shakespeare</a>
+                            </div>
+                        </div>
+                     </div>
+
+                  </div>                    
+               </div>                  
+            </div>           
+
+            <div id="poema-content"></div>
+
+         </div>            
+            
+         <!-- Conteúdo da coluna da direita -->
+         <div class="col-md-4">
+            
+            <div class="container mt-3 p-0">
+               <div class="card sombra_0 m-0 p-0">                   
+                  <div class="card-body m-2 p-2" >
+                     <p class="m-0 p-0">
+                        <div class="h6" id="div_mens"> </div>
+                     </p>                 
+                 </div>
+               </div>  
+            </div>            
+
+            <div class="card bg-white mt-2 mb-0">
+               <div class="card-body m-0 p-3">
+                  <!-- Corpo -->
+                  <p class="card-text font_1 m-0" id="frase4">
+                     É mais fácil obter o que se deseja com um sorriso do que à ponta da espada.<br>   
+                     <span class="font_2">William Shakespeare</span> 💗
+                  </p> 
+                  <span><button class="btn btn_copiar_verso">Copiar</button></span>
+                  <p class="mensagem"></p>
+               </div> 
+            </div>
+
+            <div class="card bg-white mt-2 mb-0">
+               <div class="card-body m-0 p-3">
+                  <!-- Corpo -->
+                  <p class="card-text font_1 m-0" id="frase4">
+                     Assim que se olharam, amaram-se; assim que se amaram, suspiraram; assim que suspiraram, perguntaram-se um ao outro o motivo; assim que descobriram o motivo, procuraram o remédio.<br>   
+                     <span class="font_2">William Shakespeare</span> 💗
+                  </p> 
+                  <span><button class="btn btn_copiar_verso">Copiar</button></span>
+                  <p class="mensagem"></p>
+               </div> 
+            </div>
+                           
+         </div>
+
+      </div>
+   </div>
+     
+   <div class="container-fluid bg-light mt-2 mb-2 border">
+      <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+   </div>
+   <div class="container mt-3 p-0 ">
+      <div class="card  border-0 d-none d-sm-block"> <!-- Esta div será ocultada em dispositivos pequenos -->
+         <div class="card-body bg-light">            
+            <div class="row">      
+               <div class="col-md-3">
+                  <div class="card  mt-0 mb-0 sombra_1 bg_cor_1"  >
+                     <div class="card-body m-0 p-3">
+                        <!-- Corpo -->
+                        <p class="card-text font_1 m-0" id="frase2">
+                           "Seja a mudança que você deseja ver no mundo."<br> - Mahatma Gandhi <br> 
+                           <span class="font_2"><a href="/frases/motivacionais/index.html">Frases Motivacionais</a></span> 💗
+                        </p> 
+                         <p class="mensagem"></p>
+                     </div> 
+                  </div>
+               </div>   
+               <div class="col-md-3">
+                  <div class="card mt-0 mb-0  sombra_1 bg_cor_1"  >
+                     <div class="card-body m-0 p-3">
+                        <!-- Corpo -->
+                        <p class="card-text font_1 m-0" id="frase2">
+                           Os poemas são pássaros que chegam
+                           não se sabe de onde e pousam
+                           no livro que lês.... <br> 
+                           <span class="font_2"><a href="/poemas/selecao_poetica/1/">Seleção Poética I</a></span> 💗
+                        </p> 
+                         <p class="mensagem"></p>
+                     </div> 
+                  </div>
+               </div>             
+               <div class="col-md-3">
+                  <div class="card bg-white mt-0 mb-0 sombra_1 bg_cor_1" >
+                     <div class="card-body m-0 p-3">
+                        <!-- Corpo -->
+                        <p class="card-text font_1 m-0" id="frase2">
+                           Nega-me o pão, o ar,<br> 
+                           a luz, a primavera,<br> 
+                           mas nunca o teu riso...<br> 
+                           <span class="font_2"><a href="/poemas/pablo_neruda/1/">Pablo Neruda</a></span> 💗
+                        </p> 
+                         <p class="mensagem"></p>
+                     </div> 
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="card mt-0 mb-0 sombra_1 bg_cor_1"  >
+                     <div class="card-body m-0 p-3   ">
+                        <!-- Corpo -->
+                        <p class="card-text font_1 m-0  " id="frase2">
+                           Às vezes ouço passar o vento; e só de ouvir o vento passar, vale a pena ter nascido.<br>  
+                           <span class="font_2"><a href="/poemas/fernando_pessoa/1/">Fernando Pessoa</a></span> 💗
+                        </p> 
+                         <p class="mensagem"></p>
+                     </div> 
+                  </div>
+               </div> 
+            </div> 
+         </div>
+      </div>
+   </div> 
+  
+   <div class="container-fluid fundo_site"> 
+      <div id="div_rodape"></div>  
+   </div>   
+
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="/js/scripts.js"></script>
+   <script src="/js/mens.js"></script>
+   <script>
+      $(document).ready(function() {        
+        carregar_cabecalho();
+      carregar_rodape();
+        $("#poema-div-0").show();
+      });  
+      document.addEventListener("DOMContentLoaded", function() { 
+         var divFrase = document.getElementById("div_frase"); 
+         var frase = obterFrase(); 
+         divFrase.innerHTML = frase;
+         //...............
+         var divMens = document.getElementById("div_mens"); 
+         var frase = obterMens(); 
+         divMens.innerHTML = frase;
+      });           
+   </script>
 </body>
 </html>

@@ -85,7 +85,7 @@
                            <a href="#" class="clicavel" data-poema-div="poema-div-0">A Rainha</a>
                            <div id="poema-div-0" class="poema-div">
                               <span class="font_poema_titulo">
-                                 <span class="tit1">Autor:</span>Pablo Neruda
+                                 <span class="tit1">Autor:</span>Pablo Neruda  👑
                               </span> 
                               <span class="font_poema_1">
                                  <br> 
@@ -770,10 +770,7 @@
          <div class="col-md-4">
             
             <div class="container mt-3 p-0">
-               <div class="card sombra_0 m-0 p-0"> 
-                  <div class="card-header ">
-                     <h5 class="card-title p-0 m-0">&nbsp;<strong>Versos Coloridos</strong> </h5>
-                 </div>
+               <div class="card sombra_0 m-0 p-0">
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
                         <div class="h6" id="div_mens"> </div>
@@ -885,11 +882,11 @@
       document.addEventListener("DOMContentLoaded", function() { 
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 
-         divFrase.innerText = frase;
+         divFrase.innerHTML = frase;
          //...............
          var divMens = document.getElementById("div_mens"); 
          var frase = obterMens(); 
-         divMens.innerText = frase;
+         divMens.innerHTML = frase;
       });     
    </script>
 </body>

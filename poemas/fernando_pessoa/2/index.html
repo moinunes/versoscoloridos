@@ -81,6 +81,48 @@
                      <ul class="list-group">
                         
                         <li class="list-group-item" style="line-height: 1; margin:0;">
+                           <a href="#" class="clicavel" data-poema-div="poema-div-c">O meu olhar é nítido como um girassol.</a>
+                           <div id="poema-div-c" class="poema-div" style="display: none;">
+                              <span class="font_poema_titulo">
+                                 <span class="tit1">Autor:</span>Alberto Caeiro 🌻
+                              </span> 
+                              <span class="font_poema_1">
+                                 <br>
+                                 O meu olhar é nítido como um girassol.<br>
+                                 Tenho o costume de andar pelas estradas<br>
+                                 Olhando para a direita e para a esquerda,<br>
+                                 E de vez em quando olhando para trás...<br>
+                                 E o que vejo a cada momento<br>
+                                 É aquilo que nunca antes eu tinha visto,<br>
+                                 E eu sei dar por isso muito bem...<br>
+                                 Sei ter o pasmo essencial<br>
+                                 Que tem uma criança se, ao nascer,<br>
+                                 Reparasse que nascera deveras...<br>
+                                 Sinto-me nascido a cada momento<br>
+                                 Para a eterna novidade do Mundo...<br>
+                                 <br>
+                                 Creio no Mundo como num malmequer,<br>
+                                 Porque o vejo. Mas não penso nele<br>
+                                 Porque pensar é não compreender...<br>
+                                 O Mundo não se fez para pensarmos nele<br>
+                                 (Pensar é estar doente dos olhos)<br>
+                                 Mas para olharmos para ele e estarmos de acordo…<br>
+                                 <br>
+                                 Eu não tenho filosofia: tenho sentidos...<br>
+                                 Se falo na Natureza não é porque saiba o que ela é,<br>
+                                 Mas porque a amo, e amo-a por isso,<br>
+                                 Porque quem ama nunca sabe o que ama<br>
+                                 Nem sabe porque ama, nem o que é amar...<br>
+                                 <br>
+                                 Amar é a eterna inocência,<br>
+                                 E a única inocência é não pensar...<br>
+                              </span>
+                              <button class="btn btn_copiar">Copiar</button>
+                               <p class="mensagem"></p>
+                           </div>
+                        </li> 
+
+                        <li class="list-group-item" style="line-height: 1; margin:0;">
                            <a href="#" class="clicavel" data-poema-div="poema-div-b">Pensar em Deus é desobedecer a Deus</a>
                            <div id="poema-div-b" class="poema-div" style="display: none;">
                               <span class="font_poema_titulo">
@@ -546,10 +588,7 @@
          <div class="col-md-4">
             
             <div class="container mt-3 p-0">
-               <div class="card sombra_0 m-0 p-0"> 
-                  <div class="card-header ">
-                     <h5 class="card-title p-0 m-0">&nbsp;<strong>Versos Coloridos</strong> </h5>
-                 </div>
+               <div class="card sombra_0 m-0 p-0">
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
                         <div class="h6" id="div_mens"> </div>
@@ -669,16 +708,16 @@
       $(document).ready(function() {        
         carregar_cabecalho();
         carregar_rodape();
-        $("#poema-div-b").show();
+        $("#poema-div-c").show();
       });   
       document.addEventListener("DOMContentLoaded", function() { 
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 
-         divFrase.innerText = frase;
+         divFrase.innerHTML = frase;
          //...............
          var divMens = document.getElementById("div_mens"); 
          var frase = obterMens(); 
-         divMens.innerText = frase;
+         divMens.innerHTML = frase;
       });    
    </script>
 </body>

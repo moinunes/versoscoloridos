@@ -80,6 +80,22 @@
                         <div class="card-body m-0 p-3">
                            <!-- Corpo -->
                            <p class="card-text font_1 m-0" id="frase4">
+                              Passou a diligência pela estrada, e foi-se;<br> 
+                              E a estrada não ficou mais bela, nem sequer mais feia.<br> 
+                              Assim é a acção humana pelo mundo fora.<br> 
+                              Nada tiramos e nada pomos; passamos e esquecemos;<br> 
+                              E o Sol é sempre pontual todos os dias.<br>                             
+                              <span class="font_2">Fernando Pessoa</span> 💗
+                           </p> 
+                           <span><button class="btn btn_copiar_verso">Copiar</button></span>
+                           <p class="mensagem"></p>
+                        </div> 
+                     </div> 
+
+                     <div class="card bg-white mt-0 mb-0">
+                        <div class="card-body m-0 p-3">
+                           <!-- Corpo -->
+                           <p class="card-text font_1 m-0" id="frase4">
                               Às vezes ouço passar o vento; <br>
                               e só de ouvir o vento passar, vale a pena ter nascido.<br>                             
                               <span class="font_2">Fernando Pessoa</span> 💗
@@ -342,9 +358,6 @@
             
             <div class="container mt-3 p-0">
                <div class="card sombra_0 m-0 p-0"> 
-                  <div class="card-header ">
-                     <h5 class="card-title p-0 m-0">&nbsp;<strong>Versos Coloridos</strong> </h5>
-                 </div>
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
                         <div class="h6" id="div_mens"> </div>
@@ -381,11 +394,12 @@
       </div>
    </div>
       
+   <div class="container-fluid bg-light mt-2 mb-2 border">
+      <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+   </div>
+
    <div class="container mt-3 p-0 ">
       <div class="card  border-0 d-none d-sm-block"> <!-- Esta div será ocultada em dispositivos pequenos -->
-         <div class="card-header border-0 text-center bg-light">
-            <div class="h5" id="div_frase"></div>
-         </div>
          <div class="card-body bg-light">            
             <div class="row">      
                <div class="col-md-3">
@@ -463,11 +477,11 @@
       document.addEventListener("DOMContentLoaded", function() { 
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 
-         divFrase.innerText = frase;
+         divFrase.innerHTML = frase;
          //...............
          var divMens = document.getElementById("div_mens"); 
          var frase = obterMens(); 
-         divMens.innerText = frase;
+         divMens.innerHTML = frase;
       });      
    </script>
 </body>
