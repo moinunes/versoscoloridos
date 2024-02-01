@@ -3,9 +3,15 @@
    #div_frase {
      font-size: 16px; /* ou o tamanho desejado para dispositivos pequenos */
    }
+   #div_frase_poetica {
+      font-size: 16px; /* ou o tamanho desejado para dispositivos pequenos */
+   }
    #div_mens {
       font-size: 16px; /* ou o tamanho desejado para dispositivos pequenos */
-    }
+   }
+  .font_size_1 {  
+      font-size: 16px; /* ou o tamanho desejado para dispositivos pequenos */
+   }
  }
 
 .font_poema_titulo { 

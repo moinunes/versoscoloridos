@@ -1,0 +1,95 @@
+/*-------------------------------------------------------------
+* obter a  Frase Poetica de forma cíclica
+*-------------------------------------------------------------*/ 
+function obterFrasePoetica() {
+   
+   var frases = [
+      "☀️ Que o teu dia seja leve como as plumas dançando ao vento e feliz como o riso contagiante das crianças. <br>",
+      "🌌 Na penumbra da noite, as estrelas revelam segredos e a lua tece poesias no céu. <br>",
+      "🍃 Caminho descalço na grama macia, onde a natureza sussurra histórias ao vento. <br>",
+      "🌊 O mar sussurra melodias antigas, e as ondas dançam como versos na areia. <br>",
+      "🌺 No jardim da vida, cada flor é um poema, desabrochando em cores e fragrâncias. <br>",
+      "🌄 Ao nascer do sol, o horizonte se torna uma tela onde o dia pinta sua própria obra-prima. <br>",
+      "🌙 Na serenidade da madrugada, os sonhos tecem suas asas, prontos para voar pelos céus do pensamento. <br>",
+      "🍂 As folhas dançam ao vento, contando segredos do outono, enquanto a natureza sussurra poesia em cada brisa.<br>",
+      "🌿 Entre os raios de sol, as sombras esculpem poesias no chão, revelando a dança eterna da luz e da escuridão.<br>",
+      "🌺 Nas pétalas de uma rosa, repousam versos de amor, cada gota de orvalho uma lágrima de emoção.<br>",
+      "🌊  Nas areias da perseverança, construa castelos de resiliência. Cada onda que vem e vai é uma lição, moldando sua fortaleza interior. <br>",
+      "🐚 Na praia, onde o horizonte encontra a areia, o mar e o céu se abraçam, criando uma poesia infinita. <br>",
+      "🌅 Assim como um barco enfrenta tempestades para alcançar novos horizontes, encare as adversidades com determinação e veja seu próprio horizonte se expandir. <br>",
+      "🚤  O sol sempre se põe para dar lugar a um novo amanhecer. Da mesma forma, as dificuldades cedem espaço para oportunidades de crescimento. <br>",
+      "🌊  Navegue pelas ondas da vida com a coragem de um marinheiro, pois cada desafio é uma oportunidade de descoberta. <br>",
+      "👣 Em cada passo, deixe o presente guiar seu caminho, pois é na jornada que encontramos as verdadeiras riquezas da vida. <br>",
+      "🌱 Plante sementes de esperança a cada passo, pois o solo do presente é fértil para colher os frutos do futuro. <br>",
+      "🚶‍♂️ No compasso do tempo, cada passo é uma nota na melodia da sua história. Dance com a cadência da vida. <br>",  
+      "🌄 Ao subir a escada da superação, lembre-se de que cada degrau é uma conquista, e o topo é a visão de um novo horizonte. <br>",  
+      "🌈 No passo firme da autenticidade, descubra o colorido único que só você pode adicionar à tela da existência. <br>",  
+      "🌍 O mundo é grande, mas cada passo que damos o torna mais familiar. Explorar é descobrir a amplitude da própria existência. <br>",  
+      "🌐 Sob o vasto céu, somos apenas uma pequena parte do tecido universal. Mas em nossas ações, podemos costurar histórias grandiosas. <br>",  
+      "🗺️ Nas páginas do mundo, cada cultura é um capítulo, e a diversidade é a tinta que colore o enredo global. <br>",       
+      "🌏 O horizonte se estende para além do olhar, mas a conexão humana encurta as distâncias, transformando o vasto em íntimo. <br>",  
+      "🌌 Que ninguém se engane: a jornada da vida é um poema em construção, e cada desafio é uma estrofe que nos faz crescer. <br>",  
+      "🎵 Minha felicidade é uma canção suave, tocando notas de gratidão e harmonia. <br>",  
+      "🌟 Em cada sorriso, encontro a prova de que a felicidade é uma escolha que faço a cada instante. <br>",       
+      "🌅 O nascer do sol é a tela onde Deus pinta promessas de um novo dia, cheio de possibilidades e bênçãos. <br>",  
+      "🌈 Poesia é a tinta que colore os dias em tons de encanto, um encontro íntimo com o etéreo e o humano.  <br>", 
+      "🤗 Poesia é o abraço caloroso da imaginação, um voo sem limites na vastidão da criação. <br>", 
+      "🌹 Nas entrelinhas de um olhar, encontro poesia, versos escritos sem palavras, apenas com a linguagem do coração. <br>", 
+      "🌌 Como estrelas no céu noturno, o amor ilumina as sombras, guiando-nos por caminhos de compreensão e aceitação. <br>", 
+      "🌟 Viva intensamente como se cada momento fosse uma estrela a iluminar o céu da tua jornada. <br>", 
+      "🎉 Abraça a vida com paixão, dançando ao ritmo da tua própria existência, fazendo de cada passo uma celebração. <br>", 
+      "🌺 Floresça como as flores no auge da primavera, desabrochando em cores vibrantes e espalhando a fragrância única da tua essência. <br>", 
+      "🌈 Viva intensamente, pois a vida é uma obra de arte em constante criação, e tu és o pintor do teu próprio destino. <br>", 
+      "🌟 A fé em Deus é como uma luz na escuridão, iluminando caminhos e dissipando as sombras da incerteza. <br>", 
+      "🌌 A cada dia que passa, abraça o presente como um presente, um tesouro efêmero que merece ser apreciado e vivido intensamente. <br>",
+      "🌈 Deixa que cada nascer do sol seja uma lembrança suave de renovação, e cada anoitecer, uma celebração de gratidão pelo dia vivido <br>", 
+      "🕊️ Que a paz te envolva como uma suave brisa, acalmando o coração e trazendo harmonia ao teu dia. <br>",
+      "🌈 Que as cores vivas do otimismo pintem a tua tela, transformando desafios em oportunidades e obstáculos em degraus para o crescimento. <br>", 
+      "🌻 Que hoje seja um capítulo radiante na história da tua vida, repleto de momentos que inspiram gratidão e contentamento. <br>",
+      "🌈 Acredite, dias melhores estão à vista, como o sol que surge após a noite escura, trazendo consigo um novo amanhecer. <br>", 
+      "🌻 Em cada desafio, enxergue uma oportunidade de crescimento, pois mesmo nas tempestades, as sementes da esperança germinam. <br>",
+      "🌅 Lembra-te, a vida é uma jornada de altos e baixos, e cada obstáculo é um degrau que te conduz a panoramas mais amplos. <br>",
+      "🌺 Cultive a paciência como um jardineiro cuida de suas flores, pois o tempo, com sua sabedoria, revela os frutos da perseverança. <br>",
+      "🌟 Dias melhores não são apenas um sonho, são uma realidade que se desenha com as escolhas que fazemos no presente. Acredite, pois o melhor ainda está por vir. <br>",
+      "🌺 Assim como as estações mudam, as fases da vida se transformam, e o inverno difícil cede lugar à primavera de renovação. <br>",
+      "🌈 Em cada pôr do sol, aprendemos que mesmo o dia mais longo tem seu fim, e a escuridão dá lugar à luz da lua. <br>",
+      "🌟Tudo passa, mas o que permanece é a sabedoria e a força que adquirimos ao atravessar cada capítulo da nossa história. <br>",
+      "😊 Carregue seu melhor sorriso aonde quer que vá. Ele pode iluminar o dia de alguém. <br>",
+      "😊 Libera o teu melhor sorriso como o sol que rompe as nuvens, iluminando tudo ao seu redor com calor e luz. <br>",
+      "💖 Deixa a sinceridade do teu sorriso ser como uma canção suave, tocando os que te rodeiam com notas de positividade. <br>",
+      "😄 Em cada riso, encontra-se a magia de momentos felizes, um presente que partilhas contigo e com o mundo. <br>",
+      "✨ Que o teu melhor sorriso seja uma manifestação de gratidão pela beleza da vida e uma luz que guia o teu caminho. <br>",
+      "💖 Na simplicidade do ser e na conexão com outros corações, a felicidade se revela como uma jornada, não apenas um destino. <br>",
+      "✨ Que a felicidade seja a tua trilha, iluminando cada passo da tua jornada e transformando o teu caminho em um arco-íris de emoções. <br>",
+      "🌷 Seja gentil como a brisa suave, acariciando delicadamente os corações ao seu redor. <br>",
+      "😊 Cultive a gentileza como um jardim, onde cada gesto amoroso floresce e colore a vida de quem o recebe. <br>",
+      "🤝 Em cada palavra e ação, encontre a oportunidade de espalhar bondade, criando um mundo mais amável. <br>",
+      "🌸 A gentileza é como uma semente que, ao ser plantada, cresce e floresce, transformando a paisagem à sua volta. <br>",
+      "🌟 Seja gentil consigo mesmo, reconhecendo a beleza e a singularidade que habitam no seu ser. <br>",
+      "🌺 Como uma árvore firme, deixa que a confiança cresça profundamente nas raízes da tua autoestima, sustentando-te mesmo nos ventos mais fortes. <br>",
+      "✨ Confia em ti mesmo como um tesouro precioso, pois és capaz de desbravar os desafios e alcançar as alturas que desejas. <br>",
+      "❤️ Cultivar o amor-próprio é como regar o jardim da tua alma, permitindo que floresça em beleza e autenticidade. <br>",
+      "🌻 Reconhece a tua própria luz, aceitando-te com todas as imperfeições, pois é nessa aceitação que a verdadeira beleza se revela. <br>",
+      "🌈 Como um abraço caloroso, o amor-próprio é o gesto mais gentil que podes oferecer a ti mesmo, nutrindo a tua autoestima. <br>",
+      "🌟 Permite-te crescer como uma planta que se estende em direção ao sol, buscando a luz que ilumina o caminho do teu próprio desenvolvimento. <br>",
+      "🌺 O amor-próprio não é egoísmo, mas sim o alicerce sólido que te permite compartilhar o teu amor com o mundo de uma forma mais autêntica. <br>",
+      "✨ Seja o teu maior aliado, acreditando na tua capacidade de superação e celebrando a pessoa incrível que és. O amor-próprio é a base para uma vida plena e significativa. <br>",
+      "☮️ Que a paz seja o eco suave nos corredores da tua alma, acalmando cada pensamento e trazendo serenidade ao coração. <br>",
+      "🕊️ Como as águas tranquilas de um lago, que a paz reflita a tua própria quietude interior, refletindo a beleza da tua essência. <br>",
+      "🌿 Abraça a paz como uma bênção, permitindo que ela seja a brisa suave que afasta as nuvens da inquietação. <br>",
+      "🌅 No silêncio da paz, descobre a força da aceitação, reconhecendo que a verdadeira paz começa dentro de ti. <br>",
+      "🌈 Deixa que a paz seja o fio que tece a tapeçaria dos teus dias, conectando-te com a harmonia que existe em cada respiração. <br>",
+      "✨ Que a paz seja a luz suave que guia o teu caminho, iluminando os recantos mais escuros e revelando a beleza escondida em cada momento.<br>",
+   ];
+     
+   frases1  = [
+         "🌟 Fique a vontade para copiar qualquer frase do site www.versoscoloridos.com.br <br>",
+   
+   ];     
+
+   var frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
+   var segundoAtual = new Date().getSeconds();
+   var indiceFrase = segundoAtual % frases.length;   
+   var fraseCorrespondente = frases[indiceFrase] || frase_padrao;   
+   return fraseCorrespondente;
+}
