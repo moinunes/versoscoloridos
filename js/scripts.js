@@ -1,5 +1,28 @@
 
 
+
+/*-------------------------------------------------------------
+* Ao Clicar nos botoes <copiar>, "copia  VERSO"
+*-------------------------------------------------------------*/ 
+$(document).ready(function () {
+   $('.btn_copiar_verso').on('click', function () {
+       var blocoTexto = $(this).closest('.card-body').find('.card-text');
+       var tempContainer = $('<div>').append(blocoTexto.clone());
+       tempContainer.find('.btn_copiar_verso').remove();
+       var textoFormatado = tempContainer.text().split('\n').map(line => line.trim()).join('\n').trim();
+       var urlPagina = window.location.href;
+       var tempInput = $('<textarea>');
+       tempInput.val(`${textoFormatado}\n\n${urlPagina}`);
+       $('body').append(tempInput);
+       tempInput.select();
+       document.execCommand('copy');
+       tempInput.remove();
+       $('.mensagem').empty();
+       var mensagem = $(this).closest('.card-body').find('.mensagem');
+       mensagem.html('<span class="text-success">Conteúdo copiado com sucesso! <br> Agora você pode colar usando Ctrl+V.</span>');
+   });
+});
+
 function carregar_rodape() {
    $("#div_rodape").load("/rodape.html", function(response, status, xhr) {
       if (status == "error") {
@@ -67,78 +90,36 @@ function compartilharWhatsApp(id) {
 /*-------------------------------------------------------------
 * Ao Clicar nos botoes <copiar>, copia  conteudo das div - "copia  POEMA"
 *-------------------------------------------------------------*/ 
- $(document).ready(function () {
-   $('.btn_copiar').on('click', function () {
-     var poemaDiv = $(this).closest('.poema-div'); 
-     if (poemaDiv.length > 0) {       
-       var linkPoema = poemaDiv.prev('.clicavel').text().trim();
-       var autorTitulo = poemaDiv.find('.font_poema_titulo').text().replace('Autor:', '').trim();
-       var poemaConteudo = poemaDiv.find('.font_poema_1').clone(); 
-       var poemaTexto = poemaConteudo.html().replace(/<br>\s*<br>/g, '<br><br>').replace(/<br>$/g, '');
-       var linhas = poemaTexto.split('<br>');
-       for (var i = 0; i < linhas.length; i++) {
-         linhas[i] = linhas[i].trim();
-       }
-       var poemaFormatado = linhas.join('<br>') + '<br>';
-       var mensagemSpan = poemaDiv.find('.mensagem');
-       poemaFormatado = poemaFormatado.replace(/<br>/g, '');
-       var urlPagina = window.location.href;
-       var conteudoCompleto = linkPoema + '<br>Autor: ' + autorTitulo + poemaFormatado + 'Poemas: ' + urlPagina;
-       var $tempTextArea = $('<textarea>');
-       $tempTextArea.val(conteudoCompleto);
-       $('body').append($tempTextArea); 
-       $tempTextArea.select(); 
-       try {
-         $('.mensagem').empty();
-         document.execCommand('copy');
-         mensagemSpan.html('Conteúdo copiado com sucesso! <br> Agora você pode colar usando Ctrl+V.')
-                       .addClass('text-success');
-       } catch (err) {
-         alert('Erro ao copiar o conteúdo. Utilize Ctrl+C para copiar manualmente.');
-       } finally {
-         $tempTextArea.remove();
-       }
-     } else {
-       console.error('Div .poema-div não encontrada.');
-     }
-   });
+$(document).ready(function () {   
+      $('.btn_copiar').on('click', function () {
+        var poemaDiv = $(this).closest('.poema-div'); 
+        if (poemaDiv.length > 0) {       
+          var linkPoema = poemaDiv.prev('.clicavel').text().trim();
+          var autorTitulo = poemaDiv.find('.font_poema_titulo').text().replace('Autor:', '').trim();
+          var poemaConteudo = poemaDiv.find('.font_poema_1').clone();           
+          var poemaFormatado = poemaConteudo.text().replace(/^\s+/mg, '');          
+          var mensagemSpan = poemaDiv.find('.mensagem');
+          var urlPagina = window.location.href;
+          var conteudoCompleto = linkPoema + '\n' +'Autor: ' + autorTitulo + '\n\n' + poemaFormatado.trim() + '\n\n' + urlPagina;
+          var $tempTextArea = $('<textarea>');
+          $tempTextArea.val(conteudoCompleto);
+          $('body').append($tempTextArea); 
+          $tempTextArea.select(); 
+          try {
+            $('.mensagem').empty();
+            document.execCommand('copy');
+            mensagemSpan.html('Conteúdo copiado com sucesso! <br> Agora você pode colar usando Ctrl+V.')
+                          .addClass('text-success');
+          } catch (err) {
+            alert('Erro ao copiar o conteúdo. Utilize Ctrl+C para copiar manualmente.');
+          } finally {
+            $tempTextArea.remove();
+          }
+        } else {
+          console.error('Div .poema-div não encontrada.');
+        }
+      });     
 }); 
-
-/*-------------------------------------------------------------
-* Ao Clicar nos botoes <copiar>, "copia  VERSO"
-*-------------------------------------------------------------*/ 
-$(document).ready(function () {
-   $('.btn_copiar_verso').on('click', function () {
-       var blocoTexto = $(this).closest('.card-body').find('.card-text');
-       
-       // Criar um elemento temporário para preservar a formatação
-       var tempContainer = $('<div>').append(blocoTexto.clone());
-       
-       // Remover qualquer elemento indesejado, como botões de cópia
-       tempContainer.find('.btn_copiar_verso').remove();
-       
-       // Obter o texto do elemento modificado
-       var textoFormatado = tempContainer.text().split('\n').map(line => line.trim()).join('\n').trim();
-
-       // Obter a URL da página
-       var urlPagina = window.location.href;
-
-       // Criar o elemento <textarea> com o texto e a URL
-       var tempInput = $('<textarea>');
-       tempInput.val(`${textoFormatado}\n\n${urlPagina}`);
-       $('body').append(tempInput);
-
-       // Selecionar e copiar o conteúdo
-       tempInput.select();
-       document.execCommand('copy');
-       tempInput.remove();
-
-       // Limpar mensagem anterior e exibir mensagem de sucesso
-       $('.mensagem').empty();
-       var mensagem = $(this).closest('.card-body').find('.mensagem');
-       mensagem.html('<span class="text-success">Conteúdo copiado com sucesso! <br> Agora você pode colar usando Ctrl+V.</span>');
-   });
-});
  
  
 /*-------------------------------------------------------------
