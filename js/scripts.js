@@ -110,24 +110,36 @@ function compartilharWhatsApp(id) {
 $(document).ready(function () {
    $('.btn_copiar_verso').on('click', function () {
        var blocoTexto = $(this).closest('.card-body').find('.card-text');
-       var linhas = blocoTexto.text().trim().split('<br>');
+       
+       // Criar um elemento temporário para preservar a formatação
+       var tempContainer = $('<div>').append(blocoTexto.clone());
+       
+       // Remover qualquer elemento indesejado, como botões de cópia
+       tempContainer.find('.btn_copiar_verso').remove();
+       
+       // Obter o texto do elemento modificado
+       var textoFormatado = tempContainer.text().split('\n').map(line => line.trim()).join('\n').trim();
+
+       // Obter a URL da página
        var urlPagina = window.location.href;
-       for (var i = 0; i < linhas.length; i++) {
-           linhas[i] = linhas[i].trimLeft(); // Use trimLeft para remover espaços à esquerda
-       }
-       var textoFormatado = linhas.join('<br>');
+
+       // Criar o elemento <textarea> com o texto e a URL
        var tempInput = $('<textarea>');
-       tempInput.val(textoFormatado+ '<br><br>' + urlPagina);
+       tempInput.val(`${textoFormatado}\n\n${urlPagina}`);
        $('body').append(tempInput);
+
+       // Selecionar e copiar o conteúdo
        tempInput.select();
        document.execCommand('copy');
        tempInput.remove();
+
+       // Limpar mensagem anterior e exibir mensagem de sucesso
        $('.mensagem').empty();
        var mensagem = $(this).closest('.card-body').find('.mensagem');
        mensagem.html('<span class="text-success">Conteúdo copiado com sucesso! <br> Agora você pode colar usando Ctrl+V.</span>');
    });
 });
-
+ 
  
 /*-------------------------------------------------------------
 * obter a frase de forma cíclica

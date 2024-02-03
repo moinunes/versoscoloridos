@@ -81,6 +81,7 @@
                            <li class="list-group-item"><a class="ignore-click" href="/poemas/fernando_pessoa/1/">Fernando Pessoa</a></li>
                            <li class="list-group-item"><a class="ignore-click" href="/poemas/manoel_de_barros/1/">Manoel de Barros</a></li>
                            <li class="list-group-item"><a class="ignore-click" href="/poemas/pablo_neruda/1/">Pablo Neruda</a></li>
+                           <li class="list-group-item"><a class="ignore-click" href="/poemas/paulo_leminski/1/">Paulo Leminski</a></li>
                            <li class="list-group-item"><a class="ignore-click" href="/poemas/rupi_kaur/1/">Rupi Kaur</a></li>
                            <li class="list-group-item"><a class="ignore-click" href="/poemas/selecao_poetica/1/">Seleção Poética I</a></li>
                            <li class="list-group-item"><a class="ignore-click" href="/poemas/vinicius_moraes/1/">Vinicius de Moraes</a></li>
@@ -231,6 +232,9 @@
       </div>
    </div> 
   
+   <div class="container-fluid bg-light mt-2 mb-3 border">
+      <div class="h5 text-center mt-2 mb-2" id="div_frase_poetica"></div>
+   </div> 
    <div class="container-fluid fundo_site"> 
       <div id="div_rodape"></div>  
    </div>
@@ -240,6 +244,7 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <script src="/js/scripts.js"></script>
    <script src="/js/mens.js"></script>
+   <script src="/js/frases_poeticas.js"></script>
     
    <script>
      
@@ -256,6 +261,12 @@
          var divMens = document.getElementById("div_mens"); 
          var frase = obterMens(); 
          divMens.innerHTML = frase;
+
+         //...............
+         var divMens = document.getElementById("div_frase_poetica"); 
+         var frase = obterFrasePoetica(); 
+         divMens.innerHTML = frase;
+         
       }); 
    </script>
 </body>

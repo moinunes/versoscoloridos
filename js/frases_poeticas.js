@@ -80,6 +80,7 @@ function obterFrasePoetica() {
       "🌅 No silêncio da paz, descobre a força da aceitação, reconhecendo que a verdadeira paz começa dentro de ti. <br>",
       "🌈 Deixa que a paz seja o fio que tece a tapeçaria dos teus dias, conectando-te com a harmonia que existe em cada respiração. <br>",
       "✨ Que a paz seja a luz suave que guia o teu caminho, iluminando os recantos mais escuros e revelando a beleza escondida em cada momento.<br>",
+      "☀️ Abro as janelas, deixando o sol pintar meu mundo com simplicidade e promessas<br>",
    ];
      
    frases1  = [

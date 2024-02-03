@@ -6,8 +6,7 @@ function obterMens() {
    var frases = [
       "🌟 Deus, põe teu olho amoroso sobre todos os que já tiveram um amor sem nojo nem medo, e de alguma forma insana esperam a volta dele: que os telefones toquem, que as cartas finalmente cheguem … Sobre todos aqueles que ainda continuam tentando, Deus, derrama teu Sol mais luminoso. <br><span class='small'>- Caio Fernando Abreu</span>",
       "😊 Não tem poesia nem palavra difícil e nem construção sofisticada. O amor é simples como sorrir numa droga de fila. E não se sentir mais sozinho e nem esperando e nem desesperado e nem morrendo e nem com tanto medo. <br><span class='small'>- Tati Bernardi</span>",
-      "📜 Os poetas mentiram pra mim, Roberto Carlos mentiu para a gente. O amor não é manso assim. Ele pega, invade e devora a gente. <br><span class='small'>- Caio Fernando Abreu</span>",
-      "🌙 Lua na lagoa, <br> rãs cantam canções noturnas,<br> serenata azul.",
+       "🌙 Lua na lagoa, <br> rãs cantam canções noturnas,<br> serenata azul.",
       "🌄 Neblina da manhã,<br> teias de aranha cintilam, <br> sol beija a montanha.",
       "🌸 Cerejeiras choram, <br> pétalas dançam no vento, <br> primavera sonha.",
       "✍️ Fazer poesia é como fazer amor: nunca se saberá se a própria alegria é compartilhada. <br><span class='small'>- Cesare Pavese</span>",
