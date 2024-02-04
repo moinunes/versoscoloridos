@@ -100,13 +100,56 @@ function obterMens_motivacional() {
       "<span class='small'>- Steve Jobs ✨</span>",
    ];   
    
-   var frases1  = [ 
-      
+   var frases1  = [       
         
   ];    
 
    var frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
-    var segundoAtual = new Date().getSeconds();
+   var segundoAtual = new Date().getSeconds();
+   var indiceFrase = segundoAtual % frases.length;   
+   var fraseCorrespondente = frases[indiceFrase] || frase_padrao;   
+   return fraseCorrespondente;
+}
+
+
+
+
+
+/*-------------------------------------------------------------
+* obter frase de musica de forma cíclica
+*-------------------------------------------------------------*/ 
+function obter_frase_musica() {   
+   var frases = [
+      "Quer saber o sentido da vida? <br> Pra frente. <br> " +
+      "<span class='small'>- Emicida (A Cada Vento) ✨</span>",
+
+      "Não há pedra em teu caminho<br> Não há ondas no teu mar <br>Não há vento ou tempestade<br>Que te impeçam de voar <br> " +
+      "<span class='small'>- Dona - Roupa Nova 🕊️</span>",
+
+      "Vamos descobrir o mundo juntos, baby <br> Quero aprender <br> Com o teu pequeno grande coração <br> Meu amor <br> " +
+      "<span class='small'>- 1º de Julho - Cássia Eller 💖</span>",
+  
+      "Não saiu jamais <br> Muito longe de sua cidade <br> Não cursou nenhuma faculdade  <br> Mas na vida Ele foi doutor  <br> " +
+      "<span class='small'>- O Homem de Nazareth - Antônio Marcos 🙏</span>",
+   
+      "Caminhando contra o vento <br> Sem lenço, sem documento <br> No Sol de quase dezembro <br> Eu vou  <br> " +
+      "<span class='small'> - Alegria, Alegria - Caetano Veloso 🙏</span>",
+   
+      "Quero ver sempre no teu rosto essa felicidade... O teu sorriso iluminado que me faz tão bem. <br> " +
+      "<span class='small'>- Ser Humano -Zeca Pagodinho 💖</span>",
+   
+      "Negro, branco, rico, pobre <br> O sangue é da mesma cor <br> Somos todos iguais <br> Sentimos calor, alegria e dor  <br> " +
+      "<span class='small'>- Bate a Poeira - Karol Conká 💙</span>",
+   
+   ]; 
+
+   var frases1  = [   
+
+     
+
+   ];  
+   var frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
+   var segundoAtual = new Date().getSeconds();
    var indiceFrase = segundoAtual % frases.length;   
    var fraseCorrespondente = frases[indiceFrase] || frase_padrao;   
    return fraseCorrespondente;

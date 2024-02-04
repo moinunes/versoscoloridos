@@ -60,6 +60,12 @@
    font-style: italic;
    font-weight: bold;
 }
+.font_3 { 
+   text-align: left;
+   font-family: 'Times New Roman', Times, serif;  
+   font-size: 0.7rem;
+  
+}
 
 .clicavel {
    color: blue; /* Cor do texto quando não clicado */
