@@ -1,10 +1,65 @@
 /*-------------------------------------------------------------
 * obter a  mensagem de forma cíclica
 *-------------------------------------------------------------*/ 
+function obter_frase_deus() {
+   
+   var frases = [
+      "Suba o primeiro degrau com fé. <br> Não é necessário que você veja toda a escada. " +
+      "Apenas dê o primeiro passo.  <br> <span class='small'>- Martin Luther King</span>",
+
+      "Quem tem fé em Deus, não teme o futuro.  <br>" +
+      "<span class='small'>- Marianna Moreno </span>",
+
+      "🌟 Com fé em Deus e alegria, eu trilho minha jornada, vivendo intensamente e alcançando os meus sonhos.  <br>" +
+      "<span class='small'> </span>",
+
+      "Quando Deus quer, nada impede. ✨<br>  Em Sua vontade, encontramos força para superar qualquer obstáculo e alcançar o inalcançável.  <br>" +
+      "<span class='small'> </span>",
+
+      "Comece agradecendo pelo que tem, pois a gratidão é a porta para mais bênçãos.  Deus nos presenteia diariamente, e reconhecer Suas dádivas nos conecta à abundância da vida 💖 <br>" +
+      "<span class='small'> </span>",
+
+      "Nada do que existe é por acaso. ✨ Cada detalhe é tecido com propósito por Deus, guiando-nos em um intricado plano de amor e significado. 💖 <br>" +
+      "<span class='small'> </span>",
+
+      "Transforme a tristeza em alegria, como uma arte divina. 😊 Com a graça de Deus, descubra a força interior que nos permite florescer mesmo nos jardins mais desafiadores da vida.  🎨 <br>" +
+      "<span class='small'> </span>",
+
+      " Ame a natureza como uma manifestação divina. 🌿 Em cada folha, em cada brisa, sinta a presença de Deus, lembrando-nos da beleza e harmonia que Ele nos presenteia.  <br>" +
+      "<span class='small'> </span>",
+
+      " Siga a voz silenciosa do coração, onde Deus sussurra seus planos. 💖 Em cada momento de quietude, descubra a orientação divina que conduz os passos da sua jornada.  <br>" +
+      "<span class='small'> </span>",
+
+      " Obedecer à voz da consciência é agradecer a Deus. 🌟 Cada escolha alinhada com a verdade interior é uma expressão de gratidão pela sabedoria divina que nos guia.  <br>" +
+      "<span class='small'> </span>",
+
+      "Cultive a esperança como um jardim da alma. 🌷  Nas sementes da fé, Deus nos presenteia com a promessa de um amanhã iluminado. A esperança é a luz que guia nossos passos. <br>" +
+      "<span class='small'> </span>",
+
+      " Os que amam, irradiam a luz divina. 💖  Nesse ato sagrado, Deus se manifesta, guiando-nos para um caminho de compaixão, gratidão e alegria. <br>" +
+      "<span class='small'> </span>",
+
+      "A vontade de Deus é o farol que ilumina o caminho da nossa existência.  🙏 Aceitar, compreender e seguir Sua vontade nos conduz a uma vida plena de propósito e harmonia. <br>" +
+      "<span class='small'> </span>",
+
+   ];  
+
+   var frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
+   var segundoAtual = new Date().getSeconds();
+   var indiceFrase = segundoAtual % frases.length;   
+   var fraseCorrespondente = frases[indiceFrase] || frase_padrao;   
+   return fraseCorrespondente;
+ 
+}
+
+
+/*-------------------------------------------------------------
+* obter a  mensagem de forma cíclica
+*-------------------------------------------------------------*/ 
 function obterMens() {
    
    var frases = [
-      "🌟 Deus, põe teu olho amoroso sobre todos os que já tiveram um amor sem nojo nem medo, e de alguma forma insana esperam a volta dele: que os telefones toquem, que as cartas finalmente cheguem … Sobre todos aqueles que ainda continuam tentando, Deus, derrama teu Sol mais luminoso. <br><span class='small'>- Caio Fernando Abreu</span>",
       "😊 Não tem poesia nem palavra difícil e nem construção sofisticada. O amor é simples como sorrir numa droga de fila. E não se sentir mais sozinho e nem esperando e nem desesperado e nem morrendo e nem com tanto medo. <br><span class='small'>- Tati Bernardi</span>",
        "🌙 Lua na lagoa, <br> rãs cantam canções noturnas,<br> serenata azul.",
       "🌄 Neblina da manhã,<br> teias de aranha cintilam, <br> sol beija a montanha.",
@@ -76,9 +131,6 @@ function obterMens_motivacional() {
   
       "O homem não teria alcançado o <b>possível</b> se, repetidas vezes,  não tivesse tentado <br>" +
       "o <b>impossível.</b>  <br> <span class='small'>- Max Weber</span>",
-
-      "Suba o primeiro degrau com fé. <br> Não é necessário que você veja toda a escada. " +
-      "Apenas dê o primeiro passo.  <br> <span class='small'>- Martin Luther King</span>",
 
       "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo. " +
       " <br> <span class='small'>- Winston Churchill</span>",
