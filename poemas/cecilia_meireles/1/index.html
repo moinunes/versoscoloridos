@@ -22,11 +22,7 @@
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNGPR198V4"></script>
    <script src="/js/analytics.js"></script>
 
-   <style>
-      /* Adicione estilos personalizados aqui, se necessário */
-      .poema-div {
-          display: none;
-      }
+   <style> 
       .bg_cor_1 {background: linear-gradient(to bottom, #ededf3 5%, #ece5e5 100%); }
       .sombra_0 { background-color: #e7f7fd; box-shadow: inset 0 0 15px hsl(250, 6%, 80%);}
       .sombra_1 { background-color: #ffffff; box-shadow: inset 0 0 10px hsl(135, 67%, 74%);}
@@ -245,8 +241,7 @@
                                  A minha face?<br>
                               </span>
                               <button class="btn btn_copiar">Copiar</button>
-                              <a class="ignore-click btn_video" target="_blank" href="https://www.youtube.com/watch?v=gtnbmAX8KUY">Vídeo</a>
-                              <p class="mensagem"></p>
+                               <p class="mensagem"></p>
                            </div>
                         </li>                       
                         
@@ -284,14 +279,13 @@
                                  no último andar.<br>
                               </span>
                               <button class="btn btn_copiar">Copiar</button>
-                              <a class="ignore-click btn_video" target="_blank" href="https://www.youtube.com/watch?v=MacPGZeJ9Vg&t=3s">Vídeo</a>
-                              <p class="mensagem"></p>
+                               <p class="mensagem"></p>
                            </div>
                         </li>                     
                         
                         <li class="list-group-item" style="line-height: 1; margin:0;">
                            <a href="#" class="clicavel" data-poema-div="poema-div-2">A BAILARINA</a>
-                           <div id="poema-div-2" class="poema-div" style="display: none;">
+                           <div id="poema-div-2" class="poema-div">
                               <span class="font_poema_titulo">
                                  <span class="tit1">Autor:&nbsp;</span>Cecília Meireles
                               </span> 
@@ -320,14 +314,13 @@
                                  e também quer dormir como as outras crianças.<br>
                               </span>
                               <button class="btn btn_copiar">Copiar</button>
-                              <a class="ignore-click btn_video" target="_blank" href="https://www.youtube.com/watch?v=BUGfkuMZYA8">Vídeo</a>
-                              <p class="mensagem"></p>             
+                               <p class="mensagem"></p>             
                            </div>
                         </li>                        
          
                         <li class="list-group-item" style="line-height: 1; margin:0;">
                            <a href="#" class="clicavel" data-poema-div="poema-div-3">Canção</a>
-                           <div id="poema-div-3" class="poema-div" style="display: none;">
+                           <div id="poema-div-3" class="poema-div" >
                               <span class="font_poema_titulo">
                                  <span class="tit1">Autor:&nbsp;</span>Cecília Meireles
                               </span> 
@@ -359,14 +352,13 @@
                                  e as minhas duas mãos quebradas.<br>
                               </span>
                               <button class="btn btn_copiar">Copiar</button>
-                              <a class="ignore-click btn_video" target="_blank" href="https://www.youtube.com/watch?v=ZyesUus8uL4">Vídeo</a>
-                              <p class="mensagem"></p>
+                               <p class="mensagem"></p>
                            </div>
                         </li>                                         
 
                         <li class="list-group-item" style="line-height: 1; margin:0;">
                            <a href="#" class="clicavel" data-poema-div="poema-div-4">A Arte De Ser Feliz</a>
-                           <div id="poema-div-4" class="poema-div" style="display: none;">
+                           <div id="poema-div-4" class="poema-div">
                               <span class="font_poema_titulo">
                                  <span class="tit1">Autor:&nbsp;</span>Cecília Meireles
                               </span> 
@@ -403,14 +395,13 @@
                                  finalmente, que é preciso aprender a olhar, para poder vê-las assim.<br>
                               </span> 
                               <button class="btn btn_copiar">Copiar</button>
-                              <a class="ignore-click btn_video" target="_blank" href="https://www.youtube.com/watch?v=gZPR-diceGk">Vídeo</a>
-                              <p class="mensagem"></p>
+                               <p class="mensagem"></p>
                            </div>
                         </li>                        
 
                         <li class="list-group-item" style="line-height: 1; margin:0;">
                            <a href="#" class="clicavel" data-poema-div="poema-div-5">Motivo</a>
-                           <div id="poema-div-5" class="poema-div" style="display: none;">
+                           <div id="poema-div-5" class="poema-div">
                               <span class="font_poema_titulo">
                                  <span class="tit1">Autor:&nbsp;</span>Cecília Meireles
                               </span> 
@@ -437,8 +428,7 @@
                                  — mais nada.<br>
                               </span> 
                               <button class="btn btn_copiar">Copiar</button>
-                              <a class="ignore-click btn_video" target="_blank" href="https://www.youtube.com/watch?v=sdoqIGQQ00E">Vídeo</a>
-                              <p class="mensagem"></p>
+                               <p class="mensagem"></p>
                            </div>
                         </li>
 
@@ -464,15 +454,15 @@
          <!-- Conteúdo da coluna da direita -->
          <div class="col-md-4">
             
-            <div class="container mt-3 p-0">
-               <div class="card sombra_0 m-0 p-0">
-                  <div class="card-body m-2 p-2" >
-                     <p class="m-0 p-0">
-                        <div class="h6" id="div_mens"> </div>
-                     </p>                 
+            <div class="container mt-3 p-0 d-none d-sm-block">  <!-- Esta div será ocultada em dispositivos pequenos -->
+               <div class="card">
+                 <div class="card-header ">
+                     <h5 class="card-title p-0 m-0">&nbsp; <strong>Cecília Meireles</strong> </h5>
                  </div>
-               </div>  
+                 <div class="card-body alert alert-warning">
+                  Cecília Meireles ou Cecília Benevides de Carvalho Meireles (Rio de Janeiro, 7 de novembro de 1901 — Rio de Janeiro, 9 de novembro de 1964) foi uma jornalista, pintora, poeta, escritora e professora brasileira. Amplamente considerada a melhor poeta do Brasil, pois que tenha combatido a palavra poetisa por causa da discriminação de gênero que apenas depunha outras artistas, como se houvesse caminhos distintos para um poeta. </div>
             </div> 
+            
 
             <div class="card bg-white mt-2 mb-0">
                <div class="card-body m-0 p-3 bg-white sombra_1"  >
@@ -522,7 +512,17 @@
                   <span><button class="btn btn_copiar_verso">Copiar</button></span>
                   <p class="mensagem"></p>
                </div>                
-            </div>           
+            </div>  
+            
+            <div class="container mt-3 p-0">
+               <div class="card sombra_0 m-0 p-0">
+                  <div class="card-body m-2 p-2" >
+                     <p class="m-0 p-0">
+                        <div class="h6" id="div_mens"> </div>
+                     </p>                 
+                 </div>
+               </div>  
+            </div> 
                            
          </div>
 

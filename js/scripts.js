@@ -19,7 +19,7 @@ $(document).ready(function () {
        tempInput.remove();
        $('.mensagem').empty();
        var mensagem = $(this).closest('.card-body').find('.mensagem');
-       mensagem.html('<span class="text-success">Conteúdo copiado com sucesso! <br> Agora você pode colar usando Ctrl+V.</span>');
+       mensagem.html('<span class="text-success">Conteúdo copiado com sucesso! <br> Agora você pode compartilhar.</span>');
    });
 });
 
@@ -52,7 +52,7 @@ $(".list-group-item a").click(function(e) {
       var poemaDivID = $(this).data("poema-div");
       
       // Esconde todas as divs de poemas
-      $(".poema-div").hide();
+      //$(".poema-div").hide();
 
       $('.mensagem').empty();
       
@@ -108,7 +108,7 @@ $(document).ready(function () {
           try {
             $('.mensagem').empty();
             document.execCommand('copy');
-            mensagemSpan.html('Conteúdo copiado com sucesso! <br> Agora você pode colar usando Ctrl+V.')
+            mensagemSpan.html('Conteúdo copiado com sucesso! <br> Agora você pode compartilhar.')
                           .addClass('text-success');
           } catch (err) {
             alert('Erro ao copiar o conteúdo. Utilize Ctrl+C para copiar manualmente.');
