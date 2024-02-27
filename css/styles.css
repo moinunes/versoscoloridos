@@ -48,6 +48,11 @@
    font-size: 1.2rem;   
 }
 
+.font_0 { 
+   text-align: left;
+   font-family: 'EB Garamond', 'Times New Roman', Times, serif;
+   font-size: 0.6rem; 
+}
 .font_1 { 
    text-align: left;
    font-family: 'EB Garamond', 'Times New Roman', Times, serif;
