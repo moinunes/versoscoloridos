@@ -188,6 +188,11 @@
                   </script>  
                   <br>  
                </div>
+
+               <div class="col-md-6 text-center">  
+                  <div class="h5 text-center mt-2 mb-2" id="div_frase_poetica"></div>
+               </div>
+
             </div>      
 
          </div>            
@@ -377,6 +382,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/js/scripts.js"></script>
     <script src="/js/mens.js"></script>
+    <script src="/js/frases_poeticas.js"></script>
     <!-- Seu JavaScript aqui... -->
 
  
@@ -390,6 +396,10 @@
       document.addEventListener("DOMContentLoaded", function() { 
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 
+         divFrase.innerHTML  = frase;         
+         //...............
+         var divFrase = document.getElementById("div_frase_poetica"); 
+         var frase = obterFrasePoetica(); 
          divFrase.innerHTML  = frase;         
          //...............
          var divMens = document.getElementById("div_mens"); 
