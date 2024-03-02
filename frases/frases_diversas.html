@@ -144,6 +144,10 @@
                         </div>
                      </div>
 
+                     <div class="container-fluid bg-light mt-2 mb-3 border-0">
+                        <div class="h5 text-center mt-2 mb-2" id="div_frase_poetica_2"></div>
+                     </div> 
+
                   </div>                    
                </div>                  
             </div>            
@@ -162,7 +166,7 @@
                  </div>
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
-                        <div class="h6" id="div_mens"> </div>
+                        <div class="h5" id="div_mens"> </div>
                      </p>                 
                  </div>
                </div>  
@@ -418,6 +422,10 @@
 
          //...............
          var divMens = document.getElementById("div_frase_poetica"); 
+         var frase = obterFrasePoetica(); 
+         divMens.innerHTML = frase;
+         //...............
+         var divMens = document.getElementById("div_frase_poetica_2"); 
          var frase = obterFrasePoetica(); 
          divMens.innerHTML = frase;
          
