@@ -224,3 +224,19 @@
    background: linear-gradient(to bottom, #deeeca 70%, #ece5e5 30%);
 }
  
+.carrossel-container {
+   position: relative;
+}
+.carousel-control-prev {
+   position: absolute;
+   bottom: -5rem; /* Ajuste conforme necessário */
+   left: 1rem; /* Ajuste conforme necessário */
+}
+.carousel-control-next {
+   position: absolute;
+   bottom: -5rem; /* Ajuste conforme necessário */
+   right: 1rem; /* Ajuste conforme necessário */
+}
+.carousel-inner p {
+   font-size: 20px; /* Defina o tamanho da fonte desejado */
+}
