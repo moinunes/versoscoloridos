@@ -1,29 +1,36 @@
-<div id="carousel_1" class="carousel slide sombra_1 text-center mt-2 mb-2">
-   <div class="carousel-inner m-3 p-3 mr-5">
+meu arquivo .js
 
+// Array com as mensagens
+var mensagens = [
+   "Ao virar a esquina, ela se deparou com um livro esquecido no chão. Um livro que seria sua porta de entrada para um mundo de magia e mistério 📚",
+   "A luz da lua iluminou um antigo baú no sótão, revelando segredos guardados por gerações 🌙",
+   "No fundo da gaveta, ela encontrou uma carta amarelada, escrita décadas atrás, contendo palavras que ecoavam com sua própria jornada 💌",
+  "Um mapa antigo encontrado no sótão desvendou um tesouro enterrado há muito tempo, desencadeando uma busca cheia de perigos e revelações surpreendentes 🗺️",
+];
+
+// Variável para rastrear o índice da mensagem atual
+var indiceAtual = 0;
+
+// Função para exibir a próxima mensagem
+function proximaMensagem() {
+   indiceAtual++; // Incrementa o índice
+   if (indiceAtual >= mensagens.length) {
+      indiceAtual = 0; // Volta para o início do array se atingir o final
+   }
+   document.getElementById("mensagem").innerHTML = mensagens[indiceAtual]; // Exibe a próxima mensagem
+}
+
+meu html
+<div id="carousel_1" class="carousel slide border bg-white shadow carrossel-container  mt-2">
+   <div class="carousel-inner" >
       <div class="carousel-item active">
-         <p>                         
-            A fé move montanhas, Deus é o guia.<br>
-            No topo, a vista revela Seu amor sem medida. 🙏 
+         <p id="mensagem" class="m-3">                         
+            Em cada esquina, uma história esperando ser encontrada, cada descoberta uma porta para um mundo de possibilidades.  🌟 
          </p>
-      </div>      
-      <div class="carousel-item">
-         <p> 
-            Fé não é ver para crer, é crer para ver.<br>
-            Deus se revela aos olhos do coração. 🙏<br>
-         </p>
-      </div>   
-
+      </div>
+   </div>            
+   <div class="bg-light text-center">
+      <!-- Botão de navegação -->
+      <button id="botaoProximo" class="btn btn-primary" onclick="proximaMensagem()">Próximo</button>
    </div>
-
-   <!-- Setas de navegação -->
-   <a class="carousel-control-prev" href="#carousel_1" role="button" data-slide="prev" style="position: absolute; bottom: 0; left: 0;">
-      <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-   </a>
-   <a class="carousel-control-next" href="#carousel_1" role="button" data-slide="next" style="position: absolute; bottom: 0; right: 0;">
-      <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-   </a>     
-
-</div>
+</div>  

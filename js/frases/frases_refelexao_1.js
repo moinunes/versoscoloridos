@@ -1,18 +1,56 @@
-// Array com as mensagens
-var mensagens = [
-   "Num parque ensolarado, Maria viu crianças brincando. Seus risos eram como música para sua alma cansada. Na simplicidade daquela cena, encontrou a lembrança preciosa de que a verdadeira felicidade reside nos momentos simples da vida. 🌞",
-   "Na beira de um rio sereno, uma pessoa se senta e observa a correnteza suave que flui diante dela. Enquanto contempla a água que segue seu curso, uma sensação de paz e serenidade a envolve. Nesse momento de quietude, ela deixa de lado as preocupações do dia a dia e se permite simplesmente sentir: a calma do ambiente, a leveza do ar e a harmonia que existe na natureza. E, por um instante, tudo está bem no mundo. 🌿",
-   "Num parque tranquilo, sob a sombra de uma árvore frondosa, uma pessoa fecha os olhos e respira profundamente. No ar fresco da manhã, ela sente uma onda de gratidão e contentamento se espalhando por todo o seu ser. Cada inspiração traz consigo uma sensação de paz interior, enquanto cada expiração libera qualquer tensão acumulada. Nesse momento de conexão consigo mesma e com o mundo ao seu redor, ela se sente completa e em harmonia com o universo. 🌳",
+var mensagem_1 = [
+   "<h5 class='text-center'> O Caminho para o Sucesso: <br>12 Reflexões Inspiradoras 🌟</h5>",
+   "A jornada começa com um único passo, mas é a persistência que nos leva até o fim. 🚶‍♂️",
+   "Cada desafio que enfrentamos nos torna mais fortes, se escolhermos aprender com ele. 💪",
+   "As melhores lições são muitas vezes aprendidas nos momentos mais difíceis. 📚",
+   "A verdadeira felicidade vem da gratidão por aquilo que já temos, não da busca incessante pelo que não temos. 🙏",
+   "Nos momentos de dúvida, olhe para trás e veja o quanto você já superou. 🌟",
+   "O sucesso não é medido pela altura que alcançamos, mas sim pelas pedras que escalamos ao longo do caminho. 🏔️",
+   "A paciência é uma virtude que nos ensina a esperar pelo melhor, mesmo quando tudo parece difícil. ⏳",
+   "Às vezes, o maior obstáculo em nosso caminho somos nós mesmos. 🚧",
+   "Não deixe que o medo do fracasso o impeça de tentar. O verdadeiro fracasso está em não tentar. 💡",
+   "A vida é uma jornada de altos e baixos, mas é nos vales que encontramos as flores mais bonitas. 🌺",
+   "A força interior que precisamos para enfrentar os desafios da vida muitas vezes é encontrada nos momentos de maior vulnerabilidade. 💪",
+   "Acreditar em si mesmo é o primeiro passo para alcançar seus sonhos. O resto é apenas uma questão de tempo e esforço. ✨"
 ];
 
-// Variável para rastrear o índice da mensagem atual
-var indiceAtual = 0;
 
-// Função para exibir a próxima mensagem
-function proximaMensagem() {
-   indiceAtual++; // Incrementa o índice
-   if (indiceAtual >= mensagens.length) {
-      indiceAtual = 0; // Volta para o início do array se atingir o final
+var mensagem_2 = [
+   "<h5 class='text-center '> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
+   "Ao virar a esquina, ela se deparou com um livro esquecido no chão. Um livro que seria sua porta de entrada para um mundo de magia e mistério 📚",
+   "A luz da lua iluminou um antigo baú no sótão, revelando segredos guardados por gerações 🌙",
+   "No fundo da gaveta, ela encontrou uma carta amarelada, escrita décadas atrás, contendo palavras que ecoavam com sua própria jornada 💌",
+   "Ao abrir a janela, ele foi saudado por uma brisa fresca carregada de promessas de aventuras desconhecidas 💨",
+   "Um bilhete perdido no bolso de sua jaqueta desencadeou uma jornada que o levaria aos confins da terra e além 🎫",
+   "Na velha caixa de recordações, ela descobriu uma fotografia antiga que capturava um momento de pura felicidade, acendendo uma chama de nostalgia e inspiração 📷",
+   "Uma trilha escondida na floresta levou-o a um lugar esquecido pelo tempo, onde segredos ancestrais aguardavam para serem revelados 🌳",
+   "A descoberta de um diário empoeirado revelou os pensamentos mais íntimos de alguém que uma vez caminhou pelos mesmos caminhos que ele agora trilhava 📔",
+   "Um bilhete de trem encontrado em um banco de parque desencadeou uma jornada que o levaria a encontrar não apenas novos destinos, mas também a si mesmo 🚂",
+   "No sótão empoeirado, ela descobriu uma caixa de música antiga, cujas melodias desencadearam memórias há muito esquecidas 🎶",
+   "Um raio de sol atravessou a cortina, iluminando uma pintura esquecida na parede, revelando uma paisagem de sonhos e aventuras 🌞",
+   "Uma simples concha encontrada na praia desencadeou uma jornada para além das ondas, onde segredos marinhos aguardavam para serem revelados 🐚",
+   "Um mapa antigo encontrado no sótão desvendou um tesouro enterrado há muito tempo, desencadeando uma busca cheia de perigos e revelações surpreendentes 🗺️",
+];
+
+var indice_atual_1 = -1;
+var indice_atual_2 = -1;
+
+function proxima_mensagem_1() {
+   var array;  
+   mensagens = mensagem_1; 
+   indice_atual_1++;
+   if (indice_atual_1 >= mensagens.length) {
+      indice_atual_1 = 0; // Volta para o início do array se atingir o final
    }
-   document.getElementById("mensagem").innerHTML = mensagens[indiceAtual]; // Exibe a próxima mensagem
+   document.getElementById("mensagem_1").innerHTML =  mensagens[indice_atual_1];   
+}
+
+function proxima_mensagem_2() {
+   var array;  
+   mensagens = mensagem_2; 
+   indice_atual_2++; 
+   if (indice_atual_2 >= mensagens.length) {
+      indice_atual_2 = 0; // Volta para o início do array se atingir o final
+   }
+   document.getElementById("mensagem_2").innerHTML =  mensagens[indice_atual_2];   
 }
