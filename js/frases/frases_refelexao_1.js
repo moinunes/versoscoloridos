@@ -1,8 +1,8 @@
 var mensagem_1 = [   
-   "A jornada começa com um único passo, <br >mas é a persistência que nos leva até o fim. 🚶‍♂️",
-   "Cada desafio que enfrentamos nos torna mais fortes, <br se escolhermos aprender com ele. 💪",
+   "A jornada começa com um único passo, mas é a persistência que nos leva até o fim. 🚶‍♂️",
+   "Cada desafio que enfrentamos nos torna mais fortes,  se escolhermos aprender com ele. 💪",
    "As melhores lições são muitas vezes aprendidas nos momentos mais difíceis. 📚",
-   "A verdadeira felicidade vem da gratidão por aquilo que já temos, <br não da busca incessante pelo que não temos. 🙏",
+   "A verdadeira felicidade vem da gratidão por aquilo que já temos,  não da busca incessante pelo que não temos. 🙏",
    "Nos momentos de dúvida, olhe para trás e veja o quanto você já superou. 🌟",
    "O sucesso não é medido pela altura que alcançamos, mas sim pelas pedras que escalamos ao longo do caminho. 🏔️",
    "A paciência é uma virtude que nos ensina a esperar pelo melhor, mesmo quando tudo parece difícil. ⏳",
@@ -11,7 +11,7 @@ var mensagem_1 = [
    "A vida é uma jornada de altos e baixos, mas é nos vales que encontramos as flores mais bonitas. 🌺",
    "A força interior que precisamos para enfrentar os desafios da vida muitas vezes é encontrada nos momentos de maior vulnerabilidade. 💪",
    "Acreditar em si mesmo é o primeiro passo para alcançar seus sonhos. O resto é apenas uma questão de tempo e esforço. ✨",
-   "<h5 class='text-center'> O Caminho para o Sucesso: <br>12 Reflexões Inspiradoras 🌟</h5>",
+   "<h5 class='text-center text-info'> O Caminho para o Sucesso: <br>12 Reflexões Inspiradoras 🌟</h5>",
 ];
 
 
@@ -29,7 +29,7 @@ var mensagem_2 = [
    "Um raio de sol atravessou a cortina, iluminando uma pintura esquecida na parede, revelando uma paisagem de sonhos e aventuras 🌞",
    "Uma simples concha encontrada na praia desencadeou uma jornada para além das ondas, onde segredos marinhos aguardavam para serem revelados 🐚",
    "Um mapa antigo encontrado no sótão desvendou um tesouro enterrado há muito tempo, desencadeando uma busca cheia de perigos e revelações surpreendentes 🗺️",
-   "<h5 class='text-center '> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
+   "<h5 class='text-center text-info'> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
 ];
 
 mensagem_3 = [
@@ -43,7 +43,7 @@ mensagem_3 = [
    "A gratidão é a chave que abre a porta para a felicidade duradoura. 🙏",
    "A força não está em nunca cair, mas sim em levantar-se cada vez que caímos. 💪",
    "O tempo é um presente precioso que devemos gastar com sabedoria, pois é o único recurso que nunca poderemos recuperar. ⏳",
-   "<h5 class='text-center '>Sábias Reflexões para a Jornada da Vida 🌟</h5>",
+   "<h5 class='text-center text-info'>Sábias Reflexões para a Jornada da Vida 🌟</h5>",
 ]
 
 var indice_atual_1 = -1;
