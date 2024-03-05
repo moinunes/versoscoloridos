@@ -32,8 +32,8 @@ var mensagem_2 = [
    "<h5 class='text-center '> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
 ];
 
-var indice_atual_1 = -1;
-var indice_atual_2 = -1;
+var indice_atual_1 = 0;
+var indice_atual_2 = 0;
 
 function proxima_mensagem_1() {
    var array;  
