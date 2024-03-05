@@ -48,9 +48,7 @@
             <div class="row">
                <div class="col-md-12 justify-content-center">
                
-                  <div class="container p-0">
-
-                     
+                  <div class="container p-0">                     
                      <h5 class="p-0 m-1">
                         Reflexões em Parábolas<br>
                       </h5>
@@ -60,11 +58,7 @@
                         <a href="/reflexao/2/" class="border m-1 rounded btn">2</a> 
                         <a href="/reflexao/3/" class="border m-1 rounded btn btn-primary">3</a>
                         <br> 
-                     </div> 
-
-
-
-                      
+                     </div>
 
                      <div id="carousel_1" class="carousel slide sombra_0 bg-white carrossel-container  mt-2">
                         <div class="carousel-inner " >
@@ -130,12 +124,35 @@
                         </div>
                      </div>
  
-                    
+                     <div class="carousel slide sombra_0 bg-white carrossel-container  mt-4">
+                        <div class="carousel-inner" >                           
+                           <div class="carousel-item active">
+                              <div id="mensagem_3" class="m-3 h5">
+                                <h5 class='text-center '>Sábias Reflexões<br> para a Jornada da Vida 🌟</h5>
+                              </div>
+                           </div>
+                        </div>            
+                        <div class="bg-light text-center">
+                           <!-- Botão de navegação -->
+                           <button id="botaoProximo" class="btn btn-primary" onclick="proxima_mensagem_3()">Próximo</button>
+                        </div>
+                     </div>  
+
                   </div>                    
                </div>                  
             </div>            
 
             <div id="poema-content"></div>
+
+            <div class="container-fluid bg-light mt-2 mb-2 border-0">
+               <br>
+               <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+            </div>
+
+            <div class="container-fluid bg-light mt-2 mb-3 border">
+               <br>
+               <div class="h5 text-center mt-2 mb-2" id="div_frase_poetica"></div>
+            </div>
 
          </div>            
             
@@ -153,10 +170,12 @@
                      </p>                 
                  </div>
                </div>  
-            </div> 
+            </div>  
+             
 
             <!-- Dispositvos - GRANDES -->
-            <div class="mt-2 mb-0 d-none d-lg-block">
+            <div class="sticky-top">
+            <div class=" mt-2 mb-0 d-none d-lg-block">
                <div class="m-0 p-3 text-center">
                   <span class="font_0">PUBLICIDADE</span>
                   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"
@@ -172,31 +191,27 @@
                      (adsbygoogle = window.adsbygoogle || []).push({});
                   </script>
                </div> 
-            </div>    
+            </div>  
+            </div> 
+
          </div>
 
       </div>
    </div>
       
-   <div class="container-fluid bg-light mt-2 mb-2 border-0">
-      <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
-   </div>
+   
 
    <div class="container mt-3 p-0 ">
       <div class="card  border-0 d-none d-sm-block"> <!-- Esta div será ocultada em dispositivos pequenos -->
          <div class="card-body bg-light">            
-            <div class="row">   
-               
-             
+            <div class="row"> 
 
             </div> 
          </div>
       </div>
    </div>
  
-   <div class="container-fluid bg-light mt-2 mb-3 border">
-      <div class="h5 text-center mt-2 mb-2" id="div_frase_poetica"></div>
-   </div>
+  
   
    <div class="container mt-3 p-0 ">
       <div class="card  border-0 d-none d-sm-block"> <!-- Esta div será ocultada em dispositivos pequenos -->
@@ -240,10 +255,7 @@
          var frase = obterFrasePoetica(); 
          divMens.innerHTML = frase;
          
-
-         //proxima_mensagem_1();
-         //proxima_mensagem_2();
-
+ 
       });     
    </script>
 </body>

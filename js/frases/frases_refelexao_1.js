@@ -32,11 +32,25 @@ var mensagem_2 = [
    "<h5 class='text-center '> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
 ];
 
-var indice_atual_1 = 0;
-var indice_atual_2 = 0;
+mensagem_3 = [
+   "O caminho para a sabedoria começa com a humildade de reconhecer que sempre há mais a aprender. 🌱",
+   "Nossas cicatrizes não definem quem somos, mas sim as histórias que escolhemos contar sobre elas. 🌟",
+   "Às vezes, o silêncio diz mais do que mil palavras, pois é nele que encontramos a verdadeira essência de nós mesmos. 🌿",
+   "A jornada da vida não é medida pelo número de passos que damos, mas sim pelos momentos que nos deixam sem fôlego. 🌄",
+   "A beleza está nos olhos de quem vê, mas a verdadeira beleza reside na capacidade de enxergar além das aparências. 💫",
+   "Não podemos controlar as ondas que nos atingem, mas podemos aprender a surfar sobre elas e encontrar nosso equilíbrio. 🌊",
+   "Às vezes, é preciso se perder para se encontrar verdadeiramente. 🌌",
+   "A gratidão é a chave que abre a porta para a felicidade duradoura. 🙏",
+   "A força não está em nunca cair, mas sim em levantar-se cada vez que caímos. 💪",
+   "O tempo é um presente precioso que devemos gastar com sabedoria, pois é o único recurso que nunca poderemos recuperar. ⏳",
+   "<h5 class='text-center '>Sábias Reflexões para a Jornada da Vida 🌟</h5>",
+]
+
+var indice_atual_1 = -1;
+var indice_atual_2 = -1;
+var indice_atual_3 = -1;
 
 function proxima_mensagem_1() {
-   var array;  
    mensagens = mensagem_1; 
    indice_atual_1++;
    if (indice_atual_1 >= mensagens.length) {
@@ -46,11 +60,19 @@ function proxima_mensagem_1() {
 }
 
 function proxima_mensagem_2() {
-   var array;  
    mensagens = mensagem_2; 
    indice_atual_2++; 
    if (indice_atual_2 >= mensagens.length) {
       indice_atual_2 = 0; // Volta para o início do array se atingir o final
    }
    document.getElementById("mensagem_2").innerHTML =  mensagens[indice_atual_2];   
+}
+
+function proxima_mensagem_3() {
+   mensagens = mensagem_3; 
+   indice_atual_3++; 
+   if (indice_atual_3 >= mensagens.length) {
+      indice_atual_3 = 0; 
+   }
+   document.getElementById("mensagem_3").innerHTML =  mensagens[indice_atual_3];   
 }
