@@ -1,8 +1,8 @@
 var mensagem_1 = [   
-   "A jornada começa com um único passo, mas é a persistência que nos leva até o fim. 🚶‍♂️",
-   "Cada desafio que enfrentamos nos torna mais fortes, se escolhermos aprender com ele. 💪",
+   "A jornada começa com um único passo, <br >mas é a persistência que nos leva até o fim. 🚶‍♂️",
+   "Cada desafio que enfrentamos nos torna mais fortes, <br se escolhermos aprender com ele. 💪",
    "As melhores lições são muitas vezes aprendidas nos momentos mais difíceis. 📚",
-   "A verdadeira felicidade vem da gratidão por aquilo que já temos, não da busca incessante pelo que não temos. 🙏",
+   "A verdadeira felicidade vem da gratidão por aquilo que já temos, <br não da busca incessante pelo que não temos. 🙏",
    "Nos momentos de dúvida, olhe para trás e veja o quanto você já superou. 🌟",
    "O sucesso não é medido pela altura que alcançamos, mas sim pelas pedras que escalamos ao longo do caminho. 🏔️",
    "A paciência é uma virtude que nos ensina a esperar pelo melhor, mesmo quando tudo parece difícil. ⏳",
