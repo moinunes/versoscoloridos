@@ -1,5 +1,4 @@
-var mensagem_1 = [
-   "<h5 class='text-center'> O Caminho para o Sucesso: <br>12 Reflexões Inspiradoras 🌟</h5>",
+var mensagem_1 = [   
    "A jornada começa com um único passo, mas é a persistência que nos leva até o fim. 🚶‍♂️",
    "Cada desafio que enfrentamos nos torna mais fortes, se escolhermos aprender com ele. 💪",
    "As melhores lições são muitas vezes aprendidas nos momentos mais difíceis. 📚",
@@ -11,12 +10,12 @@ var mensagem_1 = [
    "Não deixe que o medo do fracasso o impeça de tentar. O verdadeiro fracasso está em não tentar. 💡",
    "A vida é uma jornada de altos e baixos, mas é nos vales que encontramos as flores mais bonitas. 🌺",
    "A força interior que precisamos para enfrentar os desafios da vida muitas vezes é encontrada nos momentos de maior vulnerabilidade. 💪",
-   "Acreditar em si mesmo é o primeiro passo para alcançar seus sonhos. O resto é apenas uma questão de tempo e esforço. ✨"
+   "Acreditar em si mesmo é o primeiro passo para alcançar seus sonhos. O resto é apenas uma questão de tempo e esforço. ✨",
+   "<h5 class='text-center'> O Caminho para o Sucesso: <br>12 Reflexões Inspiradoras 🌟</h5>",
 ];
 
 
 var mensagem_2 = [
-   "<h5 class='text-center '> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
    "Ao virar a esquina, ela se deparou com um livro esquecido no chão. Um livro que seria sua porta de entrada para um mundo de magia e mistério 📚",
    "A luz da lua iluminou um antigo baú no sótão, revelando segredos guardados por gerações 🌙",
    "No fundo da gaveta, ela encontrou uma carta amarelada, escrita décadas atrás, contendo palavras que ecoavam com sua própria jornada 💌",
@@ -30,6 +29,7 @@ var mensagem_2 = [
    "Um raio de sol atravessou a cortina, iluminando uma pintura esquecida na parede, revelando uma paisagem de sonhos e aventuras 🌞",
    "Uma simples concha encontrada na praia desencadeou uma jornada para além das ondas, onde segredos marinhos aguardavam para serem revelados 🐚",
    "Um mapa antigo encontrado no sótão desvendou um tesouro enterrado há muito tempo, desencadeando uma busca cheia de perigos e revelações surpreendentes 🗺️",
+   "<h5 class='text-center '> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
 ];
 
 var indice_atual_1 = -1;
