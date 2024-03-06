@@ -46,9 +46,17 @@ mensagem_3 = [
    "<h5 class='text-center text-info'>Sábias Reflexões para a Jornada da Vida 🌟</h5>",
 ]
 
+mensagem_4 = [
+   "Num campo verdejante, havia um pequeno riacho que corria suavemente entre as pedras. Uma pedra, diferente das outras, encontrava-se no meio do riacho, recebendo diariamente o impacto das águas que passavam.",
+   "Um dia, a pedra começou a se lamentar por sua posição, desejando estar em outro lugar mais tranquilo. Mas o riacho sussurrou-lhe: Não percebes que tua presença aqui molda o caminho das águas e embeleza nosso leito?",
+   "A pedra refletiu sobre as palavras do riacho e percebeu que sua posição não era um fardo, mas sim uma oportunidade de fazer a diferença no mundo ao seu redor. A partir desse dia, ela abraçou sua função com gratidão, entendendo que mesmo os desafios podem ser fonte de beleza e propósito.",
+   "<h5 class='text-center text-info'>Às vezes, nossa maior força vem das adversidades.<br>🌟 FIM 🌟</h5>",
+]
+
 var indice_atual_1 = -1;
 var indice_atual_2 = -1;
 var indice_atual_3 = -1;
+var indice_atual_4 = -1;
 
 function proxima_mensagem_1() {
    mensagens = mensagem_1; 
@@ -75,4 +83,13 @@ function proxima_mensagem_3() {
       indice_atual_3 = 0; 
    }
    document.getElementById("mensagem_3").innerHTML =  mensagens[indice_atual_3];   
+}
+
+function proxima_mensagem_4() {
+   mensagens = mensagem_4; 
+   indice_atual_4++; 
+   if (indice_atual_4 >= mensagens.length) {
+      indice_atual_4 = 0; 
+   }
+   document.getElementById("mensagem_4").innerHTML =  mensagens[indice_atual_4];   
 }

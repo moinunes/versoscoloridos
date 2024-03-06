@@ -1,17 +1,8 @@
 var mensagem_1 = [   
-   "A jornada começa com um único passo, mas é a persistência que nos leva até o fim. 🚶‍♂️",
-   "Cada desafio que enfrentamos nos torna mais fortes,  se escolhermos aprender com ele. 💪",
-   "As melhores lições são muitas vezes aprendidas nos momentos mais difíceis. 📚",
-   "A verdadeira felicidade vem da gratidão por aquilo que já temos,  não da busca incessante pelo que não temos. 🙏",
-   "Nos momentos de dúvida, olhe para trás e veja o quanto você já superou. 🌟",
-   "O sucesso não é medido pela altura que alcançamos, mas sim pelas pedras que escalamos ao longo do caminho. 🏔️",
-   "A paciência é uma virtude que nos ensina a esperar pelo melhor, mesmo quando tudo parece difícil. ⏳",
-   "Às vezes, o maior obstáculo em nosso caminho somos nós mesmos. 🚧",
-   "Não deixe que o medo do fracasso o impeça de tentar. O verdadeiro fracasso está em não tentar. 💡",
-   "A vida é uma jornada de altos e baixos, mas é nos vales que encontramos as flores mais bonitas. 🌺",
-   "A força interior que precisamos para enfrentar os desafios da vida muitas vezes é encontrada nos momentos de maior vulnerabilidade. 💪",
-   "Acreditar em si mesmo é o primeiro passo para alcançar seus sonhos. O resto é apenas uma questão de tempo e esforço. ✨",
-   "<h5 class='text-center text-info'> O Caminho para o Sucesso: <br>12 Reflexões Inspiradoras 🌟</h5>",
+   "Numa vila cercada por montanhas, um sábio ancião compartilhava lições sobre a importância de viver o momento presente. Um jovem angustiado com o futuro buscou orientação com o sábio. Sob uma árvore antiga, o sábio começou sua narrativa.",
+   "Ele contou sobre um pássaro sempre em busca de um lugar mais alto para descansar. O pássaro, exausto, finalmente pousou em um galho próximo e percebeu a beleza ao seu redor.",   
+   "Assim como o pássaro, o sábio explicou ao jovem sobre apreciar as maravilhas do presente. O jovem aprendeu a encontrar serenidade no aqui e agora, cultivando uma nova perspectiva baseada na gratidão.",
+   "<h5 class='text-center text-info'>Encontrando a Serenidade no momento Presente 🌿</h5>",
 ];
 
 
