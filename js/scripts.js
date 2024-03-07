@@ -1,4 +1,8 @@
   
+$(document).ready(function () {
+      // Esconde todas as divs de poemas ao CARREGAR A PAGINA
+      $(".poema-div").hide();
+});
 
 /*-------------------------------------------------------------
 * Ao Clicar nos botoes <copiar>, "copia  VERSO"
@@ -51,7 +55,7 @@ $(".list-group-item a").click(function(e) {
       var poemaDivID = $(this).data("poema-div");
       
       // Esconde todas as divs de poemas
-      //$(".poema-div").hide();
+       $(".poema-div").hide();
 
       $('.mensagem').empty();
       
