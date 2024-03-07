@@ -13,29 +13,33 @@ mensagem_1 = [
 
 mensagem_2 = [
    "Sou o que sou  <br>   porque vivo da minha maneira... <br>   Você procurando respostas olhando pro espaço,  <br>   e eu tão ocupado vivendo...  </br>   Eu não me pergunto, </br>   Eu faço!",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",    
+   "Controlando A minha maluquez <br> Misturada Com minha lucidez <br> Vou ficar Ficar com certeza <br> Maluco beleza<br> Eu vou ficar <br> Ficar com certeza <br>   Maluco beleza",
+   "Aprendi o segredo da vida, vendo as pedras que sonham sozinhas no mesmo lugar.",
+   "Eu que já andei pelos quatro cantos do mundo procurando, foi justamente num sonho que ele me falou...",
+   "Eu não posso entender tanta gente aceitando a mentira, de que os sonhos desfazem aquilo que o padre falou. Porque quando eu jurei meu amor eu traí a mim mesmo, hoje eu sei! Que ninguém nesse mundo é feliz tendo amado uma vez, uma vez...",
+   "Tenha fé em Deus, tenha fé na vida. Tente outra vez! ",  
+   "Basta ser sincero e desejar profundo, você será capaz de sacudir o mundo",  
+   "Se é de batalhas que se vive a vida… Tente outra vez",   
+   "Enquanto você se esforça pra ser um sujeito normal e fazer tudo igual. Eu do meu lado aprendendo a ser louco, um maluco total",   
+   " Eu devia estar sorrindo e orgulhoso por ter finalmente vencido na vida, mas eu acho isso uma grande piada e um tanto quanto perigosa ",    
    "<h5 class='text-center text-info'>Eu prefiro ser essa metamorfose ambulante. Do que ter aquela velha opinião formada sobre tudo</h5>",
 ]
  
 mensagem_3 = [
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",    
-   "<h5 class='text-center text-info'>xxxxxxxxxx 🌟</h5>",
+   "As flores são bonitas em qualquer lugar do mundo  <br>   muita gente tem forma, mas não tem conteúdo",
+   "A gente passa a entender melhor a vida <br>    Quando encontra o verdadeiro amor",
+   "Buscando um novo rumo que faça sentido nesse mundo louco com o coração partido...",
+   "O melhor presente Deus me deu, a vida me ensinou a lutar pelo que é meu...",
+   "Meu estilo de vida <br> Liberta minha mente <br> Completamente louco, <br> Mas um louco consciente...",
+   "O seu sorriso vale mais que um diamante. Se você vier comigo, aí nós vamos adiante.",  
+   "Toda positividade eu desejo a você, pois precisamos disso nos dias de luta",    
+   "Você vai encontrar várias pessoas na sua vida, mas uma delas vai mudar sua vida pra muito melhor, acredite.",    
+   "Eu vi o tempo passar, vi pouca coisa mudar, então tomei um caminho diferente.",
+   "<h5 class='text-center text-info'>Viver, viver e ser livre. Saber dar valor para as coisas mais simples. Só o amor constrói pontes indestrutíveis.</h5>",
+
 ]
 
 mensagem_4 = [
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
-   "xxxxxxxxxxxxx",
    "xxxxxxxxxxxxx",
    "xxxxxxxxxxxxx",    
    "<h5 class='text-center text-info'>xxxxxxxxxx 🌟</h5>",

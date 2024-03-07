@@ -192,6 +192,24 @@ function obter_frase_musica() {
    
       "Negro, branco, rico, pobre <br> O sangue é da mesma cor <br> Somos todos iguais <br> Sentimos calor, alegria e dor  <br> " +
       "<span class='small'>- Bate a Poeira - Karol Conká 💙</span>",
+
+      "Um branco e um preto unido, respostas que cala o ridículo <br> " +
+      "<span class='small'>- Mun-rá - Sabotage 🤝</span>",
+
+      " Brindo à casa <br> Brindo à vida <br> Meus amores <br>  Minha família <br> " +
+      "<span class='small'>- Mar de Gente - O Rappa 👨‍👩‍👧‍👦</span>",
+
+      " Na vida a gente tem que entender que um nasce pra sofrer enquanto o outro ri. <br> " +
+      "<span class='small'>- Azul da Cor do Mar - Tim Maia 🔄</span>",
+
+      " Eu insisto, persisto, não mando recado. Eu tenho algo a dizer, não vou ficar calado <br> " +
+      "<span class='small'>- Na Zona Sul - Sabotage 💬</span>",
+
+      " Das lembranças que eu trago na vida <br>  Você é a saudade que eu gosto de ter <br>  Só assim sinto você bem perto de mim. Roberto Carlos  <br> " +
+      "<span class='small'>- Outra Vez - Roberto Carlos 💭</span>",
+
+      " E tenho comigo pensado: Deus é brasileiro e anda do meu lado <br> " +
+      "<span class='small'>- Sujeito de Sorte - Belchior 🙏</span>",
    
    ]; 
 
