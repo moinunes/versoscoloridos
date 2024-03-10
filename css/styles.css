@@ -17,6 +17,9 @@
  .linha_1 {
    line-height: 0.8;
  }
+ .linha_2 {
+   line-height: 1.8;
+ }
  
 .font_poema_titulo { 
    text-align: left;   

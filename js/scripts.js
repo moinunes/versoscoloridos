@@ -2,8 +2,16 @@
 $(document).ready(function () {
       // Esconde todas as divs de poemas ao CARREGAR A PAGINA
       $(".poema-div").hide(); 
+      carrega_adsense();
 });
 
+function carrega_adsense() {
+   var script = document.createElement('script');
+   script.async = true;
+   script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233";
+   script.setAttribute('crossorigin', 'anonymous');
+   document.head.appendChild(script);
+}
  
 
 /*-------------------------------------------------------------
