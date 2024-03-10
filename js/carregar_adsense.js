@@ -25,8 +25,8 @@ const options = {
 const observer1 = new IntersectionObserver(handleIntersection, options);
 observer1.observe(document.getElementById('frase1'));
 
-const observer2 = new IntersectionObserver(handleIntersection, options);
-observer2.observe(document.getElementById('frase2'));
+//const observer2 = new IntersectionObserver(handleIntersection, options);
+//observer2.observe(document.getElementById('frase2'));
 
-const observer3 = new IntersectionObserver(handleIntersection, options);
-observer3.observe(document.getElementById('frase3'));
+//const observer3 = new IntersectionObserver(handleIntersection, options);
+//observer3.observe(document.getElementById('frase3'));
