@@ -19,7 +19,8 @@ function handleIntersection(entries, observer) {
 const options = {
    root: null,
    rootMargin: '0px',
-   threshold: 0.5  // Pode ajustar o valor conforme necessário
+   //threshold: 0.5  // Pode ajustar o valor conforme necessário
+   threshold: 1.0
 };
 
 // Observador de interseção para cada frase
