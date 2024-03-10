@@ -2,7 +2,13 @@
 $(document).ready(function () {
       // Esconde todas as divs de poemas ao CARREGAR A PAGINA
       $(".poema-div").hide();
+
+      configurarCookie();
 });
+
+function configurarCookie() {
+   document.cookie = '_gcl_au=123456789; SameSite=None; Secure';
+}
 
 /*-------------------------------------------------------------
 * Ao Clicar nos botoes <copiar>, "copia  VERSO"
