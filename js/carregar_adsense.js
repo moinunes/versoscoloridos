@@ -18,15 +18,15 @@ function handleIntersection(entries, observer) {
 const options = {
    root: null,
    rootMargin: '0px',
-   threshold: 0.5  // Pode ajustar o valor conforme necessário
+   threshold: 0.1  // Pode ajustar o valor conforme necessário
 };
 
 // Observador de interseção para cada frase
 const observer1 = new IntersectionObserver(handleIntersection, options);
 observer1.observe(document.getElementById('frase1'));
 
-//const observer2 = new IntersectionObserver(handleIntersection, options);
-//observer2.observe(document.getElementById('frase2'));
+const observer2 = new IntersectionObserver(handleIntersection, options);
+observer2.observe(document.getElementById('frase2'));
 
 //const observer3 = new IntersectionObserver(handleIntersection, options);
 //observer3.observe(document.getElementById('frase3'));
