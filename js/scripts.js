@@ -100,7 +100,11 @@ $(document).ready(function () {
         var poemaDiv = $(this).closest('.poema-div'); 
         if (poemaDiv.length > 0) {       
           var linkPoema = poemaDiv.prev('.clicavel').text().trim();
-          var autorTitulo = poemaDiv.find('.font_poema_titulo').text().replace('Autor:', '').trim();
+          var autorTitulo = poemaDiv.find('.font_poema_titulo').text().replace('Autor:', '').trim();         
+          if (!autorTitulo) {
+             // Se estiver vazia, atribui 'desconhecido' a ela
+             autorTitulo = 'desconhecido';
+          }
           var poemaConteudo = poemaDiv.find('.font_poema_1').clone();           
           var poemaFormatado = poemaConteudo.text().replace(/^\s+/mg, '');          
           var mensagemSpan = poemaDiv.find('.mensagem');
