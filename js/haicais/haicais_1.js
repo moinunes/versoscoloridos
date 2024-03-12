@@ -10,10 +10,16 @@ mensagem_1 = [
 
 
 mensagem_2 = [
-   " Eu devia estar sorrindo e orgulhoso por ter finalmente vencido na vida, mas eu acho isso uma grande piada e um tanto quanto perigosa ",    
-   "<h5 class='text-center text-info'>Eu prefiro ser essa metamorfose ambulante. Do que ter aquela velha opinião formada sobre tudo</h5>",
+   "<b>Amor</b><br> Dois corações entrelaçados, <br> Batendo em sintonia perfeita, <br>Um amor puro e eterno.",
+   "<b>Paz</b><br> Silêncio interior,<br> A mente serena e tranquila,<br> Paz que a alma conquista.",
+    "<b>Alegria</b><br> Sorriso contagiante,<br> Riso que ecoa no coração,<br> Felicidade genuína.",
+   "<b>Prosperidade</b><br> Abundância em todos os aspectos,<br> Vida plena e florescente,<br>Sucesso em cada passo.",
+   "<b>Gratidão</b><br>Coração transborda de gratidão,<br> Pelas bençãos da vida,<br> Agradecimento sincero. ",
+   "<h5 class='text-center text-info'><b>Agradecimento:</b><br>Coração transborda,<br>Gratidão por tudo que existe,<br>Obrigado, universo!</h5>",
 ]
  
+
+
 mensagem_3 = [
    "As flores são bonitas em qualquer lugar do mundo  <br>   muita gente tem forma, mas não tem conteúdo",
     "Eu vi o tempo passar, vi pouca coisa mudar, então tomei um caminho diferente.",
