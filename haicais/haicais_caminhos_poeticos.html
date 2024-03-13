@@ -36,15 +36,30 @@
 </head>
 <body class="bg-light">
 
-   <div class="container-fluid fundo_site">
+   <!-- cabecalho -->
+   <div class="container-fluid fundo_site h-350"  >
       <div class="container"> 
-         <div class="row">
-            <div class="col-12">
-               <div id="div_cabecalho"></div>
+         <div class="row align-items-center ">
+            <!-- Logotipo e Versos Coloridos -->
+            <div class="col-md-4">
+               <div class="d-flex align-items-center">
+                     <a href="/index.html"><img src="/images/logo.png" alt="Logotipo" height="30"></a>
+                     <span class="h4 font-weight-bold ml-2">Versos Coloridos</span>
+               </div>
+            </div>
+            <!-- Menu -->
+            <div class="col-md-8">
+               <div class="d-flex justify-content-between">
+                     <a href="/index.html" class="text-center link_1">Home</a>
+                     <a href="/autores/a/" class="text-center link_1">Autores</a>
+                     <a href="/frases/index.html" class="text-center link_1">Frases</a>
+                     <a href="/sobre.html" class="text-center link_1">Sobre</a> 
+               </div>
             </div>
          </div>
-      </div>
+      </div>   
    </div>
+   
 
    <!-- corpo do site -->
    <div class="container mt-2 text-left">
@@ -329,7 +344,7 @@
    <script src="/js/haicais/haicais_1.js"></script>  
    <script>
       $(document).ready(function() {        
-        carregar_cabecalho();
+        //carregar_cabecalho();
       carregar_rodape();
         $("#poema-div-0").show();
       }); 
