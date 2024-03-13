@@ -332,9 +332,53 @@
       </div>
    </div> 
   
-   <div class="container-fluid fundo_site"> 
-      <div id="div_rodape"></div>  
-   </div>  
+   <!-- Inicio do Rodape -->
+   <div class="container-fluid fundo_site">
+      <div class="row bg-light">
+         <div class="col-md-12"><br></div>
+      </div>
+      <div class="row border-bottom bg-light">
+         <!-- Dispositvos - GRANDES -->
+         <div class="col-md-12 text-center d-none d-lg-block">
+            <a href="/index.html" class="nav-link d-inline link_1">Home</a>
+            <a href="/autores/a/" class="nav-link d-inline link_1">Autores</a>
+            <a href="/frases/index.html" class="nav-link d-inline link_1">Frases</a>  
+            <a href="/reflexao/1/" class="nav-link d-inline link_1">Reflexão</a>  
+            <a href="/sobre.html" class="nav-link d-inline link_1">Sobre</a>
+         </div> 
+      </div>
+      <!-- Dispositvos - PEQUENOS -->
+      <div class="row border-bottom bg-light  d-none d-block d-lg-none">   
+         <div class="col-md-6 text-center">
+            <a href="/index.html" class="nav-link d-inline link_1">Home</a>
+            <a href="/autores/a/" class="nav-link d-inline link_1">Autores</a>
+         </div>
+         <br>
+         <div class="col-md-6 text-center">
+            <a href="/frases/index.html" class="nav-link d-inline link_1">Frases</a>  
+            <a href="/reflexao/1/" class="nav-link d-inline link_1">Reflexão</a> 
+         </div>
+      </div>
+      <div class="container-fluid text-info mt-3 mb-4  ">
+         <div class="h5 text-center mt-2 mb-2 font_size_1"   >
+            Gostou de uma frase ou poema? <br>
+            Copie, compartilhe!
+         </div>
+      </div>
+      <footer class="p-20 ">
+         <div class="container-fluid">      
+            <div class="row ">
+               <div class="col-md-12 text-center">
+                     <p>
+                        &copy; 2024 Versos Coloridos</br>
+                        Frases, poemas, mensagens e textos
+                     </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <!-- Fim do Rodape -->  
 
    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
@@ -342,12 +386,7 @@
    <script src="/js/scripts.js"></script>
    <script src="/js/mens.js"></script> 
    <script src="/js/haicais/haicais_1.js"></script>  
-   <script>
-      $(document).ready(function() {        
-       // carregar_cabecalho();
-      carregar_rodape();
-        $("#poema-div-0").show();
-      }); 
+   <script> 
       document.addEventListener("DOMContentLoaded", function() { 
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 

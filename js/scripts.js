@@ -34,23 +34,8 @@ $(document).ready(function () {
        var mensagem = $(this).closest('.card-body').find('.mensagem');
        mensagem.html('<span class="text-success">Conteúdo copiado com sucesso! <br> Agora você pode compartilhar.</span>');
    });
-});
-
-function carregar_rodape() {
-   $("#div_rodape").load("/rodape.html", function(response, status, xhr) {
-      if (status == "error") {
-         console.log("Erro ao carregar o rodapé:", xhr.statusText);
-      }
-   });
-}
-
-function carregar_cabecalho() {
-   $("#div_cabecalho").load("/header.html", function(response, status, xhr) {
-      if (status == "error") {
-            console.log("Erro ao carregar o header.html:", xhr.statusText);
-      }
-   });
-}
+}); 
+ 
 
 /*
 * Adiciona um ouvinte de eventos de clique aos links, para abrir os poemas 

@@ -60,9 +60,9 @@
                <div class="col-md-8 offset-md-2">
                  <div class="text-center">
                    <h2>Bem-vindo ao Versos Coloridos!</h2>
-                   <p>
-                     Bem-vindo ao mundo dos Versos Coloridos. 
-                     Explore nossa coleção de poemas e frases inspiradoras. Deixe-se envolver pela melodia das letras e embarque em uma jornada de descoberta e inspiração. Sinta-se em casa. Sinta-se inspirado.</p>
+                   <h5>
+                     Explore nossa coleção de Frases, <br>poemas, mensagens e textos.<br>
+                     Sinta-se em casa. Sinta-se inspirado.</h5>
                  </div>
                </div>
              </div>
@@ -384,13 +384,54 @@
          </div>
       </div>
    </div>  
-   
-    
 
-   <div class="container-fluid fundo_site"> 
-         <div id="div_rodape"></div>  
+   <!-- Inicio do Rodape -->
+   <div class="container-fluid fundo_site">
+      <div class="row bg-light">
+         <div class="col-md-12"><br></div>
+      </div>
+      <div class="row border-bottom bg-light">
+         <!-- Dispositvos - GRANDES -->
+         <div class="col-md-12 text-center d-none d-lg-block">
+            <a href="/index.html" class="nav-link d-inline link_1">Home</a>
+            <a href="/autores/a/" class="nav-link d-inline link_1">Autores</a>
+            <a href="/frases/index.html" class="nav-link d-inline link_1">Frases</a>  
+            <a href="/reflexao/1/" class="nav-link d-inline link_1">Reflexão</a>  
+            <a href="/sobre.html" class="nav-link d-inline link_1">Sobre</a>
+         </div> 
+      </div>
+      <!-- Dispositvos - PEQUENOS -->
+      <div class="row border-bottom bg-light  d-none d-block d-lg-none">   
+         <div class="col-md-6 text-center">
+            <a href="/index.html" class="nav-link d-inline link_1">Home</a>
+            <a href="/autores/a/" class="nav-link d-inline link_1">Autores</a>
+         </div>
+         <br>
+         <div class="col-md-6 text-center">
+            <a href="/frases/index.html" class="nav-link d-inline link_1">Frases</a>  
+            <a href="/reflexao/1/" class="nav-link d-inline link_1">Reflexão</a> 
+         </div>
+      </div>
+      <div class="container-fluid text-info mt-3 mb-4  ">
+         <div class="h5 text-center mt-2 mb-2 font_size_1"   >
+            Gostou de uma frase ou poema? <br>
+            Copie, compartilhe!
+         </div>
+      </div>
+      <footer class="p-20 ">
+         <div class="container-fluid">      
+            <div class="row ">
+               <div class="col-md-12 text-center">
+                     <p>
+                        &copy; 2024 Versos Coloridos</br>
+                        Frases, poemas, mensagens e textos
+                     </p>
+               </div>
+            </div>
+         </div>
+      </footer>
    </div>
-
+   <!-- Fim do Rodape -->  
    
 
     <!-- Bootstrap JavaScript (coloque no final do corpo para otimizar o carregamento) -->
@@ -407,10 +448,7 @@
 
    <script> 
 
-      window.onload = function() { 
-        // carregar_cabecalho();
-         carregar_rodape();
-      };      
+         
       document.addEventListener("DOMContentLoaded", function() { 
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 
