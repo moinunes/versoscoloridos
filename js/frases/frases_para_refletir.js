@@ -99,10 +99,4 @@ function proxima_mensagem_4() {
 }
 
 
-document.getElementById('botaoProximo').addEventListener('click', function() {
-   // Move a página para o topo da div com uma margem de -40 pixels
-   window.scrollTo({
-       top: document.getElementById('mens_1').offsetTop - 40, // Posição da div menos 40 pixels
-       behavior: 'smooth' // Faz com que a rolagem seja suave
-   });
-})
+ 
