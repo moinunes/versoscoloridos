@@ -4,6 +4,20 @@
 function obterFrasePoetica() {
    
    var frases = [
+      "🌟 Tudo vale a pena quando a alma não é pequena. <br><span class='small'>- Fernando Pessoa </span>", 
+      "🌬️ Às vezes ouço passar o vento; e só de ouvir o vento passar, vale a pena ter nascido.<br><span class='small'>- Fernando Pessoa </span>", 
+      "🌍 Para viajar basta existir. <br><span class='small'>- Fernando Pessoa </span>", 
+      "🎨 A arte é a autoexpressão lutando para ser absoluta. <br><span class='small'>- Fernando Pessoa </span>", 
+      "🌌 Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado. <br><span class='small'>- Roberto Shinyashiki </span>", 
+      "🌹 Existem momentos inesquecíveis, coisas inexplicáveis e pessoas incomparáveis. <br><span class='small'>- Maria Julia Paes de Silva </span>", 
+      "💗 Amai, porque nada melhor para a saúde que um amor correspondido. <br><span class='small'>- Vinicius de Moraes </span>", 
+      "💗 A vida é a arte do encontro, embora haja tanto desencontro pela vida. <br><span class='small'>- Vinicius de Moraes </span>", 
+      "💗 Quem já passou por essa vida e não viveu, pode ser mais, mas sabe menos do que eu... <br><span class='small'>- Vinicius de Moraes </span>", 
+      "🌹 Até cortar os próprios defeitos pode ser perigoso. Nunca se sabe qual é o defeito que sustenta nosso edifício inteiro. <br><span class='small'>- Clarice Lispector </span>", 
+      "🌟 Que ninguém se engane, só se consegue a simplicidade através de muito trabalho.<br><span class='small'>- Clarice Lispector </span>", 
+      "💖 Enquanto eu tiver perguntas e não houver resposta continuarei a escrever. <br><span class='small'>- Clarice Lispector </span>", 
+      "🌺 Os homens distinguem-se pelo que fazem; as mulheres, pelo que levam os homens a fazer. <br><span class='small'>- Carlos Drummond de Andrade </span>", 
+     
       "☀️ Que o teu dia seja leve como as plumas dançando ao vento e feliz como o riso contagiante das crianças. <br>",
       "🌌 Na penumbra da noite, as estrelas revelam segredos e a lua tece poesias no céu. <br>",
       "🍃 Caminho descalço na grama macia, onde a natureza sussurra histórias ao vento. <br>",
@@ -83,8 +97,9 @@ function obterFrasePoetica() {
       "☀️ Abro as janelas, deixando o sol pintar meu mundo com simplicidade e promessas<br>",
    ];
      
-   frases1  = [
-         "🌟 Fique a vontade para copiar qualquer frase do site www.versoscoloridos.com.br <br>",
+   frases1 = [
+      "🌺 Os homens distinguem-se pelo que fazem; as mulheres, pelo que levam os homens a fazer. <br><span class='small'>- Carlos Drummond de Andrade </span>", 
+     
    
    ];     
 

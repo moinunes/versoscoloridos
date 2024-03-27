@@ -60,6 +60,20 @@ function obter_frase_deus() {
 function obterMens() {
    
    var frases = [
+      "Nas asas do vento, dança a folha 🍃, leve e livre, ecoando o suspiro da natureza",
+      "E as águas dançam, refletindo o céu em seus movimentos serenos.",
+      "Nas curvas da jornada, encontre a força para seguir adiante, pois cada desafio é um convite para crescer e florescer. 🌱",
+      "💗 O poeta é um fingidor. Finge tão completamente que chega a fingir que é dor a dor que deveras sente. <br><span class='small'>- Fernando Pessoa</span>", 
+      "💗 O mundo é grande e cabe nesta janela sobre o mar. O mar é grande e cabe na cama e no colchão de amar. <br><span class='small'>- Carlos Drummond de Andrade </span>", 
+      "💗 Todo o homem saudável consegue ficar dois dias sem comer - sem a poesia, jamais. <br><span class='small'>- Charles Baudelaire</span>", 
+      "💗 Porque eu sou do tamanho do que vejo, e não do tamanho da minha altura. <br><span class='small'>- Alberto Caeiro  </span>", 
+      "💗 A pintura é poesia sem palavras. <br><span class='small'>- Voltaire</span>", 
+      "💗 A arte existe porque a vida não basta. <br><span class='small'>- Ferreira Gullar </span>", 
+      "💗 A poesia não se entrega a quem a define. <br><span class='small'>-  Mario Quintana </span>", 
+      "💗 A vida é trem-bala, parceiro, e a gente é só passageiro prestes a partir. <br><span class='small'>- Ana Vilela </span>",
+      "💗 Uma pitada de poesia é suficiente para perfumar um século inteiro. <br><span class='small'>- José Martí </span>",
+      "💗 Fazer poesia é como fazer amor: nunca se saberá se a própria alegria é compartilhada. <br><span class='small'>- Cesare Pavese </span>",
+      "💗 A poesia não está nem nos pensamentos, nem nas coisas, nem nas palavras; ela não é nem filosofia, nem descrição, nem eloquência: ela é inflexão. <br><span class='small'>- Charles Ramuz </span>",
       "😊 Não tem poesia nem palavra difícil e nem construção sofisticada. O amor é simples como sorrir numa droga de fila. E não se sentir mais sozinho e nem esperando e nem desesperado e nem morrendo e nem com tanto medo. <br><span class='small'>- Tati Bernardi</span>",
        "🌙 Lua na lagoa, <br> rãs cantam canções noturnas,<br> serenata azul.",
       "🌄 Neblina da manhã,<br> teias de aranha cintilam, <br> sol beija a montanha.",
