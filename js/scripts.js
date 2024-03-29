@@ -13,6 +13,9 @@ function carrega_adsense() {
    document.head.appendChild(script);
 }
  
+function isPar(numero) {
+   return numero % 2 === 0;
+}
 
 /*-------------------------------------------------------------
 * Ao Clicar nos botoes <copiar>, "copia  VERSO"
