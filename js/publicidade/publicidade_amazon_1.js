@@ -173,6 +173,16 @@ function obterPublicidade_amazon_3() {
             <i>Poesias Livro de bolso</i>
          </p> 
       </a>`,
+
+            
+      `<a href="https://amzn.to/3VEU6rI">
+         <img src="/images/publicidade/amazon/quadros_frase.png" class="img-fluid" alt="Kit 3 Quadros Frase Abençoados Por Deus Cabeceira Mdf Vazado">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>Kit 3 Quadros Frase Abençoados Por Deus Cabeceira Mdf Vazado</i>
+         </p> 
+      </a>`,
+
+      
       
       
    ];
