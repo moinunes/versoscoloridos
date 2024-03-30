@@ -134,7 +134,7 @@ function obterPublicidade_amazon_2() {
    ];
 
    // teste
-   var opcoes = [
+   var opcoesxx = [
 
       `<a href="https://amzn.to/3xa2wwQ">
          <img src="/images/publicidade/amazon/livros/colleen Hoover_e_assim_que_comeca.png" class="img-fluid" alt="É assim que começa (Vol. 2 É assim que acaba)">
