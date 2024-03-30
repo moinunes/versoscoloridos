@@ -3,6 +3,15 @@
 *-------------------------------------------------------------*/ 
 function obterPublicidade_amazon_1() {   
    var opcoes = [
+    
+
+      `<a href="https://amzn.to/3vodQoN">             
+         <img src="/images/publicidade/amazon/pet/pet_coleira.png" class="img-fluid" alt="Scalibor Coleira Antiparasitária 48cm para Cães Scalibor para Cães, 48 cm">
+         <p class="font_1 text-center m-0">                      
+            <i>Scalibor Coleira Antiparasitária <br>48cm para Cães Scalibor para Cães, 48 cm</i>
+        </p> 
+      </a>`,
+      
       `<a href="https://amzn.to/3Vw8i6h">            
          <img src="/images/publicidade/amazon/caneca_porcelana_1.png" class="img-fluid" alt="Imagem da Caneca de Porcelana">
          <p class="font_1 text-center m-0">                      
@@ -38,6 +47,7 @@ function obterPublicidade_amazon_1() {
             </p> 
         </a>`,
     
+
        `<a href="https://amzn.to/3VIIWls">
          <img src="/images/publicidade/amazon/sabonete_alfazema_provencal.png" class="img-fluid" alt="Sabonete Alfazema Provençal, PHEBO, Lilás, 100g">
          <p class="font_1 text-center m-0 p-0" >                      
@@ -173,19 +183,23 @@ function obterPublicidade_amazon_3() {
             <i>Poesias Livro de bolso</i>
          </p> 
       </a>`,
-
             
       `<a href="https://amzn.to/3VEU6rI">
          <img src="/images/publicidade/amazon/quadros_frase.png" class="img-fluid" alt="Kit 3 Quadros Frase Abençoados Por Deus Cabeceira Mdf Vazado">
          <p class="font_1 text-center m-0 p-0" >                      
             <i>Kit 3 Quadros Frase Abençoados Por Deus Cabeceira Mdf Vazado</i>
          </p> 
-      </a>`,
+      </a>`, 
 
+      `<a href="https://amzn.to/3TG3lF9">
+         <img src="/images/publicidade/amazon/pet/pet_areia_viva_verde.png" class="img-fluid" alt="Viva Verde Areia Higiênica Biodegradável Para Gatos Grãos Mistos 4Kg">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>Viva Verde Areia Higiênica Biodegradável Para Gatos Grãos Mistos 4Kg</i>
+         </p> 
+      </a>`, 
       
       
-      
-   ];
+   ]; 
 
    var opcao_padrao =  
       `<a href="https://amzn.to/3PJ7V4t">
@@ -200,3 +214,51 @@ function obterPublicidade_amazon_3() {
    var resultado = opcoes[indice] || opcao_padrao;   
    return resultado;
 } // obterPublicidade_amazon_3
+
+
+function obterPublicidade_amazon_4() {
+   var opcoes = [ 
+      `<a href="https://amzn.to/3PD9dhd">
+         <img src="/images/publicidade/amazon/pape_sulfite_a4.png" class="img-fluid" alt="Chamex - Papel Sulfite, A4, 75g, 500 folhas">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>Chamex - Papel Sulfite, A4, 75g, 500 folhas</i>
+         </p> 
+      </a>`,  
+
+      `<a href="https://amzn.to/4awDztW">
+         <img src="/images/publicidade/amazon/tv_lg_55.png" class="img-fluid" alt="Smart TV 55" 4K LG UHD ThinQ AI 55UR8750PSA HDR Bluetooth Alexa Google Assistente Airplay2 3 HDMI">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>Smart TV 55" 4K LG UHD ThinQ AI 55UR8750PSA HDR Bluetooth Alexa Google Assistente Airplay2 3 HDMI</i>
+         </p> 
+      </a>`, 
+
+      `<a href="https://amzn.to/3TAvlKB">
+         <img src="/images/publicidade/amazon/beleza_morte_subita.png" class="img-fluid" alt="Lola Cosmetics, 25834, Morte Súbita - Máscara Super Hidratante, 450g">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>Lola Cosmetics, 25834, Morte Súbita - Máscara Super Hidratante, 450g</i>
+         </p> 
+      </a>`, 
+
+      `<a href="https://amzn.to/4arpqOU">
+         <img src="/images/publicidade/amazon/pet/pet_lencos.png" class="img-fluid" alt="BOLYDOOM Toalhas Umedecidas Pet 50 Unidades Com Tampa Flip Top Feelclean">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>BOLYDOOM Toalhas Umedecidas Pet 50 Unidades Com Tampa Flip Top Feelclean</i>
+         </p> 
+      </a>`, 
+      
+      
+   ];
+
+   var opcao_padrao =  
+      `<a href="https://amzn.to/3PD9dhd">
+         <img src="/images/publicidade/amazon/pape_sulfite_a4.png" class="img-fluid" alt="Chamex - Papel Sulfite, A4, 75g, 500 folhas">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>Chamex - Papel Sulfite, A4, 75g, 500 folhas</i>
+         </p> 
+      </a>`;  
+
+   var segundoAtual = new Date().getSeconds();
+   var indice = segundoAtual % opcoes.length;   
+   var resultado = opcoes[indice] || opcao_padrao;   
+   return resultado;
+} // obterPublicidade_amazon_4
