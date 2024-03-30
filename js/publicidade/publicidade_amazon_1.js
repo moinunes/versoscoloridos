@@ -34,7 +34,7 @@ function obterPublicidade_amazon_1() {
       </a>`,
 
       `<a href="https://amzn.to/3xc3Mj3">
-         <img src="/images/publicidade/amazon/como_fazer_amigos_dale_carnegie.png" class="img-fluid" alt="Como fazer amigos e influenciar pessoas">
+         <img src="/images/publicidade/amazon/livros/dale_carnegie_como_fazer_amigos.png" class="img-fluid" alt="Como fazer amigos e influenciar pessoas">
          <p class="font_1 text-center m-0 p-0" >                      
             <i>Como fazer amigos e influenciar pessoas - Dale Carnegie</i>
          </p> 
@@ -56,7 +56,7 @@ function obterPublicidade_amazon_1() {
        </a>`,  
 
       `<a href="https://amzn.to/3xeMMZy">
-         <img src="/images/publicidade/amazon/livro_o_pequeno_principe.png" class="img-fluid" alt="O Pequeno Príncipe - Edição de Luxo Almofada Capa dura ">
+         <img src="/images/publicidade/amazon/livros/o_pequeno_principe.png" class="img-fluid" alt="O Pequeno Príncipe - Edição de Luxo Almofada Capa dura ">
          <p class="font_1 text-center m-0 p-0" >                      
             <i>O Pequeno Príncipe - Edição de Luxo Almofada Capa dura </i>
          </p> 
@@ -81,6 +81,14 @@ function obterPublicidade_amazon_1() {
  
 function obterPublicidade_amazon_2() {
    var opcoes = [
+
+      `<a href="https://amzn.to/3xa2wwQ">
+         <img src="/images/publicidade/amazon/livros/colleen Hoover_e_assim_que_comeca.png" class="img-fluid" alt="É assim que começa (Vol. 2 É assim que acaba)">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>É assim que começa (Vol. 2) <br>É assim que acaba </i>
+         </p> 
+      </a>`,  
+
       `<a href="https://amzn.to/3TALI9P">
             <img src="/images/publicidade/amazon/monitor_lg.png" class="img-fluid" alt="MONITOR LG GAMER 21.5">
             <p class="font_1 text-center m-0 p-0" >                      
@@ -124,6 +132,17 @@ function obterPublicidade_amazon_2() {
         </a>`,  
       
    ];
+
+   // teste
+   var opcoes = [
+
+      `<a href="https://amzn.to/3xa2wwQ">
+         <img src="/images/publicidade/amazon/livros/colleen Hoover_e_assim_que_comeca.png" class="img-fluid" alt="É assim que começa (Vol. 2 É assim que acaba)">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>É assim que começa (Vol. 2) <br>É assim que acaba </i>
+         </p> 
+      </a>`,  
+   ]
 
    var opcao_padrao =  
    `<a href="https://amzn.to/3VEaCZ4">
@@ -171,14 +190,14 @@ function obterPublicidade_amazon_3() {
       </a>`,
 
       `<a href="https://amzn.to/4aCtVWR">
-         <img src="/images/publicidade/amazon/livro_desassossego.png" class="img-fluid" alt="Livro do desassossego Capa comum – Versão integral">
+         <img src="/images/publicidade/amazon/livros/fernando_pessoa_desassossego.png" class="img-fluid" alt="Livro do desassossego Capa comum – Versão integral">
          <p class="font_1 text-center m-0 p-0" >                      
             <i>Livro do desassossego Capa comum – Versão integral</i>
          </p> 
       </a>`,      
       
       `<a href="https://amzn.to/4cyIgW1">
-         <img src="/images/publicidade/amazon/livros_fernando_pessoa.png" class="img-fluid" alt="Poesias Livro de bolso">
+         <img src="/images/publicidade/amazon/livros/fernando_pessoa_livros.png" class="img-fluid" alt="Poesias Livro de bolso">
          <p class="font_1 text-center m-0 p-0" >                      
             <i>Poesias Livro de bolso</i>
          </p> 
