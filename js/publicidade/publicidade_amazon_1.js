@@ -89,6 +89,13 @@ function obterPublicidade_amazon_2() {
          </p> 
       </a>`,  
 
+      `<a href="https://amzn.to/3THZQ10">
+         <img src="/images/publicidade/amazon/livros/marcela_ceribelli_aurora.png" class="img-fluid" alt="Aurora: O despertar da mulher exausta eBook Kindle">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>Aurora: O despertar da mulher exausta eBook Kindle</i>
+         </p> 
+      </a>`,  
+
       `<a href="https://amzn.to/3TALI9P">
             <img src="/images/publicidade/amazon/monitor_lg.png" class="img-fluid" alt="MONITOR LG GAMER 21.5">
             <p class="font_1 text-center m-0 p-0" >                      
@@ -117,10 +124,31 @@ function obterPublicidade_amazon_2() {
          </p> 
       </a>`,  
       
+      `<a href="https://amzn.to/3xejvy9">
+         <img src="/images/publicidade/amazon/livros/rupi_kaur_o_que_o_sol.png" class="img-fluid" alt="o que o sol faz com as flores">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>o que o sol faz com as flores - Rupi Kaur</i>
+         </p> 
+      </a>`,  
+
+      `<a href="https://amzn.to/3xejvy9">
+         <img src="/images/publicidade/amazon/livros/o_homem_mais_rico_babilonia.png" class="img-fluid" alt="O homem mais rico da Babilônia">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>O homem mais rico da Babilônia</i>
+         </p> 
+      </a>`, 
+
       `<a href="https://amzn.to/3IXAzuW">
          <img src="/images/publicidade/amazon/impressora_epson.png" class="img-fluid" alt="EPSON EcoTank L1250">
          <p class="font_1 text-center m-0 p-0" >                      
             <i>EPSON EcoTank L1250 - Impressora, tanque de Tinta Colorida<br>Com sistema 100% sem cartuchos</i>
+         </p> 
+      </a>`,  
+
+      `<a href="https://amzn.to/3VEMftW">
+         <img src="/images/publicidade/amazon/livros/igor_pires_textos_crueis.png" class="img-fluid" alt="Textos cruéis demais para serem lidos rapidamente – Onde dorme o amor (TCD Livro 2) eBook Kindle">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>Textos cruéis demais para serem lidos rapidamente – Onde dorme o amor (TCD Livro 2) eBook Kindle</i>
          </p> 
       </a>`,  
 
@@ -134,14 +162,16 @@ function obterPublicidade_amazon_2() {
    ];
 
    // teste
-   var opcoesxx = [
+   var opcoes = [
 
-      `<a href="https://amzn.to/3xa2wwQ">
-         <img src="/images/publicidade/amazon/livros/colleen Hoover_e_assim_que_comeca.png" class="img-fluid" alt="É assim que começa (Vol. 2 É assim que acaba)">
+      `<a href="https://amzn.to/3xejvy9">
+         <img src="/images/publicidade/amazon/livros/rupi_kaur_o_que_o_sol.png" class="img-fluid" alt="o que o sol faz com as flores">
          <p class="font_1 text-center m-0 p-0" >                      
-            <i>É assim que começa (Vol. 2) <br>É assim que acaba </i>
+            <i>o que o sol faz com as flores - Rupi Kaur</i>
          </p> 
       </a>`,  
+       
+ 
    ]
 
    var opcao_padrao =  
