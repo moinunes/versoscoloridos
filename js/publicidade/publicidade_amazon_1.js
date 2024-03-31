@@ -162,7 +162,7 @@ function obterPublicidade_amazon_2() {
    ];
 
    // teste
-   var opcoes = [
+   var opcoes11 = [
 
       `<a href="https://amzn.to/3xejvy9">
          <img src="/images/publicidade/amazon/livros/rupi_kaur_o_que_o_sol.png" class="img-fluid" alt="o que o sol faz com as flores">
