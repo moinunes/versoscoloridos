@@ -152,6 +152,13 @@ function obterPublicidade_amazon_2() {
          </p> 
       </a>`,  
 
+      `<a href="https://amzn.to/3xiwzT8">
+         <img src="/images/publicidade/amazon/livros/Pauline_G_algoritmo_da_atracaoo.png" class="img-fluid" alt="O Algoritmo da Atração: O viúvo nerd e a colega de trabalho">
+         <p class="font_1 text-center m-0 p-0" >                      
+            <i>O Algoritmo da Atração: O viúvo nerd e a colega de trabalho</i>
+         </p> 
+      </a>`,  
+
       `<a href="https://amzn.to/3TxS221">
             <img src="/images/publicidade/amazon/jbl_fone_ouvido.png" class="img-fluid" alt="JBL, Fone de Ouvido in Ear, C50HI - Preto">
             <p class="font_1 text-center m-0 p-0" >                      
@@ -162,12 +169,12 @@ function obterPublicidade_amazon_2() {
    ];
 
    // teste
-   var opcoes11 = [
+   var opcoesxx  = [
 
-      `<a href="https://amzn.to/3xejvy9">
-         <img src="/images/publicidade/amazon/livros/rupi_kaur_o_que_o_sol.png" class="img-fluid" alt="o que o sol faz com as flores">
+      `<a href="https://amzn.to/3xiwzT8">
+         <img src="/images/publicidade/amazon/livros/Pauline_G_algoritmo_da_atracaoo.png" class="img-fluid" alt="O Algoritmo da Atração: O viúvo nerd e a colega de trabalho">
          <p class="font_1 text-center m-0 p-0" >                      
-            <i>o que o sol faz com as flores - Rupi Kaur</i>
+            <i>O Algoritmo da Atração: O viúvo nerd e a colega de trabalho</i>
          </p> 
       </a>`,  
        
