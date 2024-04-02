@@ -117,7 +117,7 @@
                  </div>
                </div>  
             </div> 
-            
+
              <!-- publicidade -->
             <div class="container mt-3 p-0">
               <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"
@@ -460,25 +460,28 @@
    
     
    <script>      
-      document.addEventListener("DOMContentLoaded", function() { 
-         var divFrase = document.getElementById("div_frase"); 
-         var frase = obterFrase(); 
-         divFrase.innerHTML = frase;
-         //...............
-         var divMens = document.getElementById("div_mens"); 
-         var frase = obterMens(); 
-         divMens.innerHTML = frase;
 
-         //...............
-         var divMens = document.getElementById("div_frase_poetica"); 
-         var frase = obterFrasePoetica(); 
-         divMens.innerHTML = frase;
-         //...............
-         var divMens = document.getElementById("div_motivacional"); 
-         var frase = obterMens_motivacional(); 
-         divMens.innerHTML = frase;
-
+      $(document).ready(function () {
          
+         document.addEventListener("DOMContentLoaded", function() { 
+            var divFrase = document.getElementById("div_frase"); 
+            var frase = obterFrase(); 
+            divFrase.innerHTML = frase;
+            //...............
+            var divMens = document.getElementById("div_mens"); 
+            var frase = obterMens(); 
+            divMens.innerHTML = frase;
+
+            //...............
+            var divMens = document.getElementById("div_frase_poetica"); 
+            var frase = obterFrasePoetica(); 
+            divMens.innerHTML = frase;
+            //...............
+            var divMens = document.getElementById("div_motivacional"); 
+            var frase = obterMens_motivacional(); 
+            divMens.innerHTML = frase;
+
+         });   
          
          
       }); 

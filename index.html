@@ -375,23 +375,24 @@
 
    <script> 
 
-         
-      document.addEventListener("DOMContentLoaded", function() { 
-         var divFrase = document.getElementById("div_frase"); 
-         var frase = obterFrase(); 
-         divFrase.innerHTML  = frase;         
-         //...............
-         var divFrase = document.getElementById("div_frase_poetica"); 
-         var frase = obterFrasePoetica(); 
-         divFrase.innerHTML  = frase;         
-         //...............
-         var divMens = document.getElementById("div_mens"); 
-         var frase = obterMens(); 
-         divMens.innerHTML = frase;
-        
- 
-      });
+      $(document).ready(function () {
 
+         document.addEventListener("DOMContentLoaded", function() { 
+            var divFrase = document.getElementById("div_frase"); 
+            var frase = obterFrase(); 
+            divFrase.innerHTML  = frase;         
+            //...............
+            var divFrase = document.getElementById("div_frase_poetica"); 
+            var frase = obterFrasePoetica(); 
+            divFrase.innerHTML  = frase;         
+            //...............
+            var divMens = document.getElementById("div_mens"); 
+            var frase = obterMens(); 
+            divMens.innerHTML = frase; 
+         });
+         
+      }); 
+   
    </script> 
 
 </body>
