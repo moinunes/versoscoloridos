@@ -14,6 +14,10 @@
       }    
     </style> 
 
+   <!-- Google ADSENSE  -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"
+     crossorigin="anonymous"></script>
+
    <!-- Google analytics  -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNGPR198V4"></script>
    <script src="/js/analytics.js"></script>
@@ -123,19 +127,6 @@
                
                
 
-               <div class="container mt-3 p-0">
-                  <div class="card sombra_0 m-0 p-0  bg-light">  
-                     <div class="card-header p-0 m-0 text-center ">
-                        <h7 class="card-title tit2">&nbsp;<strong>Publicidade</strong> </h7>
-                    </div>
-                     <div class="card-body m-2 p-0  text-center" >
-                        <p class="m-0 p-0">
-                           <div class="h5 link_1" id="div_publicidade_1"> </div>
-                        </p>                 
-                    </div>
-                  </div>  
-               </div>   
-
                <div class="container-fluid bg-light mt-2 mb-2 border">
                   <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
                </div>
@@ -193,18 +184,7 @@
                  </div>
                </div>  
             </div>  
-            <div class="container mt-3 p-0">
-               <div class="card sombra_0 m-0 p-0  bg-light">  
-                  <div class="card-header p-0 m-0 text-center ">
-                     <h7 class="card-title tit2">&nbsp;<strong>Publicidade</strong> </h7>
-                 </div>
-                  <div class="card-body m-2 p-0  text-center" >
-                     <p class="m-0 p-0">
-                        <div class="h5 link_1 bg-light" id="div_publicidade_2"> </div>
-                     </p>                 
-                 </div>
-               </div>  
-            </div>   
+             
 
             <div class="card bg-white mt-2 mb-0" style="background-image: url('/images/posts/fundo-poema.png'); background-size: 100%; background-repeat: no-repeat; color: rgb(29, 5, 5);"> 
                <div class="card-body m-0 p-3">
@@ -351,7 +331,7 @@
     <script src="/js/scripts.js"></script>
     <script src="/js/mens.js"></script>
     <script src="/js/frases_poeticas.js"></script>
-    <script src="/js/publicidade/publicidade_amazon_1.js"></script>
+    
    
     <!-- Seu JavaScript aqui... -->
 
@@ -372,14 +352,7 @@
          var divMens = document.getElementById("div_mens"); 
          var frase = obterMens(); 
          divMens.innerHTML = frase;
-         //...............
-         var div = document.getElementById("div_publicidade_1"); 
-         var conteudo = obterPublicidade_amazon_1(); 
-         div.innerHTML = conteudo;
-
-         var div = document.getElementById("div_publicidade_2"); 
-         var conteudo = obterPublicidade_amazon_2(); 
-         div.innerHTML = conteudo;
+        
  
       });
 
