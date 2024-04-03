@@ -1,6 +1,6 @@
 // Seleciona as divs onde você quer colocar as frases
-const divFrase1 = document.querySelector('#divFrase1');
-const divFrase2 = document.querySelector('#divFrase2');
+const div_publicidade_1 = document.querySelector('#div_publicidade_1');
+const div_publicidade_2 = document.querySelector('#div_publicidade_2');
 
 // Opções para o IntersectionObserver
 const opcoes = {
@@ -44,7 +44,7 @@ function colocarFrase(divObservadaId ) {
                               data-ad-format="auto"
                               data-full-width-responsive="true"></ins>
                         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>`;
-      divFrase1.innerHTML = codigoAdSense;
+      div_publicidade_1.innerHTML = codigoAdSense;
       break;
 
     case 'div_observada2':     
@@ -57,7 +57,7 @@ function colocarFrase(divObservadaId ) {
                               data-full-width-responsive="true"></ins>
                         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>`;
 
-      divFrase2.innerHTML = codigoAdSense;
+      div_publicidade_2.innerHTML = codigoAdSense;
       break; 
   } 
    
