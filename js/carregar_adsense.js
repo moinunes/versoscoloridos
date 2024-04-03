@@ -33,7 +33,7 @@ const opcoes = {
  
 function colocarFrase(divObservadaId ) { 
   let frase;
-  alert(divObservadaId )  
+   
   switch (divObservadaId) {
     case 'div_observada1':
       codigoAdSense = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"></script>
