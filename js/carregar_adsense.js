@@ -32,33 +32,54 @@ const opcoes = {
 
  
 function colocarFrase(divObservadaId ) { 
-  let frase;
+   let frase;
    
-  switch (divObservadaId) {
-    case 'div_observada1':
-      codigoAdSense = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"></script>
-                        <ins class="adsbygoogle"
+   switch (divObservadaId) {
+      case 'div_observada1':
+         codigoAdSense = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"></script>
+                           <ins class="adsbygoogle"
+                                 style="display:block"
+                                 data-ad-client="ca-pub-2582645504069233"
+                                 data-ad-slot="8477839329"
+                                 data-ad-format="auto"
+                                 data-full-width-responsive="true"></ins>
+                           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>`;
+         div_publicidade_1.innerHTML = codigoAdSense;
+         break;
+
+      case 'div_observada2':     
+         codigoAdSense = ` <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"
+                           crossorigin="anonymous"></script>
+                           <!-- ads_display_2 -->
+                           <ins class="adsbygoogle"
                               style="display:block"
                               data-ad-client="ca-pub-2582645504069233"
-                              data-ad-slot="8477839329"
+                              data-ad-slot="9796119410"
                               data-ad-format="auto"
                               data-full-width-responsive="true"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>`;
-      div_publicidade_1.innerHTML = codigoAdSense;
-      break;
+                           <script>
+                              (adsbygoogle = window.adsbygoogle || []).push({});
+                           </script>`;
 
-    case 'div_observada2':     
-      codigoAdSense = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"></script>
-                        <ins class="adsbygoogle"
-                              style="display:block"
-                              data-ad-client="ca-pub-2582645504069233"
-                              data-ad-slot="8477839329"
-                              data-ad-format="auto"
-                              data-full-width-responsive="true"></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>`;
-
-      div_publicidade_2.innerHTML = codigoAdSense;
+         div_publicidade_2.innerHTML = codigoAdSense;
       break; 
+
+      case 'div_observada3':     
+         codigoAdSense = ` <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"
+                           crossorigin="anonymous"></script>
+                           <!-- ads_display_2 -->
+                           <ins class="adsbygoogle"
+                              style="display:block"
+                              data-ad-client="ca-pub-2582645504069233"
+                              data-ad-slot="9796119410"
+                              data-ad-format="auto"
+                              data-full-width-responsive="true"></ins>
+                           <script>
+                              (adsbygoogle = window.adsbygoogle || []).push({});
+                           </script>`;
+
+         div_publicidade_3.innerHTML = codigoAdSense;
+         break; 
   } 
    
  
