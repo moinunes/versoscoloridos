@@ -11,7 +11,7 @@ const opcoes = {
 };
 
 // Criação do IntersectionObserver para cada div observada
-['div_observada1', 'div_observada2', 'div_observada3'].forEach(id => {
+['div_observada1'].forEach(id => {
   const divObservada = document.getElementById(id);
   const observer = new IntersectionObserver(function(entries, observer) {
     // Para cada entrada (elemento observado)
