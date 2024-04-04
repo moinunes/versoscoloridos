@@ -48,6 +48,7 @@ function colocarFrase(divObservadaId ) {
          div_publicidade_1.innerHTML = codigoAdSense;
          break;
 
+         
       case 'div_observada2':     
          codigoAdSense = ` <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"
                            crossorigin="anonymous"></script>
