@@ -1,6 +1,7 @@
 // Seleciona as divs onde você quer colocar as frases
 const div_publicidade_1 = document.querySelector('#div_publicidade_1');
 const div_publicidade_2 = document.querySelector('#div_publicidade_2');
+const div_publicidade_3 = document.querySelector('#div_publicidade_3');
 
 // Opções para o IntersectionObserver
 const opcoes = {
