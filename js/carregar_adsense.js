@@ -37,18 +37,19 @@ function colocarFrase(divObservadaId ) {
    
    switch (divObservadaId) {
       case 'div_observada1':
-         codigoAdSense = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"></script>
-                           <ins class="adsbygoogle"
-                                 style="display:block"
-                                 data-ad-client="ca-pub-2582645504069233"
-                                 data-ad-slot="8477839329"
-                                 data-ad-format="auto"
-                                 data-full-width-responsive="true"></ins>
-                           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>`;
+         const codigoAdSense = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"></' + 'script>' +
+                              '<ins class="adsbygoogle" ' +
+                                   'style="display:block" ' +
+                                   'data-ad-client="ca-pub-2582645504069233" ' +
+                                   'data-ad-slot="8477839329" ' +
+                                   'data-ad-format="auto" ' +
+                                   'data-full-width-responsive="true"></' + 'ins>' +
+                              '<script>(adsbygoogle = window.adsbygoogle || []).push({});</' + 'script>';
+          
          div_publicidade_1.innerHTML = codigoAdSense;
          break;
 
-         
+
       case 'div_observada2':     
          codigoAdSense = ` <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2582645504069233"
                            crossorigin="anonymous"></script>
