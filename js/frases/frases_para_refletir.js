@@ -75,6 +75,7 @@ function proxima_mensagem_1() {
    document.getElementById("div_mensagem").innerHTML =  mensagens[indice_atual_1];   
 }
 
+
 function proxima_mensagem_2() {
    mensagens = mensagem_2; 
    indice_atual_2++; 
