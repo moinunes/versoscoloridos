@@ -1,60 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Teste de Intersection Observer com AdSense</title>
-</head>
-<body>
 
-<div id="div_observada1" class="div_observada" style="height: 200px; background-color: lightblue;">
-    <p>Div Observada 1</p>
-</div>
+Conversa aberta. Uma mensagem não lida.
 
-<div id="div_publicidade_1" class="div_publicidade" style="height: 100px; background-color: lightcoral;">
-    <p>Área de Anúncio 1</p>
-</div>
+Pular para o conteúdo
+Como usar o Gmail com leitores de tela
+1 de 8
+(sem assunto)
+Caixa de entrada
+Moises Nunes <moinunes@gmail.com>
+	
+Anexos16:53 (há 43 minutos)
+	
+para mim
 
-<div id="div_observada2" class="div_observada" style="height: 200px; background-color: lightgreen;">
-    <p>Div Observada 2</p>
-</div>
 
-<div id="div_publicidade_2" class="div_publicidade" style="height: 100px; background-color: lightpink;">
-    <p>Área de Anúncio 2</p>
-</div>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const divObservadas = document.querySelectorAll('.div_observada');
-    const divPublicidades = document.querySelectorAll('.div_publicidade');
 
-    const opcoes = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-    };
 
-    const observer = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const index = Array.from(divObservadas).indexOf(entry.target);
-                carregarAnuncio(divPublicidades[index]);
-                observer.unobserve(entry.target);
-            }
-        });
-    }, opcoes);
+atenciosamente,
+Moisés Nunes
 
-    divObservadas.forEach(div => observer.observe(div));
 
-    function carregarAnuncio(divPublicidade) {
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-2582645504069233",
-            enable_page_level_ads: true
-        });
-    }
-});
-</script>
+1 anexo  •  Anexos verificados pelo Gmail
+	
 
-</body>
-</html>
+************ REFLEXÂO 
+
+Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado. - Roberto Shinyashiki 1.
+
+Imagine uma nova história para sua vida e acredite nela. - Paulo Coelho 
+
+A verdadeira liberdade está em ser você mesmo, sem medo ou hesitação.
+
+Não espere por uma crise para descobrir o que é importante em sua vida. - Platão
+
+Nas dificuldades da vida, descobrimos a nossa verdadeira força interior. 
+
+A verdadeira riqueza está nas experiências que acumulamos e não nos bens materiais que possuímos. 
+
+Colecione memórias e acumule sorrisos. 
+Todo o resto é passageiro.
+
+Não espere por circunstâncias ideais para agir, faça o seu melhor com o que você tem.
+
+A vida é curta demais para gastar tempo se preocupando com coisas que estão além do nosso controle. 
+
+---------
+Viva! Sonhe! Acredite em si e chegará um dia em que os outros não terão outra escolha senão acreditar com você. - Cynthia Kersey
+Pessimismo leva à fraqueza, otimismo ao poder. - William James 1.
+------------
+
+O sucesso não é a chave para a felicidade. A felicidade é a chave para o sucesso. Se você ama o que faz, terá sucesso.
+
+A maior prisão que as pessoas vivem é o medo do que os outros pensam.
+
+O otimismo é a fé em ação. Nada se pode levar a efeito sem otimismo. - Helen Keller
+
+O pessimismo, depois de você se acostumar a ele, é tão agradável quanto o otimismo. - Arnold Bennett
+
+A vida é uma balança entre aceitar o que não podemos mudar e ter coragem para mudar o que podemos.
+
+Amar alguém é aceitá-lo com todas as suas imperfeições e ainda assim vê-lo como perfeito.
+
+A vida também é uma consequência de como encaramos as situações ao nosso redor. Não tenha medo das conquistas. Tenha medo de não tentar.
+
+O amor não é medido pelo tempo que passamos juntos, mas pela qualidade dos momentos compartilhados.
+
+Não são as nossas ideias que nos fazem otimistas ou pessimistas, mas o otimismo e o pessimismo de origem fisiológica que fazem as nossas ideias. - Miguel Unamuno
+
+O contrário do pessimismo raramente é o otimismo. O contrário do pessimismo, se não é a boa intenção de injetar força nos fracos, 
+o que é bonito e faz bem, é quase sempre a idiota. - Vergílio Ferreira
+
+Se estivermos atentos, a presença de Deus se revela nas pequenas coisas.
+
+Os obstáculos são apenas oportunidades disfarçadas para deixar você mais forte. Não desista. 
+
+As melhores oportunidades aparecem quando você menos espera.
+
+Esteja presente em cada momento da sua vida, antes que estes momentos se tornem apenas lembranças. 
+
+A vida é curta, então não desperdice tempo se preocupando com o que não pode mudar.
+
+ A fé não é sobre entender tudo, mas sobre confiar mesmo quando não entendemos. 
+ 
+ A família é onde a vida começa e onde o amor nunca termina.
+ 
+
+ /*-----------------------com titulo ----------------------------------
+     Aprecie o momento presente: Concentre-se no que está acontecendo agora, em vez de se preocupar apenas com o futuro. Cada momento da jornada da vida tem algo valioso para oferecer.
+
+    Aprendizado contínuo: A jornada da vida é repleta de experiências que nos ensinam e nos moldam. Valorize cada experiência como uma oportunidade de crescimento e aprendizado.
+
+    Flexibilidade: Assim como em uma jornada, a vida pode ter mudanças de rota inesperadas. Esteja aberto a novas experiências e ajuste-se às mudanças conforme elas surgem.
+
+    Aproveite o caminho: Em vez de se concentrar apenas nos objetivos finais, aproveite o caminho para chegar lá. Os momentos que você passa enquanto trabalha em direção aos seus objetivos são tão importantes quanto alcançá-los.
+
+    Gratidão: Cultive a gratidão pela jornada da vida e pelas pessoas que encontramos ao longo do caminho. Cada pessoa e experiência contribui para a riqueza da nossa jornada.
+
+ -----------------------------------------------------------*/
+
+
+ /*----------------------- com titulo ----------------------------------
+     Foco no positivo: Ao praticar a gratidão, tendemos a nos concentrar no que temos, em vez de lamentar o que nos falta. Isso nos permite reconhecer as bênçãos em nossas vidas, independentemente de quão grandes ou pequenas elas possam parecer.
+
+    Satisfação interior: Quando somos gratos pelo que temos, desenvolvemos um senso de contentamento e satisfação interior. Em vez de buscar constantemente mais, aprendemos a valorizar e aproveitar o que já está presente em nossas vidas.
+
+    Mudança de perspectiva: A prática da gratidão pode mudar nossa perspectiva sobre as dificuldades e desafios que enfrentamos. Em vez de nos concentrarmos apenas nos aspectos negativos, aprendemos a encontrar algo pelo qual sermos gratos, mesmo nas situações mais difíceis.
+
+    Fortalecimento dos relacionamentos: Expressar gratidão às pessoas ao nosso redor fortalece os laços emocionais e cria um ambiente de apreço e reconhecimento mútuo. Isso contribui para relacionamentos mais saudáveis e positivos.
+
+    Felicidade duradoura: A gratidão está fortemente ligada à felicidade e ao bem-estar emocional. Ao cultivarmos um estado de gratidão constante, podemos experimentar uma sensação mais profunda de felicidade e contentamento em nossas vidas.
+
+
+ -----------------------------------------------------------*/    
+
+feflexão.txt
+Exibindo feflexão.txt.
