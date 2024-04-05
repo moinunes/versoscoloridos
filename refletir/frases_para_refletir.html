@@ -58,14 +58,14 @@
                      
                      <div id="mens_1" class="card bg-white mt-0 mb-0 sombra_0 " style="background-image: url('/images/posts/fundo-poema.png'); background-size: cover; background-position: center; height: 200px;" " > 
                         <div class="card-body m-0 p-2"   >                            
-                           <div id="mensagem_1" class="m-2 h5">
-                              <h5 class='text-center text-info'>A chave em sua mão. Uma porta se abre. Reflexões no espelho. Uma decisão final. Olhar para trás, aventuras começam. 🌟</h5>
+                           <div id="div_mensagem" class="m-2 h5">
+                              
                            </div>
                         </div>  
                         <div class="bg-white text-center">   
 
                            <hr class="m-0">
-                           <button id="botaoProximo" class="btn btn-primary" onclick="proxima_mensagem_1()">Próximo</button>
+                           <button id="botaoProximo" class="btn btn-primary" onclick="avancarParaProximaMensagem()">Próximo</button>
                         </div>              
                      </div> 
 
@@ -92,10 +92,11 @@
                </div>                  
             </div>  
 
-            <div class="border p-0 m-0 d-inline-block">
-               <a href="/refletir/frases_para_refletir.html" class="border m-1 rounded btn btn-primary">1</a>
-               <a href="/refletir/frases_para_refletir.html" class="border m-1 rounded btn">2</a> 
-               <a href="/refletir/frases_para_refletir.html" class="border m-1 rounded btn">3</a>
+            <div class="border p-0 mt-3 d-inline-block">
+               <a href="/refletir/frases_para_refletir.html?modo=1" class="border m-1 rounded btn">1</a>
+               <a href="/refletir/frases_para_refletir.html?modo=2" class="border m-1 rounded btn">2</a> 
+               <a href="/refletir/frases_para_refletir.html?modo=3" class="border m-1 rounded btn">3</a>
+               <a href="/refletir/frases_para_refletir.html?modo=4" class="border m-1 rounded btn">4</a>
                <br> 
             </div>
 
@@ -211,13 +212,15 @@
     
 
    <script>   
-     document.addEventListener("DOMContentLoaded", function() { 
-           
-            var divMens = document.getElementById("div_mens"); 
-            var frase = obterMens(); 
-            divMens.innerHTML = frase; 
-         });
-  
+      document.addEventListener("DOMContentLoaded", function() { 
+         var divMens = document.getElementById("div_mens"); 
+         var frase = obterMens(); 
+         divMens.innerHTML = frase; 
+
+         avancarParaProximaMensagem();
+      }); 
+ 
    </script>
+
 </body>
 </html>

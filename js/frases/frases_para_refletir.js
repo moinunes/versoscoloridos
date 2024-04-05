@@ -1,4 +1,5 @@
 var mensagem_1 = [   
+   "<h5 class='text-center text-info'> O Caminho para o Sucesso: <br>12 Reflexões Inspiradoras 🌟</h5>",
    "A jornada começa com um único passo, mas é a persistência que nos leva até o fim. 🚶‍♂️",
    "Cada desafio que enfrentamos nos torna mais fortes,  se escolhermos aprender com ele. 💪",
    "As melhores lições são muitas vezes aprendidas nos momentos mais difíceis. 📚",
@@ -11,11 +12,12 @@ var mensagem_1 = [
    "A vida é uma jornada de altos e baixos, mas é nos vales que encontramos as flores mais bonitas. 🌺",
    "A força interior que precisamos para enfrentar os desafios da vida muitas vezes é encontrada nos momentos de maior vulnerabilidade. 💪",
    "Acreditar em si mesmo é o primeiro passo para alcançar seus sonhos. O resto é apenas uma questão de tempo e esforço. ✨",
-   "<h5 class='text-center text-info'> O Caminho para o Sucesso: <br>12 Reflexões Inspiradoras 🌟</h5>",
+   
 ];
 
 
 var mensagem_2 = [
+   "<h5 class='text-center text-info'> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
    "Ao virar a esquina, ela se deparou com um livro esquecido no chão. Um livro que seria sua porta de entrada para um mundo de magia e mistério 📚",
    "A luz da lua iluminou um antigo baú no sótão, revelando segredos guardados por gerações 🌙",
    "No fundo da gaveta, ela encontrou uma carta amarelada, escrita décadas atrás, contendo palavras que ecoavam com sua própria jornada 💌",
@@ -29,10 +31,11 @@ var mensagem_2 = [
    "Um raio de sol atravessou a cortina, iluminando uma pintura esquecida na parede, revelando uma paisagem de sonhos e aventuras 🌞",
    "Uma simples concha encontrada na praia desencadeou uma jornada para além das ondas, onde segredos marinhos aguardavam para serem revelados 🐚",
    "Um mapa antigo encontrado no sótão desvendou um tesouro enterrado há muito tempo, desencadeando uma busca cheia de perigos e revelações surpreendentes 🗺️",
-   "<h5 class='text-center text-info'> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
+   
 ];
 
 mensagem_3 = [
+   "<h5 class='text-center text-info'>Sábias Reflexões para a Jornada da Vida 🌟</h5>",
    "O caminho para a sabedoria começa com a humildade de reconhecer que sempre há mais a aprender. 🌱",
    "Nossas cicatrizes não definem quem somos, mas sim as histórias que escolhemos contar sobre elas. 🌟",
    "Às vezes, o silêncio diz mais do que mil palavras, pois é nele que encontramos a verdadeira essência de nós mesmos. 🌿",
@@ -43,14 +46,15 @@ mensagem_3 = [
    "A gratidão é a chave que abre a porta para a felicidade duradoura. 🙏",
    "A força não está em nunca cair, mas sim em levantar-se cada vez que caímos. 💪",
    "O tempo é um presente precioso que devemos gastar com sabedoria, pois é o único recurso que nunca poderemos recuperar. ⏳",
-   "<h5 class='text-center text-info'>Sábias Reflexões para a Jornada da Vida 🌟</h5>",
+   
 ]
 
 mensagem_4 = [
+   "<h5 class='text-center text-info'>Às vezes, nossa maior força vem das adversidades.<br>🌟 FIM 🌟</h5>",
    "Num campo verdejante, havia um pequeno riacho que corria suavemente entre as pedras. Uma pedra, diferente das outras, encontrava-se no meio do riacho, recebendo diariamente o impacto das águas que passavam.",
    "Um dia, a pedra começou a se lamentar por sua posição, desejando estar em outro lugar mais tranquilo. Mas o riacho sussurrou-lhe: Não percebes que tua presença aqui molda o caminho das águas e embeleza nosso leito?",
    "A pedra refletiu sobre as palavras do riacho e percebeu que sua posição não era um fardo, mas sim uma oportunidade de fazer a diferença no mundo ao seu redor. A partir desse dia, ela abraçou sua função com gratidão, entendendo que mesmo os desafios podem ser fonte de beleza e propósito.",
-   "<h5 class='text-center text-info'>Às vezes, nossa maior força vem das adversidades.<br>🌟 FIM 🌟</h5>",
+  
 ]
 
 var indice_atual_1 = -1;
@@ -68,7 +72,7 @@ function proxima_mensagem_1() {
    if (indice_atual_1 >= mensagens.length) {
       indice_atual_1 = 0; // Volta para o início do array se atingir o final
    }
-   document.getElementById("mensagem_1").innerHTML =  mensagens[indice_atual_1];   
+   document.getElementById("div_mensagem").innerHTML =  mensagens[indice_atual_1];   
 }
 
 function proxima_mensagem_2() {
@@ -77,7 +81,7 @@ function proxima_mensagem_2() {
    if (indice_atual_2 >= mensagens.length) {
       indice_atual_2 = 0; // Volta para o início do array se atingir o final
    }
-   document.getElementById("mensagem_2").innerHTML =  mensagens[indice_atual_2];   
+   document.getElementById("div_mensagem").innerHTML =  mensagens[indice_atual_2];   
 }
 
 function proxima_mensagem_3() {
@@ -86,7 +90,7 @@ function proxima_mensagem_3() {
    if (indice_atual_3 >= mensagens.length) {
       indice_atual_3 = 0; 
    }
-   document.getElementById("mensagem_3").innerHTML =  mensagens[indice_atual_3];   
+   document.getElementById("div_mensagem").innerHTML =  mensagens[indice_atual_3];   
 }
 
 function proxima_mensagem_4() {
@@ -95,8 +99,37 @@ function proxima_mensagem_4() {
    if (indice_atual_4 >= mensagens.length) {
       indice_atual_4 = 0; 
    }
-   document.getElementById("mensagem_4").innerHTML =  mensagens[indice_atual_4];   
+   document.getElementById("div_mensagem").innerHTML =  mensagens[indice_atual_4];   
 }
 
+var modo = new URLSearchParams(window.location.search).get('modo');
 
- 
+function avancarParaProximaMensagem() {
+   switch (modo) {
+       case '1':
+             proxima_mensagem_1();
+             break;
+       case '2': 
+             proxima_mensagem_2();
+             break;
+       case '3':
+             proxima_mensagem_3();
+             break;
+       case '4':
+             proxima_mensagem_4();
+             break;
+       default:
+             console.error('Número de mensagem inválido:', numeroMensagem);
+   }
+} 
+
+// Selecione o link correspondente ao modo atual e adicione a classe btn-primary
+if (modo === '1') {
+    document.querySelector('a[href="/refletir/frases_para_refletir.html?modo=1"]').classList.add('btn-primary');
+} else if (modo === '2') {
+    document.querySelector('a[href="/refletir/frases_para_refletir.html?modo=2"]').classList.add('btn-primary');
+} else if (modo === '3') {
+    document.querySelector('a[href="/refletir/frases_para_refletir.html?modo=3"]').classList.add('btn-primary');
+} else if (modo === '4') {
+    document.querySelector('a[href="/refletir/frases_para_refletir.html?modo=4"]').classList.add('btn-primary');
+}
