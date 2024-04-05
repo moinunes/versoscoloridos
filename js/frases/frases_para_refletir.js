@@ -1,19 +1,17 @@
-var mensagem_1 = [   
-   "<h5 class='text-center text-info'> O Caminho para o Sucesso: <br>12 Reflexões Inspiradoras 🌟</h5>",
-   "A jornada começa com um único passo, mas é a persistência que nos leva até o fim. 🚶‍♂️",
-   "Cada desafio que enfrentamos nos torna mais fortes,  se escolhermos aprender com ele. 💪",
-   "As melhores lições são muitas vezes aprendidas nos momentos mais difíceis. 📚",
-   "A verdadeira felicidade vem da gratidão por aquilo que já temos,  não da busca incessante pelo que não temos. 🙏",
-   "Nos momentos de dúvida, olhe para trás e veja o quanto você já superou. 🌟",
-   "O sucesso não é medido pela altura que alcançamos, mas sim pelas pedras que escalamos ao longo do caminho. 🏔️",
-   "A paciência é uma virtude que nos ensina a esperar pelo melhor, mesmo quando tudo parece difícil. ⏳",
-   "Às vezes, o maior obstáculo em nosso caminho somos nós mesmos. 🚧",
-   "Não deixe que o medo do fracasso o impeça de tentar. O verdadeiro fracasso está em não tentar. 💡",
-   "A vida é uma jornada de altos e baixos, mas é nos vales que encontramos as flores mais bonitas. 🌺",
-   "A força interior que precisamos para enfrentar os desafios da vida muitas vezes é encontrada nos momentos de maior vulnerabilidade. 💪",
-   "Acreditar em si mesmo é o primeiro passo para alcançar seus sonhos. O resto é apenas uma questão de tempo e esforço. ✨",
-   
-];
+mensagem_1 = [
+   "<h5 class='text-center text-info'>Caminhos da Reflexão: Inspirações para uma Vida Significativa🌟</h5>",    
+   "A vida é uma jornada, não um destino. 🌟",
+   "Às vezes, é preciso olhar para trás para entender o caminho à frente. 🔄",
+   "As dificuldades são oportunidades para crescer e aprender. 🌱",
+   "Não há atalhos para qualquer lugar que valha a pena ir. 🛣️",
+   "A verdadeira sabedoria está em reconhecer a própria ignorância. 🧠",
+   "A gratidão transforma o que temos em suficiente. 🙏",
+   "O sucesso não é medido pelo que você conquista, mas pelo que você supera. 🏆",
+   "A jornada de mil milhas começa com um único passo. 👣",
+   "Às vezes, a maior bênção é não conseguir o que você quer. 🎁",
+   "O maior poder está em ser paciente enquanto tudo se desenrola. ⏳",
+]
+
 
 
 var mensagem_2 = [
@@ -49,13 +47,22 @@ mensagem_3 = [
    
 ]
 
-mensagem_4 = [
-   "<h5 class='text-center text-info'>Às vezes, nossa maior força vem das adversidades.<br>🌟 FIM 🌟</h5>",
-   "Num campo verdejante, havia um pequeno riacho que corria suavemente entre as pedras. Uma pedra, diferente das outras, encontrava-se no meio do riacho, recebendo diariamente o impacto das águas que passavam.",
-   "Um dia, a pedra começou a se lamentar por sua posição, desejando estar em outro lugar mais tranquilo. Mas o riacho sussurrou-lhe: Não percebes que tua presença aqui molda o caminho das águas e embeleza nosso leito?",
-   "A pedra refletiu sobre as palavras do riacho e percebeu que sua posição não era um fardo, mas sim uma oportunidade de fazer a diferença no mundo ao seu redor. A partir desse dia, ela abraçou sua função com gratidão, entendendo que mesmo os desafios podem ser fonte de beleza e propósito.",
-  
-]
+var mensagem_4 = [   
+   "<h5 class='text-center text-info'>Semeando Amor e Paz: <br>Reflexões para o Coração 💖</h5>",
+   "No jardim da vida, plante as flores do amor e colha a paz como recompensa. 🌺",
+   "O amor é a essência da paz, transformando cada encontro em uma celebração da vida. ❤️",
+   "Seja a luz que guia os outros através do labirinto da escuridão, irradiando amor, paz e positividade. 💡",
+   "A compreensão é a linguagem universal que transcende diferenças, fortalecendo os laços de amor em uma rede de paz. 🤝",
+   "No silêncio, descobrimos a paz que reside em nossa essência, alimentando o amor que nos transborda. 🤫",
+   "Espalhe sementes de positividade, e verá como o jardim da sua vida se transforma em um paraíso de amor e paz. 🌱",
+   "A serenidade é a respiração da alma, preenchendo cada espaço vazio com a essência do amor.  💕",
+   "Ao ser um farol de positividade, você guia os outros para o porto seguro da paz e do amor pleno.  ✨",
+   "É apenas por falta de amor que, muitas vezes, julgamos ter encontrado a paz. 💔🕊️",
+   "Onde há amor… há paz. Onde há paz… há fé. Onde há fé, há Deus… E onde há Deus, nada faltará!🕊️ ",
+   
+];
+
+
 
 var indice_atual_1 = -1;
 var indice_atual_2 = -1;
