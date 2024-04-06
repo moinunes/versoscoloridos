@@ -27,7 +27,7 @@ var mensagem_2 = [
    "A vida é uma balança entre aceitar o que não podemos mudar e ter coragem para mudar o que podemos. ⚖️",
    "Amar alguém é aceitá-lo com todas as suas imperfeições e ainda assim vê-lo como perfeito. ❤️",
    "O amor não é medido pelo tempo que passamos juntos, mas pela qualidade dos momentos compartilhados. ⏱️",
-   "Não são as nossas ideias que nos fazem otimistas ou pessimistas, mas o otimismo e o pessimismo de origem fisiológica que fazem as nossas ideias. 🧠",
+   "Deus obrigado pelo amanhecer, por ter cuidado da minha noite, que esse dia seja recheado de amor e benção. 🙏",
    "Se estivermos atentos, a presença de Deus se revela nas pequenas coisas. 🙏",
    "Os obstáculos são apenas oportunidades disfarçadas para deixar você mais forte. Não desista. 🏔️",
    "As melhores oportunidades aparecem quando você menos espera. 🌈",
