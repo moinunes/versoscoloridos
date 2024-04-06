@@ -175,7 +175,7 @@ var frases_2 = [
    "A jornada da vida é uma combinação de altos e baixos; é como dançar na chuva enquanto esperamos pelo arco-íris. 🌧️",
    "A vida é como uma câmera. Foque no que é importante, capture bons momentos e, se as coisas não saírem como você queria, tire outra foto. 📸",
    "A felicidade não é algo pronto. Ela vem de suas próprias ações. 😊",
-   "me profundamente e ria alto. Você pode se machucar, mas é a única maneira de viver a vida completamente. ❤️",
+   "Ame profundamente e ria alto. Você pode se machucar, mas é a única maneira de viver a vida completamente. ❤️",
    "Às vezes, a jornada para encontrar a paz interior é mais importante do que o destino. 🌿",
    "A verdadeira força não está em nunca cair, mas em levantar-se sempre após cada queda. 💪",
    "A mente é como um pássaro, sempre voando entre o passado e o futuro. A verdadeira paz está no momento presente.🕊️",
