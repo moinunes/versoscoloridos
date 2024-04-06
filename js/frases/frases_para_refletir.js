@@ -1,5 +1,5 @@
 mensagem_1 = [
-   "<h5 class='text-center text-info'>Caminhos da Reflexão: Inspirações para uma Vida Significativa🌟</h5>",    
+   "<h5 class='text-center text-info'>Caminhos da Reflexão:<br> Inspirações para uma Vida Significativa🌟</h5>",    
    "A vida é uma jornada, não um destino. 🌟",
    "Às vezes, é preciso olhar para trás para entender o caminho à frente. 🔄",
    "As dificuldades são oportunidades para crescer e aprender. 🌱",
@@ -15,20 +15,24 @@ mensagem_1 = [
 
 
 var mensagem_2 = [
-   "<h5 class='text-center text-info'> Portais da Descoberta: <br>Jornadas Desencadeadas por Relíquias Esquecidas 🌟</h5>",
-   "Ao virar a esquina, ela se deparou com um livro esquecido no chão. Um livro que seria sua porta de entrada para um mundo de magia e mistério 📚",
-   "A luz da lua iluminou um antigo baú no sótão, revelando segredos guardados por gerações 🌙",
-   "No fundo da gaveta, ela encontrou uma carta amarelada, escrita décadas atrás, contendo palavras que ecoavam com sua própria jornada 💌",
-   "Ao abrir a janela, ele foi saudado por uma brisa fresca carregada de promessas de aventuras desconhecidas 💨",
-   "Um bilhete perdido no bolso de sua jaqueta desencadeou uma jornada que o levaria aos confins da terra e além 🎫",
-   "Na velha caixa de recordações, ela descobriu uma fotografia antiga que capturava um momento de pura felicidade, acendendo uma chama de nostalgia e inspiração 📷",
-   "Uma trilha escondida na floresta levou-o a um lugar esquecido pelo tempo, onde segredos ancestrais aguardavam para serem revelados 🌳",
-   "A descoberta de um diário empoeirado revelou os pensamentos mais íntimos de alguém que uma vez caminhou pelos mesmos caminhos que ele agora trilhava 📔",
-   "Um bilhete de trem encontrado em um banco de parque desencadeou uma jornada que o levaria a encontrar não apenas novos destinos, mas também a si mesmo 🚂",
-   "No sótão empoeirado, ela descobriu uma caixa de música antiga, cujas melodias desencadearam memórias há muito esquecidas 🎶",
-   "Um raio de sol atravessou a cortina, iluminando uma pintura esquecida na parede, revelando uma paisagem de sonhos e aventuras 🌞",
-   "Uma simples concha encontrada na praia desencadeou uma jornada para além das ondas, onde segredos marinhos aguardavam para serem revelados 🐚",
-   "Um mapa antigo encontrado no sótão desvendou um tesouro enterrado há muito tempo, desencadeando uma busca cheia de perigos e revelações surpreendentes 🗺️",
+   "<h5 class='text-center text-info'> 17 Reflexões Inspiradoras: 🌟</h5>",
+   "A verdadeira liberdade está em ser você mesmo, sem medo ou hesitação. 🦋",
+   "Não espere por uma crise para descobrir o que é importante em sua vida. ⏳",
+   "Nas dificuldades da vida, descobrimos a nossa verdadeira força interior. 💪",
+   "A verdadeira riqueza está nas experiências que acumulamos e não nos bens materiais que possuímos. ✨",
+   "Colecione memórias e acumule sorrisos. Todo o resto é passageiro. 📸",
+   "Não espere por circunstâncias ideais para agir, faça o seu melhor com o que você tem. 🌟",
+   "A vida é curta demais para gastar tempo se preocupando com coisas que estão além do nosso controle. 🌿",
+   "A maior prisão que as pessoas vivem é o medo do que os outros pensam. 🗝️",
+   "A vida é uma balança entre aceitar o que não podemos mudar e ter coragem para mudar o que podemos. ⚖️",
+   "Amar alguém é aceitá-lo com todas as suas imperfeições e ainda assim vê-lo como perfeito. ❤️",
+   "O amor não é medido pelo tempo que passamos juntos, mas pela qualidade dos momentos compartilhados. ⏱️",
+   "Não são as nossas ideias que nos fazem otimistas ou pessimistas, mas o otimismo e o pessimismo de origem fisiológica que fazem as nossas ideias. 🧠",
+   "Se estivermos atentos, a presença de Deus se revela nas pequenas coisas. 🙏",
+   "Os obstáculos são apenas oportunidades disfarçadas para deixar você mais forte. Não desista. 🏔️",
+   "As melhores oportunidades aparecem quando você menos espera. 🌈",
+   "A fé não é sobre entender tudo, mas sobre confiar mesmo quando não entendemos. 🌟",
+   "A família é onde a vida começa e onde o amor nunca termina. 👨‍👩‍👧‍👦",
    
 ];
 
