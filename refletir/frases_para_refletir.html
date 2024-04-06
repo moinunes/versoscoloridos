@@ -58,7 +58,7 @@
                      
                      <div id="mens_1" class="card bg-white mt-0 mb-0 sombra_0 " style="background-image: url('/images/posts/fundo-poema.png'); background-size: cover; background-position: center; height: 200px;" " > 
                         <div class="card-body m-0 p-2"   >                            
-                           <div id="div_mensagem" class="m-2 h5">
+                           <div id="div_mensagem" class="m-2 h4">
                               
                            </div>
                         </div>  
@@ -92,8 +92,20 @@
                </div>                  
             </div>  
 
-            
-            <div class="border p-0 mt-3 d-inline-block">
+            <div class="container mt-3 p-0">
+               <div class="card sombra_0 m-0 p-0"> 
+                   
+                  <div class="card-body m-2 p-2" >
+                     <p class="m-0 p-0">
+                        <div class="h5" id="div_frase_2"> </div>
+                     </p>                 
+                 </div>
+               </div>  
+            </div> 
+
+            <div class="border p-0 mt-3 d-inline-block text-center">
+               <h5>Mais reflexão</h5>
+
                <a href="/refletir/frases_para_refletir.html?modo=1" class="border m-1 rounded btn">1</a>
                <a href="/refletir/frases_para_refletir.html?modo=2" class="border m-1 rounded btn">2</a> 
                <a href="/refletir/frases_para_refletir.html?modo=3" class="border m-1 rounded btn">3</a>
@@ -115,7 +127,7 @@
                  </div>
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
-                        <div class="h6" id="div_mens"> </div>
+                        <div class="h5" id="div_frase_1"> </div>
                      </p>                 
                  </div>
                </div>  
@@ -179,6 +191,8 @@
             <a href="/reflexao/reflexao.html" class="nav-link d-inline link_1">Reflexão</a> 
          </div>
       </div>
+
+      
       <div class="container-fluid text-info mt-3 mb-4  ">
          <div class="h5 text-center mt-2 mb-2 font_size_1"   >
             Gostou de uma frase ou poema? <br>
@@ -209,8 +223,12 @@
     
    <script>   
       document.addEventListener("DOMContentLoaded", function() { 
-         var divMens = document.getElementById("div_mens"); 
-         var frase = obterMens(); 
+         var divMens = document.getElementById("div_frase_1"); 
+         var frase = obterFrase_1(); 
+         divMens.innerHTML = frase; 
+         //...
+         var divMens = document.getElementById("div_frase_2"); 
+         var frase = obterFrase_2(); 
          divMens.innerHTML = frase; 
 
          avancarParaProximaMensagem();

@@ -141,3 +141,62 @@ if (modo === '1') {
 } else if (modo === '4') {
     document.querySelector('a[href="/refletir/frases_para_refletir.html?modo=4"]').classList.add('btn-primary');
 }
+
+
+/*-------------------------------------------------------------
+* obter a frase de forma cíclica
+*-------------------------------------------------------------*/ 
+var frases_1 = [
+   "🚀 O segredo da felicidade está em fazer o que se gosta como se fosse um dever. ",
+   "💧 A felicidade é a única coisa que podemos dar sem possuir. <br> <span class='small'>- Voltaire</span>",
+   "🌟 O sucesso é ir de fracasso em fracasso sem perder o entusiasmo. <br> <span class='small'>- Winston Churchill</span>",
+   "Nossas escolhas moldam nosso destino, mas é nossa atitude que define nossa jornada. 🌟",
+   "Às vezes, o silêncio diz mais do que mil palavras. 🤫",
+   "A verdadeira felicidade não está em ter tudo, mas em apreciar tudo o que se tem. ❤️",
+   "Nunca é tarde demais para começar de novo e criar o futuro que desejamos. 🌈",
+   "O maior tesouro que podemos acumular não está em nossos bolsos, mas sim em nossos corações. 💖",
+   "O que você pensa, você se torna. O que você sente, você atrai. O que você imagina, você cria.🌟",
+   "Lembre-se sempre de que cada dia é uma nova oportunidade para crescer, aprender e se inspirar. 🌿",
+   "Nunca subestime o poder de um simples ato de bondade. Pode mudar vidas e até o mundo. 💖",
+   "O tempo gasto com as pessoas que amamos é o verdadeiro tesouro da vida. ⏳",
+   "O perdão não é apenas para aqueles que erram, mas também para aqueles que sabem perdoar. 🙏",
+   "A gratidão transforma o que temos em suficiente e mais. 🙌",
+   "Às vezes, é preciso perder-se para se encontrar. 🛤️",
+];
+
+var frases_2 = [
+   "🍃 A vida é o que acontece enquanto você está ocupado fazendo outros planos. <br> <span class='small'>- John Lennon</span>",
+   "🌸 A beleza está nos olhos de quem vê.",
+   "🌈 A vida é curta demais para ser pequena.",
+   "A adversidade revela o verdadeiro caráter de uma pessoa. 💪",
+   "O perdão liberta tanto o perdoado quanto o que perdoa. 🕊️",
+   "A gratidão transforma o que temos em suficiente e mais. 🙏",
+   "Às vezes, o maior crescimento vem das experiências mais difíceis. 🌱",
+   "A jornada da vida é uma combinação de altos e baixos; é como dançar na chuva enquanto esperamos pelo arco-íris. 🌧️",
+   "A vida é como uma câmera. Foque no que é importante, capture bons momentos e, se as coisas não saírem como você queria, tire outra foto. 📸",
+   "A felicidade não é algo pronto. Ela vem de suas próprias ações. 😊",
+   "me profundamente e ria alto. Você pode se machucar, mas é a única maneira de viver a vida completamente. ❤️",
+   "Às vezes, a jornada para encontrar a paz interior é mais importante do que o destino. 🌿",
+   "A verdadeira força não está em nunca cair, mas em levantar-se sempre após cada queda. 💪",
+   "A mente é como um pássaro, sempre voando entre o passado e o futuro. A verdadeira paz está no momento presente.🕊️",
+   "O sucesso é medido não apenas pelo que alcançamos, mas também pelo impacto que temos sobre os outros. 🌟",
+   "A verdadeira liberdade está em ser quem você realmente é, sem se preocupar com o julgamento dos outros. 🦋",
+]; 
+
+
+function obterFrase_1() {
+   let frases = frases_1.concat(frases_2);   
+   let frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
+   let segundoAtual = new Date().getSeconds();
+   let indiceFrase = segundoAtual % frases.length;
+   let fraseCorrespondente = frases[indiceFrase] || frase_padrao;   
+   return fraseCorrespondente;
+}
+function obterFrase_2() {
+   let frases = frases_2.concat(frases_1);
+   let frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
+   let segundoAtual = new Date().getSeconds();
+   let indiceFrase = segundoAtual % frases.length;
+   let fraseCorrespondente = frases[indiceFrase] || frase_padrao;   
+   return fraseCorrespondente;
+}
