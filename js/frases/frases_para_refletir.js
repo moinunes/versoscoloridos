@@ -79,11 +79,7 @@ $('html, body').animate({
 
 function proxima_mensagem_1(_indice) {   
    mensagens = mensagem_1; 
-   if(_indice==undefined) {
-      indice_atual_1++;
-   } else{
-      indice_atual_1=0;
-   }
+   indice_atual_1 = (_indice === undefined) ? indice_atual_1 + 1 : 0;
    if (indice_atual_1 >= mensagens.length) {
       indice_atual_1 = 0; // Volta para o início do array se atingir o final
    }
@@ -93,7 +89,7 @@ function proxima_mensagem_1(_indice) {
 
 function proxima_mensagem_2(_indice) {
    mensagens = mensagem_2; 
-   indice_atual_2++; 
+   indice_atual_2 = (_indice === undefined) ? indice_atual_2 + 1 : 0;
    if (indice_atual_2 >= mensagens.length) {
       indice_atual_2 = 0; // Volta para o início do array se atingir o final
    }
@@ -101,8 +97,8 @@ function proxima_mensagem_2(_indice) {
 }
 
 function proxima_mensagem_3(_indice) {
-   mensagens = mensagem_3; 
-   indice_atual_3++; 
+   mensagens = mensagem_3;
+   indice_atual_3 = (_indice === undefined) ? indice_atual_3 + 1 : 0;
    if (indice_atual_3 >= mensagens.length) {
       indice_atual_3 = 0; 
    }
@@ -111,7 +107,7 @@ function proxima_mensagem_3(_indice) {
 
 function proxima_mensagem_4(_indice) {
    mensagens = mensagem_4; 
-   indice_atual_4++; 
+   indice_atual_4 = (_indice === undefined) ? indice_atual_4 + 1 : 0;
    if (indice_atual_4 >= mensagens.length) {
       indice_atual_4 = 0; 
    }
