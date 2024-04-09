@@ -440,24 +440,28 @@
    
    <script> 
       document.addEventListener("DOMContentLoaded", function() { 
-         var divFrase = document.getElementById("div_frase"); 
-         var frase = obterFrase(); 
-         divFrase.innerHTML = frase;
+        // var divFrase = document.getElementById("div_frase"); 
+        // var frase = obterFrase(); 
+         //divFrase.innerHTML = frase;
 
          //...............
-         var divMens = document.getElementById("div_mens"); 
-         var frase = obterMens(); 
-         divMens.innerHTML = frase;
+         //var divMens = document.getElementById("div_mens"); 
+         //var frase = obterMens(); 
+         //divMens.innerHTML = frase;
 
          //...............
          var divMens = document.getElementById("div_frase_poetica"); 
          var frase = obterFrasePoetica(); 
-         divMens.innerHTML = frase;
-
-         
-
-
+         divMens.innerHTML = frase; 
       });     
+
+      function atualizar_obterFrase() {
+         document.getElementById('div_frase').innerHTML = obterFrase();
+         document.getElementById('div_mens').innerHTML = obterMens();
+      } 
+      atualizar_obterFrase();     
+      setInterval(atualizar_obterFrase, 15000);
+   
    </script>
 </body>
 </html>
