@@ -77,9 +77,13 @@ $('html, body').animate({
    scrollTop: 0
 }, 700);
 
-function proxima_mensagem_1() {
+function proxima_mensagem_1(_indice) {   
    mensagens = mensagem_1; 
-   indice_atual_1++;
+   if(_indice==undefined) {
+      indice_atual_1++;
+   } else{
+      indice_atual_1=0;
+   }
    if (indice_atual_1 >= mensagens.length) {
       indice_atual_1 = 0; // Volta para o início do array se atingir o final
    }
@@ -87,7 +91,7 @@ function proxima_mensagem_1() {
 }
 
 
-function proxima_mensagem_2() {
+function proxima_mensagem_2(_indice) {
    mensagens = mensagem_2; 
    indice_atual_2++; 
    if (indice_atual_2 >= mensagens.length) {
@@ -96,7 +100,7 @@ function proxima_mensagem_2() {
    document.getElementById("div_mensagem").innerHTML =  mensagens[indice_atual_2];   
 }
 
-function proxima_mensagem_3() {
+function proxima_mensagem_3(_indice) {
    mensagens = mensagem_3; 
    indice_atual_3++; 
    if (indice_atual_3 >= mensagens.length) {
@@ -105,7 +109,7 @@ function proxima_mensagem_3() {
    document.getElementById("div_mensagem").innerHTML =  mensagens[indice_atual_3];   
 }
 
-function proxima_mensagem_4() {
+function proxima_mensagem_4(_indice) {
    mensagens = mensagem_4; 
    indice_atual_4++; 
    if (indice_atual_4 >= mensagens.length) {
@@ -116,19 +120,19 @@ function proxima_mensagem_4() {
 
 var modo = new URLSearchParams(window.location.search).get('modo');
 
-function avancarParaProximaMensagem() {
+function avancarParaProximaMensagem(_indice) { 
    switch (modo) {
        case '1':
-             proxima_mensagem_1();
+             proxima_mensagem_1(_indice);
              break;
        case '2': 
-             proxima_mensagem_2();
+             proxima_mensagem_2(_indice);
              break;
        case '3':
-             proxima_mensagem_3();
+             proxima_mensagem_3(_indice);
              break;
        case '4':
-             proxima_mensagem_4();
+             proxima_mensagem_4(_indice);
              break;
        default:
              console.error('Número de mensagem inválido:', numeroMensagem);

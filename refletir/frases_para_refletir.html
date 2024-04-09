@@ -53,20 +53,28 @@
 
                   <div class="container p-0"> 
                      <h4 class="p-0 m-1">
-                         Frases para refletir
+                         Frases para refletir 
                      </h4>  
                      
                      <div id="mens_1" class="card bg-white mt-0 mb-0 sombra_0 " style="background-image: url('/images/posts/fundo-poema.png'); background-size: cover; background-position: center; height: 200px;" " > 
                         <div class="card-body m-0 p-2"   >                            
-                           <div id="div_mensagem" class="m-2 h4">
-                              
+                           <div id="div_mensagem" class="m-2 h4">                              
                            </div>
                         </div>  
-                        <div class="bg-white text-center">   
+                        <div class="bg-white text-center">
+                           <hr class="m-0 p-0">
+                           <div class="row">
+                              <div class="col-7 text-right">
+                                 <button  id="botaoProximo" class="btn btn-primary mr-10" onclick="avancar()">Próximo</button>
+                              </div>
+                              <div class="col-5">
+                                 <span class="text-right">
+                                    <a href="javascript:toggleInterval();" ><span class=" text-danger link_1" id="span_automatico">Automatico</span></a>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
 
-                           <hr class="m-0">
-                           <button id="botaoProximo" class="btn btn-primary" onclick="avancarParaProximaMensagem()">Próximo</button>
-                        </div>              
                      </div> 
 
                      <div class="my-4"><br> </div> <!-- Adiciona uma margem vertical de tamanho médio -->
@@ -222,7 +230,8 @@
    <script src="/js/mens.js"></script>
     <script src="/js/frases/frases_para_refletir.js"></script>
     
-   <script>   
+   <script>  
+      //var liga_desliga =false;
       document.addEventListener("DOMContentLoaded", function() { 
          var divMens = document.getElementById("div_frase_1"); 
          var frase = obterFrase_1(); 
@@ -234,7 +243,40 @@
 
          avancarParaProximaMensagem();
       }); 
- 
+
+      
+      var intervaloAtivo = false; // Variável para controlar o estado do setInterval
+      var intervalo; // Variável para armazenar o ID do setInterval
+
+      // Função para ligar ou desligar o setInterval
+      function toggleInterval() {
+         if (intervaloAtivo) {
+            // Desligar o setInterval
+            document.getElementById('botaoProximo').style.display = 'inline-block';
+            document.getElementById('span_automatico').className = '';
+            document.getElementById('span_automatico').classList.add('text-danger');
+            clearInterval(intervalo);
+            intervaloAtivo = false;
+            avancarParaProximaMensagem(1);             
+
+         } else {
+            // Ligar o setInterval
+            document.getElementById('botaoProximo').style.display = 'none';
+            document.getElementById('span_automatico').className = '';
+            document.getElementById('span_automatico').classList.add('text-success');
+            intervalo = setInterval(avancarParaProximaMensagem, 10000);  
+            intervaloAtivo = true;
+            avancarParaProximaMensagem(1);
+         }
+      }  
+
+      
+      function avancar() {
+         document.getElementById('span_automatico').className = '';
+         document.getElementById('span_automatico').classList.add('text-danger');
+         avancarParaProximaMensagem();
+      } 
+
    </script>
 
 </body>
