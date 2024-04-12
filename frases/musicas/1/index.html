@@ -594,6 +594,9 @@
 
             <div class="container-fluid bg-light mt-2 mb-2 border">
                <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+               <span class="text-right">
+                  <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+               </span>
             </div>
             
 
@@ -610,6 +613,9 @@
                   <div class="card-body m-2 p-2" >                     
                      <p class="m-0 p-0">
                         <div class="h5" id="div_frase_musica"> </div>
+                        <span class="text-right">
+                           <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+                        </span>
                      </p>                 
                  </div>
                </div>  
@@ -740,10 +746,13 @@
          //...............
          var divMens = document.getElementById("div_frase"); 
          var frase = obterMens_motivacional(); 
-         divMens.innerHTML = frase;
-
-         
+         divMens.innerHTML = frase; 
       }); 
+      function atualizar_obterFrase() {
+         document.getElementById('div_frase_musica').innerHTML = obter_frase_musica();
+         document.getElementById('div_frase').innerHTML = obterMens_motivacional(); 
+      } 
+      atualizar_obterFrase();  
 
    </script>
 </body>

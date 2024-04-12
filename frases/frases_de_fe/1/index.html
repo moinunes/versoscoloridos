@@ -307,6 +307,9 @@
                      
                      <div class="container-fluid bg-light mt-2 mb-2 border">
                         <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+                        <span class="text-right">
+                           <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+                        </span>
                      </div>
                      
 
@@ -333,7 +336,10 @@
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
                         <div class="h6" id="div_frase_deus"> </div>
-                     </p>                 
+                     </p>    
+                     <span class="text-right">
+                        <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+                     </span>             
                  </div>
                </div>  
             </div>  
@@ -426,11 +432,15 @@
          //...............
          var divMens = document.getElementById("div_frase"); 
          var frase = obter_frase_deus(); 
-         divMens.innerHTML = frase;
-
-
+         divMens.innerHTML = frase; 
          
-      });     
+      });  
+      
+      function atualizar_obterFrase() {
+         document.getElementById('div_frase').innerHTML = obter_frase_deus();
+         document.getElementById('div_frase_deus').innerHTML = obter_frase_deus(); 
+      } 
+      atualizar_obterFrase(); 
 
       $(document).ready(function(){
          $('#carousel_1').carousel({

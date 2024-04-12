@@ -460,11 +460,17 @@
 
             <div class="container-fluid bg-light mt-2 mb-2 border-0">
                <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+               <span class="text-right">
+                  <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+               </span>
             </div>
          
              
             <div class="container-fluid bg-light mt-2 mb-3 border">
                <div class="h5 text-center mt-2 mb-2" id="div_frase_poetica"></div>
+               <span class="text-right">
+                  <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+               </span>
             </div>
             <!-- link apos ultimo poema -->
             <div class="container-fluid p-0 mt-3">
@@ -494,7 +500,10 @@
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
                         <div class="h6" id="div_mens"> </div>
-                     </p>                 
+                     </p>    
+                     <span class="text-right">
+                        <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+                     </span>             
                  </div>
                </div>  
             </div> 
@@ -629,11 +638,15 @@
          //...............
          var divMens = document.getElementById("div_frase_poetica"); 
          var frase = obterFrasePoetica(); 
-         divMens.innerHTML = frase;
-
-         
-
+         divMens.innerHTML = frase;  
       });     
+      function atualizar_obterFrase() {
+         document.getElementById('div_frase').innerHTML = obterFrase();
+         document.getElementById('div_mens').innerHTML = obterMens();
+         document.getElementById('div_frase_poetica').innerHTML = obterFrasePoetica(); 
+      } 
+      atualizar_obterFrase();  
+
    </script>
 </body>
 </html>

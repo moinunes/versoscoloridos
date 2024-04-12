@@ -98,7 +98,10 @@
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
                         <div class="h4" id="div_frase_2"> </div>
-                     </p>                 
+                     </p>       
+                     <span class="text-right">
+                        <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+                     </span>           
                  </div>
                </div>  
             </div> 
@@ -128,7 +131,10 @@
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
                         <div class="h5" id="div_frase_1"> </div>
-                     </p>                 
+                     </p>  
+                     <span class="text-right">
+                        <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+                     </span>                
                  </div>
                </div>  
             </div> 
@@ -234,6 +240,12 @@
 
          avancarParaProximaMensagem();
       }); 
+
+      function atualizar_obterFrase() {
+         document.getElementById('div_frase_1').innerHTML = obterFrase_1();
+         document.getElementById('div_frase_2').innerHTML = obterFrase_2();
+      } 
+      atualizar_obterFrase(); 
  
    </script>
 
