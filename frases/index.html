@@ -104,6 +104,9 @@
                      <div class="container-fluid bg-light mt-2 mb-3 border">
                         <br>
                         <div class="h4 text-center mt-2 mb-2" id="div_frase_poetica"></div>
+                        <span class="text-right">
+                           <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+                        </span>  
                      </div>  
                      
                       <!-- publicidade -->
@@ -124,6 +127,9 @@
 
                      <div class="container bg-light mt-2 mb-2 border">
                         <div class="h4 text-center mt-2 mb-2" id="div_frase"></div>
+                        <span class="text-right">
+                           <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+                        </span>  
                      </div>
 
                   </div>                    
@@ -145,7 +151,10 @@
                   <div class="card-body m-2 p-2" >
                      <p class="m-0 p-0">
                         <div class="h5" id="div_mens"> </div>
-                     </p>                 
+                     </p>   
+                     <span class="text-right">
+                        <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+                     </span>                
                  </div>
                </div>  
             </div> 
@@ -450,17 +459,18 @@
          //divMens.innerHTML = frase;
 
          //...............
-         var divMens = document.getElementById("div_frase_poetica"); 
-         var frase = obterFrasePoetica(); 
-         divMens.innerHTML = frase; 
+         //var divMens = document.getElementById("div_frase_poetica"); 
+        // var frase = obterFrasePoetica(); 
+         //divMens.innerHTML = frase; 
       });     
 
       function atualizar_obterFrase() {
          document.getElementById('div_frase').innerHTML = obterFrase();
          document.getElementById('div_mens').innerHTML = obterMens();
+         document.getElementById('div_frase_poetica').innerHTML = obterFrasePoetica();
       } 
       atualizar_obterFrase();     
-      setInterval(atualizar_obterFrase, 15000);
+      //setInterval(atualizar_obterFrase, 15000);
    
    </script>
 </body>

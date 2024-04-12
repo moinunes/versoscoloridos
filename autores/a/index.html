@@ -107,6 +107,9 @@
 
             <div class="container-fluid bg-light mt-2 mb-2 border">
                <div class="h4 text-center mt-2 mb-2" id="div_frase"></div>
+               <span class="text-right">
+                  <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
+               </span>
             </div>
             
              <!-- publicidade -->
@@ -473,6 +476,11 @@
             divMens.innerHTML = frase;
 
          });   
+
+         function atualizar_obterFrase() {
+            document.getElementById('div_frase').innerHTML = obterFrase();
+         } 
+         atualizar_obterFrase(); 
          
          
    

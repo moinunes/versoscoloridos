@@ -1,26 +1,39 @@
-/*-------------------------------------------------------------
-* Obter frase de forma cíclica
-*-------------------------------------------------------------*/ 
-function obter_frase() {   
-   var frases = [
-       "🌟 Acredite em você mesmo e tudo será possível.",
-       "🚀 O que você faz hoje pode semear um futuro melhor amanhã.",
-       "🕰️ Nunca é tarde demais para ser quem você poderia ter sido.",
-       "🔍 O sucesso é a soma de pequenos esforços repetidos dia após dia.",
-   ]; 
-   var frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
-   var indiceFrase = Math.floor(Math.random() * frases.length); // Obter um índice aleatório
-   return frases[indiceFrase] || frase_padrao;
-}
+ 
+Uma Canção de Amor 
+Amor Quando se revela 
+A Arte de ser FELIZ
+Quando Olho Para Mim
+O meu olhar é nítido como um girassol
 
-// Função para atualizar a frase a cada intervalo de tempo
-function atualizarFraseAutomaticamente() {
-   // Atualizar a frase
-   document.getElementById('div_frase').innerHTML = obter_frase();
-}
+"Suspiros da Alma"
+"Ecos do Coração"
+"Pintando Emoções"
+"Entre Sonhos e Realidade"
+"Percursos do Sentimento"
+"Raios de Esperança"
+"Desvendando Sorrisos"
+"Trilhas do Amor-próprio"
+"Versos da Existência"
+"A Dança das Estrelas
+"Sussurros do Tempo"
+"Melodias da Alma"
+"Encantos do Universo"
+"Cores da Imaginação"
+"Estações da Vida"
+"Tramas do Destino"
+"Flores da Esperança"
+"Despertares da Consciência"
+"Caminhos da Redenção"
+"Raios de Inspiração"
+ 
+Suspiros da Alma  
+ 
+"Nas adversidades, permita-se florescer com o amor que você recebe."
+"Cultive o amor ao seu redor e descubra sua verdadeira beleza interior."
+"Na jornada da vida, deixe o amor ser a luz que faz você florescer."
 
-// Atualizar a frase inicialmente
-atualizarFraseAutomaticamente();
+"Nas adversidades, permita-se florescer com o amor que você recebe."
 
-// Definir intervalo para atualizar a frase automaticamente a cada 5 segundos (5000 milissegundos)
-setInterval(atualizarFraseAutomaticamente, 5000);
+"Cultive o amor ao seu redor e descubra sua verdadeira beleza interior."
+
+"Na jornada da vida, deixe o amor ser a luz que faz você florescer."
