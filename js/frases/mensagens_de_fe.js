@@ -148,7 +148,7 @@ function avancarParaProximaMensagem() {
        default:
              console.error('Número de mensagem inválido:', modo);
    }
-   obter_frases(); // preenche: div_frase_1,div_frase_2,div_frase_3 e div_frase_4
+   obter_frases(); // preenche: div_frase_1, div_frase_2, div_frase_3 e div_frase_4
 } 
 
 // Selecione o link correspondente ao modo atual e adicione a classe btn-primary
