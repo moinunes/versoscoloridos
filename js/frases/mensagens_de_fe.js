@@ -167,6 +167,9 @@ if (modo === '1') {
 * obter a frase de forma cíclica
 *-------------------------------------------------------------*/ 
 var frases_1 = [  
+   "Manhã surge, erga-se,<br> Agradeça a Deus, sorria,<br> Novo dia brilha.🙏",
+   "Na presença divina,<br>Encontro força para enfrentar os desafios,<br> E amor para compartilhar com o mundo,<br> Com Deus no coração, sou completo.❤️",
+   "Sob o sol ardente, <br> a fé se renova em mim, <br>Deus, fonte de amor. <br>Em cada dádiva, a luz, <br>gratidão que não se esgota.🙏",
    "Nunca subestime o poder da sua fé para superar qualquer desafio. 🌈💪",
    "Que a sua fé seja maior do que seus medos e suas dúvidas. 🙌😌",
    "Em meio às tempestades da vida, mantenha a fé como seu guarda-chuva. ☔️🌧️",
@@ -184,6 +187,7 @@ var frases_1 = [
 ];
 
 var frases_2 = [
+   "Agradeça pela família e amigos,<br> Pela saúde e pela esperança,<br> Pelos desafios que te fortalecem,<br> E pelas alegrias que te fazem sorrir.🙏",
    "Em tempos de dificuldade, a fé é o farol que ilumina nosso caminho. 🕯️🙏",
    "Acredite que cada desafio é uma oportunidade de crescimento e aprendizado. 🌱📈",
    "Nunca foi sorte, sempre foi Deus! A fé em Deus renova toda a criatura. 🍀🙌",
@@ -214,6 +218,7 @@ var frases_3 = [
    "Em cada sorriso, sentia a alegria que vem da certeza de ser amada por Deus. 😊❤️",
    "Encare cada novo dia com coragem e fé no coração. 💪🙏",
    "Acredite em si mesmo e deixe que sua fé o guie para alcançar seus sonhos. ✨🌟",
+   "Ó Deus de amor e graça, a Ti rendemos louvor, Em gratidão por tua constante provisão, Em cada nascer do sol, em cada pôr do sol, Em cada sorriso, em cada canção.🌟",
  ]; 
 
  var frases_4 = [
@@ -221,12 +226,15 @@ var frases_3 = [
    "No calor do abraço de um amigo, sentiu o amor de Deus se manifestar, confortando sua alma. 🤗❤️",
    "A cada pôr do sol, lembrava-se da fidelidade do amor de Deus, que nunca falha. 🌇❤️",   
    "Tenha fé e espere sem cessar. 🙏⏳",
-   "Coloque fé em tudo que fizer, pois para Deus não há limites. 💪🙌",
+   "Em Deus depositamos nossa confiança, Pois sabemos que com Ele ao nosso lado, Nada nos será impossível, E os sonhos que acalentamos, Certamente encontrarão seu caminho.❤️",
+   "Coloque fé em tudo que fizer, pois para Deus não há limites.  🙌",
+   "Acreditemos no extraordinário, Pois é na fé que encontramos o poder, De transformar sonhos em realidade, E alcançar o inatingível.",
    "Nos momentos de escuridão, encontrou a luz da esperança brilhando através da fé em Deus. 🕯️🙏",
    "Nunca desista, pois a fé transforma obstáculos em oportunidades. 🚀💪",
    "Que a sua fé seja inabalável, como uma rocha que enfrenta as ondas do mar. 🌊🙏",
    "No brilho da aurora, encontrou a promessa de um novo dia, repleto do amor e da graça divina. 🌅❤️",
    "Nas páginas da vida, escreveu sua história com a tinta da fé, os traços do amor e a orientação de Deus. 📖🙏",
+   "Deus, em Teu amor sem fim, encontramos força, Em cada passo, em cada lágrima, em cada riso, Tua presença nos guia, nos conforta, nos anima, Em Ti, encontramos a paz, o amor, o paraíso.🙏",
  ]
 
 function obterFrase_1() {
@@ -259,10 +267,16 @@ function obterFrase_4() {
    let segundoAtual = new Date().getSeconds();
    let indiceFrase = segundoAtual % frases.length;
    let fraseCorrespondente = frases[indiceFrase] || frase_padrao;   
+
+   // linha para testar frase
+    fraseCorrespondente_=
+      "Sob o sol ardente, <br> a fé se renova em mim, <br>Deus, fonte de amor. <br>Em cada dádiva, a luz, <br>gratidão que não se esgota.🙏";
+
    return fraseCorrespondente;
 }
 
-function obter_frases() {
+function obter_frases() {  
+
    var divMens = document.getElementById("div_frase_1"); 
    var frase = obterFrase_1(); 
    divMens.innerHTML = frase; 
