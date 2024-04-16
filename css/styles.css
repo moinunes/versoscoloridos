@@ -94,10 +94,12 @@
 }
 
 .btn_video {
-   color: blue;
+   color: blue; 
    text-decoration: underline;
    cursor: pointer;
    margin-left:20px;
+   padding: 0%;
+ 
 }
 .btn_video:hover {
    color: rgb(11, 117, 34); /* Cor do texto quando hover (passar o mouse sobre) */
