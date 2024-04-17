@@ -132,6 +132,17 @@
                   </span>
                </div>
 
+                <!-- Carregar video -->
+                <div class="container-fluid bg-light mt-2 mb-2 border-0 text-center">    
+                  <div class="card m-2 p-2 bg-light  border-0"> 
+                     <div class="card-header p-0 m-0 bg-light  border-0">
+                        <div class="p-0 m-0" id="div_video_tit_2"></div>
+                     </div>
+                      <div class="card-body p-0 m-0 border-0" id="div_video_link_2">
+                     </div>
+                  </div> 
+               </div>
+               
                <div class="container-fluid bg-light mt-2 mb-2">
                   <div class="row">
                       <div class="col">
@@ -179,17 +190,15 @@
          <!-- Conteúdo da coluna da direita -->
          <div class="col-md-4  d-none d-lg-block">
 
-            <div class="card-body m-0 p-3">
-            </div>
-
-            <div class="card m-2 p-2"> 
-               <div class="card-header ">
-                   <h5 class="card-title p-0 m-0">&nbsp; <strong>Fernando Pessoa</strong> </h5>
+             <!-- Carregar video -->
+            <div class="card m-2 p-2 bg-light"> 
+               <div class="card-header p-0 m-0  bg-light">
+                   <div class="p-0 m-0" id="div_video_tit_1"></div>
                </div>
-               <div class="card-body   p-0">
-                <a href="https://www.youtube.com/watch?v=uKkkfgaoSlQ"><img class="img-fluid" src="/images/capas/capa_fernando_da_mai_alta_janela.png" alt="Texto alternativo"></a>
-               </div>
-            </div> 
+               <div class="card-body p-0 m-0 " id="div_video_link_1">
+                </div>
+            </div>  
+            
 
             <div class="container mt-3 p-0">
                <div class="card sombra_0 m-0 p-0"> 
@@ -206,7 +215,7 @@
                </div>  
             </div> 
             
-
+            
             <div class="card m-2 p-2"> 
                <div class="card-header ">
                    <h5 class="card-title p-0 m-0">&nbsp; <strong>Música para Relaxar</strong> </h5>
@@ -331,6 +340,8 @@
          </div>
       </div> 
 
+      
+
       <!-- Dispositvos - PEQUENOS -->
       <div class="row border-bottom bg-light  d-none d-block d-lg-none">   
          <div class="col-md-6 text-center">
@@ -373,31 +384,24 @@
     <script src="/js/scripts.js"></script>
     <script src="/js/mens.js"></script>
     <script src="/js/frases_poeticas.js"></script>
+    <script src="/js/carregar_videos.js"></script> 
     
-   
-    <!-- Seu JavaScript aqui... -->
+   <script>
 
- 
+      document.addEventListener("DOMContentLoaded", function() { 
+         var div_video_tit_1  = document.getElementById("div_video_tit_1"); 
+         var div_video_link_1 = document.getElementById("div_video_link_1"); 
+         var video = obterVideo_1(); 
+         div_video_tit_1.innerHTML = video.autor; 
+         div_video_link_1.innerHTML= video.link;
+         //----------
+         var div_video_tit_2  = document.getElementById("div_video_tit_2"); 
+         var div_video_link_2 = document.getElementById("div_video_link_2"); 
+         var video = obterVideo_2(); 
+         div_video_tit_2.innerHTML = video.autor; 
+         div_video_link_2.innerHTML= video.link;
 
-   <script> 
-
-     
-
-         document.addEventListener("DOMContentLoaded", function() { 
-            //var divFrase = document.getElementById("div_frase"); 
-            //var frase = obterFrase(); 
-            //divFrase.innerHTML  = frase;         
-            //...............
-            //var divFrase = document.getElementById("div_frase_poetica"); 
-            //var frase = obterFrasePoetica(); 
-            //divFrase.innerHTML  = frase;         
-            //...............
-            //var divMens = document.getElementById("div_mens"); 
-            //var frase = obterMens(); 
-            //divMens.innerHTML = frase; 
-
-            
-         });
+      });
 
       function atualizar_obterMens() {
          document.getElementById('div_mens').innerHTML = obterMens();
