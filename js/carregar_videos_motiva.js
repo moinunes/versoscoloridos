@@ -1,0 +1,36 @@
+var videos_1 = [
+   { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=62Z4H2fhOZ8">Um bilhete antigo revela amor</a>',
+     link: '<a target="_blank" href="https://www.youtube.com/watch?v=62Z4H2fhOZ8"><img class="img-fluid" src="/images/capas/_capa_bilhete.png" alt="Um bilhete antigo revela amor"></a>'
+   },
+   { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=IJS2DE0iLgk&t=13s">Páginas do passado, o amor escreve sua história...</a>',
+     link: '<a target="_blank" href="https://www.youtube.com/watch?v=IJS2DE0iLgk&t=13s"><img class="img-fluid" src="/images/capas/_capa_uma_carta_esquecida.png" alt="Nas páginas do passado, o amor escreve sua história"></a>'
+   },
+   
+   
+   
+
+]; 
+
+var videos_2 = [
+   { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=lgPSU6oSrwo">Sua luz interior é a chama que nunca se apaga</a>',
+     link: '<a target="_blank" href="https://www.youtube.com/watch?v=lgPSU6oSrwo"><img class="img-fluid" src="/images/capas/_capa_sua_luz_interior.png" alt="Sua luz interior é a chama que nunca se apaga"></a>'
+   },
+ 
+   
+   
+]; 
+
+function obterVideo_1() {
+   let videos = videos_1.concat(videos_2); 
+   var segundoAtual = new Date().getSeconds();
+   var indiceVideo = segundoAtual % videos.length;
+   return videos[indiceVideo];   
+}
+
+function obterVideo_2() { 
+   let videos = videos_2.concat(videos_1); 
+   var segundoAtual = new Date().getSeconds();
+   var indiceVideo = segundoAtual % videos.length;
+   return videos[indiceVideo];   
+}
+

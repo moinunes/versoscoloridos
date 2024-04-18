@@ -18,7 +18,61 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs2077" />
+     id="defs2077">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7203">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop7199" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1;"
+         offset="1"
+         id="stop7201" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7195">
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1;"
+         offset="0"
+         id="stop7191" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:0;"
+         offset="1"
+         id="stop7193" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7203"
+       id="linearGradient8088"
+       x1="180.32681"
+       y1="-25.075249"
+       x2="254.51477"
+       y2="-25.075249"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7195"
+       id="linearGradient8096"
+       x1="180.37682"
+       y1="-25.075249"
+       x2="254.46477"
+       y2="-25.075249"
+       gradientUnits="userSpaceOnUse" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath10460">
+      <rect
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:0.0999998;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:38.3;paint-order:fill markers stroke"
+         id="rect10462"
+         width="356.2168"
+         height="694.47308"
+         x="1208.083"
+         y="1518.6176" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="namedview2075"
      pagecolor="#ffffff"
@@ -29,9 +83,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1.0115288"
-     inkscape:cx="167.07385"
-     inkscape:cy="197.72053"
+     inkscape:zoom="0.35762944"
+     inkscape:cx="542.46094"
+     inkscape:cy="408.2438"
      inkscape:window-width="1366"
      inkscape:window-height="705"
      inkscape:window-x="-8"
