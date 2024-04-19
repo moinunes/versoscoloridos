@@ -570,6 +570,16 @@
                         </div>
                      </div>
 
+                     <!-- Carregar video -->
+                     <div class="container-fluid bg-light mt-2 mb-2 border-0 text-center">    
+                        <div class="card m-2 p-2 bg-light  border-0"> 
+                           <div class="card-header p-0 m-0 bg-light  border-0">
+                              <div class="p-0 m-0" id="div_video_tit_2"></div>
+                           </div>
+                           <div class="card-body p-0 m-0 border-0" id="div_video_link_2">
+                           </div>
+                        </div> 
+                     </div>
                      <div class="border-0 p-0 m-0">
                         <a href="/poemas/fernando_pessoa/1/index.html" class="border m-1 rounded btn btn-primary">1</a>
                         <a href="/poemas/fernando_pessoa/2/index.html" class="border m-1 rounded btn">2</a>
@@ -598,17 +608,14 @@
          <!-- Conteúdo da coluna da direita -->
          <div class="col-md-4 d-none d-lg-block"> <!-- Dispositvos - GRANDES --> 
             
-            <div class="container mt-3 p-0 d-none d-sm-block">  <!-- Esta div será ocultada em dispositivos pequenos -->
-               <div class="card">
-                 <div class="card-header ">
-                     <h5 class="card-title p-0 m-0">&nbsp; <strong>Fernando Pessoa</strong> </h5>
-                 </div>
-                 <div class="card-body alert alert-warning p-0">
-                  <a href="https://www.youtube.com/watch?v=oahs1DMvUDc"><img class="img-fluid" src="/images/capas/capa_fernando_adeus_sr_antonio.png" alt="Texto alternativo"></a>
-                 </div>
-            </div>  
-
-          
+             <!-- Carregar video -->
+             <div class="card m-2 p-2 bg-light"> 
+               <div class="card-header p-0 m-0  bg-light">
+                   <div class="p-0 m-0" id="div_video_tit_1"></div>
+               </div>
+               <div class="card-body p-0 m-0 " id="div_video_link_1">
+                </div>
+            </div>   
 
             <div class="card-body p-1 mt-2 text-left" style="background-image: url('/images/posts/fundo-poema.png'); background-size: 100%; background-repeat: no-repeat; color: rgb(29, 5, 5);">
                <div class="card-body m-0 p-3">
@@ -792,10 +799,24 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <script src="/js/scripts.js"></script>
    <script src="/js/mens.js"></script>
-   
+   <script src="/js/carregar_videos.js"></script> 
 
    <script> 
       document.addEventListener("DOMContentLoaded", function() { 
+
+         var div_video_tit_1  = document.getElementById("div_video_tit_1"); 
+         var div_video_link_1 = document.getElementById("div_video_link_1"); 
+         var video = obterVideo_fernando_pessoa(); 
+         div_video_tit_1.innerHTML = video.autor; 
+         div_video_link_1.innerHTML= video.link;
+         //----------
+         var div_video_tit_2  = document.getElementById("div_video_tit_2"); 
+         var div_video_link_2 = document.getElementById("div_video_link_2"); 
+         var video = obterVideo_fernando_pessoa(); 
+         div_video_tit_2.innerHTML = video.autor; 
+         div_video_link_2.innerHTML= video.link;
+
+         //----------
          var divFrase = document.getElementById("div_frase"); 
          var frase = obterFrase(); 
          divFrase.innerHTML = frase;
@@ -803,6 +824,7 @@
          var divMens = document.getElementById("div_mens"); 
          var frase = obterMens(); 
          divMens.innerHTML = frase;
+
          
       });      
    </script>

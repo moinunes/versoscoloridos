@@ -149,3 +149,10 @@ function obterVideo_2() {
    return videos[indiceVideo];   
 }
 
+function obterVideo_fernando_pessoa() { 
+   let videos = videos_fernando_pessoa;
+   videos.sort(() => Math.random() - 0.5);
+   var segundoAtual = new Date().getSeconds();
+   var indiceVideo = segundoAtual % videos.length;
+   return videos[indiceVideo];   
+}
