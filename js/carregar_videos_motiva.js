@@ -5,10 +5,6 @@ var videos_1 = [
    { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=IJS2DE0iLgk&t=13s">Páginas do passado, o amor escreve sua história...</a>',
      link: '<a target="_blank" href="https://www.youtube.com/watch?v=IJS2DE0iLgk&t=13s"><img class="img-fluid" src="/images/capas/_capa_uma_carta_esquecida.png" alt="Nas páginas do passado, o amor escreve sua história"></a>'
    },
-   
-   
-   
-
 ]; 
 
 var videos_2 = [
@@ -17,9 +13,7 @@ var videos_2 = [
    },
    { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=ezJv141czvk">No sótão, uma caixa esquecida</a>',
      link: '<a target="_blank" href="https://www.youtube.com/watch?v=ezJv141czvk"><img class="img-fluid" src="/images/capas/_capa_caixa_da_alegria.png" alt="No sótão, uma caixa esquecida"></a>'
-   },
- 
-   
+   },   
    
 ]; 
 
