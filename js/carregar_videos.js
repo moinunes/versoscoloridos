@@ -136,14 +136,14 @@ var videos_2 = [
 ]; 
 
 function obterVideo_1() {
-   let videos = videos_1.concat(videos_2); 
+   let videos = videos_1.concat(videos_2,videos_fernando_pessoa); 
    var segundoAtual = new Date().getSeconds();
    var indiceVideo = segundoAtual % videos.length;
    return videos[indiceVideo];   
 }
 
 function obterVideo_2() { 
-   let videos = videos_2.concat(videos_1); 
+   let videos = videos_fernando_pessoa.concat(videos_2,videos_1); 
    var segundoAtual = new Date().getSeconds();
    var indiceVideo = segundoAtual % videos.length;
    return videos[indiceVideo];   
