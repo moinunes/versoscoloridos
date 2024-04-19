@@ -15,6 +15,9 @@ var videos_2 = [
    { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=lgPSU6oSrwo">Sua luz interior é a chama que nunca se apaga</a>',
      link: '<a target="_blank" href="https://www.youtube.com/watch?v=lgPSU6oSrwo"><img class="img-fluid" src="/images/capas/_capa_sua_luz_interior.png" alt="Sua luz interior é a chama que nunca se apaga"></a>'
    },
+   { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=ezJv141czvk">No sótão, uma caixa esquecida</a>',
+     link: '<a target="_blank" href="https://www.youtube.com/watch?v=ezJv141czvk"><img class="img-fluid" src="/images/capas/_capa_caixa_da_alegria.png" alt="No sótão, uma caixa esquecida"></a>'
+   },
  
    
    
