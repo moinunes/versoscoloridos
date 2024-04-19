@@ -2,8 +2,8 @@ var videos_1 = [
    { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=62Z4H2fhOZ8">Um bilhete antigo revela amor</a>',
      link: '<a target="_blank" href="https://www.youtube.com/watch?v=62Z4H2fhOZ8"><img class="img-fluid" src="/images/capas/_capa_bilhete.png" alt="Um bilhete antigo revela amor"></a>'
    },
-   { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=IJS2DE0iLgk&t=13s">Páginas do passado, o amor escreve sua história...</a>',
-     link: '<a target="_blank" href="https://www.youtube.com/watch?v=IJS2DE0iLgk&t=13s"><img class="img-fluid" src="/images/capas/_capa_uma_carta_esquecida.png" alt="Nas páginas do passado, o amor escreve sua história"></a>'
+   { autor: '<a class="link_1" target="_blank" href="https://youtu.be/IJS2DE0iLgk?si=o1ctGE_j80eEZo-V">Páginas do passado, o amor escreve sua história...</a>',
+     link: '<a target="_blank" href="https://youtu.be/IJS2DE0iLgk?si=o1ctGE_j80eEZo-V"><img class="img-fluid" src="/images/capas/_capa_uma_carta_esquecida.png" alt="Nas páginas do passado, o amor escreve sua história"></a>'
    },
 ]; 
 
