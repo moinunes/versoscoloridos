@@ -1,4 +1,5 @@
- 
+// fecha todas divs de poemas
+$(".poema-div").hide();
  
  
 function isPar(numero) {
