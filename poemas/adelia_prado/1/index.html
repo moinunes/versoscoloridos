@@ -298,11 +298,26 @@
                        
                      </ul> 
                      
+                     <div class="container-fluid bg-light mt-2 mb-2 border-0">
+                        <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+                     </div>
+
+                     <div class="container-fluid bg-light mt-2 mb-2 border-0 text-center">    
+                        <div class="card m-2 p-2 bg-light  border-0"> 
+                           <div class="card-header p-0 m-0 bg-light  border-0">
+                              <h5 class="card-title p-0 m-0">&nbsp; <strong>Adélia Prado</strong> </h5>
+                           </div>
+                           <div class="card-body alert p-0">
+                           <a href="https://www.youtube.com/watch?v=b4He7bRP3x8"><img class="img-fluid" src="/images/capas/capa_adelia_prado_com_licenca.png" alt="Texto alternativo"></a>
+                           </div>
+                        </div>   
+                     </div> 
+
                      <!-- link apos ultimo poema -->
                      <div class="container-fluid p-0">
                         <div class="row">
                             <div class="col-12">                               
-                                <a href="/frases/adelia_prado/1/" class="btn link_1">Veja as Frases de Adélia Prado</a>
+                               <br> <a href="/frases/adelia_prado/1/" class="btn link_1">➡️ Frases de Adélia Prado</a>
                             </div>
                         </div>
                      </div> 
@@ -314,6 +329,8 @@
 
             <div id="poema-content"></div>
 
+           
+
          </div>            
             
          <!-- Conteúdo da coluna da direita -->
@@ -323,7 +340,7 @@
                  <div class="card-header ">
                      <h5 class="card-title p-0 m-0">&nbsp; <strong>Adélia Prado</strong> </h5>
                  </div>
-                 <div class="card-body alert alert-warning p-0">
+                 <div class="card-body alert  p-0">
                   <a href="https://www.youtube.com/watch?v=b4He7bRP3x8"><img class="img-fluid" src="/images/capas/capa_adelia_prado_com_licenca.png" alt="Texto alternativo"></a>
                  </div>
             </div>   
@@ -396,9 +413,7 @@
       </div>
    </div>
       
-   <div class="container-fluid bg-light mt-2 mb-2 border-0">
-      <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
-   </div>
+  
 
    <div class="container mt-3 p-0 ">
       <div class="card d-none d-sm-block border-0"> <!-- Esta div será ocultada em dispositivos pequenos -->
@@ -529,6 +544,8 @@
          var frase = obterMens(); 
          divMens.innerHTML = frase;
         
+         $("#poema-div-a").show();
+
       });      
    </script>
 </body>

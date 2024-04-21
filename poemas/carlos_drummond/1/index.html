@@ -541,12 +541,24 @@
                      <!-- link apos ultimo poema -->
                      
 
-                   
+                     <div class="container-fluid bg-light mt-2 mb-2 border-0 text-center">    
+                        <div class="card m-2 p-2 bg-light  border-0"> 
+                           <div class="card-header p-0 m-0 bg-light  border-0">
+                              <h5 class="card-title p-0 m-0">&nbsp; <strong>Carlos Drummond</strong> </h5>
+                           </div>
+                           <div class="card-body alert p-0">
+                           <a href="https://www.youtube.com/watch?v=tjFQzmZ4OXI"><img class="img-fluid" src="/images/capas/capa_drummond_caso_vestido.png" alt="Carlos Drummond de Andrade"></a>
+                           </div>
+                        </div>   
+                     </div> 
+                     <div class="container-fluid bg-light mt-2 mb-2 border">
+                        <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+                     </div>
 
                     <div class="container-fluid p-0 mt-2">
                      <div class="row">
                          <div class="col-12">                               
-                             <a href="/frases/carlos_drummond/1/" class="btn btn-block link_1 h5">Veja as Frases de Carlos Drummond</a>
+                            <br> <a href="/frases/carlos_drummond/1/" class="btn btn-block link_1 h5">➡️ Frases de Carlos Drummond</a>
                          </div>
                      </div>
                   </div>
@@ -611,9 +623,7 @@
       </div>
    </div>
 
-   <div class="container-fluid bg-light mt-2 mb-2 border">
-      <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
-   </div>
+   
 
    <div class="container mt-3 p-0 ">
       <div class="card  border-0 d-none d-sm-block"> <!-- Esta div será ocultada em dispositivos pequenos -->
@@ -743,6 +753,8 @@
          var divMens = document.getElementById("div_mens"); 
          var frase = obterMens(); 
          divMens.innerHTML = frase;
+
+         $("#poema-div-c").show();
          
       });
    </script>
