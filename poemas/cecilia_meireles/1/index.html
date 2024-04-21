@@ -452,11 +452,27 @@
 
                      </ul> 
                      
+
+                     <div class="container-fluid bg-light mt-2 mb-2 border-0 text-center">    
+                        <div class="card m-2 p-2 bg-light  border-0"> 
+                           <div class="card-header p-0 m-0 bg-light  border-0">
+                              <h5 class="card-title p-0 m-0">&nbsp; <strong>Cecília Meireles</strong> </h5>
+                           </div>
+                           <div class="card-body alert p-0">
+                           <a href="https://www.youtube.com/watch?v=gtnbmAX8KUY"><img class="img-fluid" src="/images/capas/capa_cecilia_retrato.png" alt="Cecília Meireles"></a>
+                           </div>
+                        </div>   
+                     </div> 
+
+                     <div class="container-fluid bg-light mt-2 mb-2 border">
+                        <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
+                     </div>
+                     
                      <!-- link apos ultimo poema -->
                      <div class="container-fluid p-0">
                         <div class="row">
                             <div class="col-12">                               
-                                <a href="/frases/cecilia_meireles/1/" class="btn link_1">Veja as Frases de Cecília Meireles</a>
+                                <a href="/frases/cecilia_meireles/1/" class="btn link_1">➡️ Frases de Cecília Meireles</a>
                             </div>
                         </div>
                      </div> 
@@ -550,9 +566,7 @@
       </div>
    </div>
       
-   <div class="container-fluid bg-light mt-2 mb-2 border-0">
-      <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
-   </div>
+  
 
    <div class="container mt-3 p-0 ">
       <div class="card d-none d-sm-block bg-light border-0"> <!-- Esta div será ocultada em dispositivos pequenos -->
@@ -680,6 +694,7 @@
          var frase = obterMens(); 
          divMens.innerHTML = frase;
         
+         $("#poema-div-d").show();
       });      
    </script>
 </body>
