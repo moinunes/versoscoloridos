@@ -191,12 +191,14 @@ function obterFrase() {
       "🚀 Só se pode alcançar um grande êxito quando nos mantemos fiéis a nós mesmos. <br> <span class='small'>- Friedrich Nietzsche</span>",
       "💧 Por vezes sentimos que aquilo que fazemos não é senão uma gota de água no mar.<br> Mas o mar seria menor se lhe faltasse uma gota. <br> <span class='small'>- Madre Teresa de Calcutá</span>",
       "🌟 Jamais desista das pessoas que ama. Jamais desista de ser feliz. Lute sempre pelos seus sonhos. <br>Seja profundamente apaixonado pela vida. Pois a vida é um espetáculo imperdível. <br> <span class='small'>- Augusto Cury</span>",
+      "❤️ O amor é como o vento<br> Não se vê, mas se sente<br> No toque, na voz<br> No olhar, na palavra<br> Que nos faz vibrar o coração",
 
 
    ];
 
-   var frases1 = [
-     
+   var frases11 = [
+      "❤️ O amor é como o vento<br> Não se vê, mas se sente<br> No toque, na voz<br> No olhar, na palavra<br> Que nos faz vibrar o coração",
+
    ];
 
    var frase_padrao = "Sua autenticidade é sua beleza.<br> Abrace quem você é, pois você é único e especial.";
