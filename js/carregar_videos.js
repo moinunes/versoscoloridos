@@ -20,7 +20,9 @@ var videos_fernando_pessoa = [
    { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=Tcn2hL6pEUU">Fernando Pessoa</a>',
       link: '<a target="_blank" href="https://www.youtube.com/watch?v=Tcn2hL6pEUU"><img class="img-fluid" src="/images/capas/capa_fernando_segue_teu_destino.png" alt="Fernando Pessoa"></a>'
    },
-   
+   { autor: '<a class="link_1" target="_blank" href="https://www.youtube.com/watch?v=uzwKk0gpS2E&t=9s">Pablo Neruda</a>',
+      link: '<a target="_blank" href="https://www.youtube.com/watch?v=uzwKk0gpS2E&t=9s"><img class="img-fluid" src="/images/capas/capa_pablo_se_voce_me_esquecer.png" alt="Pablo Neruda"></a>'
+   },
    
 ]; 
 
