@@ -15,7 +15,6 @@ var videos_2 = [
      link: '<a target="_blank" href="https://www.youtube.com/watch?v=ezJv141czvk"><img class="img-fluid" src="/images/capas/capa_caixa_da_alegria.png" alt="No sótão, uma caixa esquecida"></a>'
    },   
 
-
    
 ]; 
 
