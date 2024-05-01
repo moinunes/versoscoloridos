@@ -106,16 +106,7 @@
                            <p><a href="javascript:atualizar_obterFrase();" id="link_mais">mais...</a></p>
                         </span>
                      </div> 
-                     <!-- Carregar video -->
-                     <div class="container-fluid bg-light mt-2 mb-2 border-0 text-center">    
-                        <div class="card m-2 p-2 bg-light  border-0"> 
-                           <div class="card-header p-0 m-0 bg-light  border-0">
-                              <div class="p-0 m-0" id="div_video_tit_2"></div>
-                           </div>
-                           <div class="card-body p-0 m-0 border-0" id="div_video_link_2">
-                           </div>
-                        </div> 
-                     </div>
+                      
                      
                      <div class="container-fluid bg-light mt-2 mb-2 border">
                         <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
@@ -179,14 +170,7 @@
                  </div>
                </div>  
             </div> 
-             <!-- Carregar video -->
-            <div class="card m-2 p-2 bg-light"> 
-               <div class="card-header p-0 m-0  bg-light">
-                   <div class="p-0 m-0" id="div_video_tit_1"></div>
-               </div>
-               <div class="card-body p-0 m-0 " id="div_video_link_1">
-                </div>
-            </div>  
+            
             
             <div class="card bg-white mt-4 mb-0 sombra_0">
                <div class="card-body m-0 p-3">
@@ -449,21 +433,11 @@
    <script src="/js/scripts.js"></script>
    <script src="/js/mens.js"></script>
    <script src="/js/frases_poeticas.js"></script>
-   <script src="/js/carregar_videos_motiva.js"></script> 
+ 
    
    <script> 
       document.addEventListener("DOMContentLoaded", function() { 
-         var div_video_tit_1  = document.getElementById("div_video_tit_1"); 
-         var div_video_link_1 = document.getElementById("div_video_link_1"); 
-         var video = obterVideo_1(); 
-         div_video_tit_1.innerHTML = video.autor; 
-         div_video_link_1.innerHTML= video.link;
-         //----------
-         var div_video_tit_2  = document.getElementById("div_video_tit_2"); 
-         var div_video_link_2 = document.getElementById("div_video_link_2"); 
-         var video = obterVideo_2(); 
-         div_video_tit_2.innerHTML = video.autor; 
-         div_video_link_2.innerHTML= video.link;
+        
 
          //...............
          var divMens = document.getElementById("div_frase_poetica"); 

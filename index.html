@@ -132,16 +132,7 @@
                   </span>
                </div>
 
-                <!-- Carregar video -->
-                <div class="container-fluid bg-light mt-2 mb-2 border-0 text-center">    
-                  <div class="card m-2 p-2 bg-light  border-0"> 
-                     <div class="card-header p-0 m-0 bg-light  border-0">
-                        <div class="p-0 m-0" id="div_video_tit_2"></div>
-                     </div>
-                      <div class="card-body p-0 m-0 border-0" id="div_video_link_2">
-                     </div>
-                  </div> 
-               </div>
+               
                
                <div class="container-fluid bg-light mt-2 mb-2">
                   <div class="row">
@@ -190,14 +181,7 @@
          <!-- Conteúdo da coluna da direita -->
          <div class="col-md-4  d-none d-lg-block">
 
-             <!-- Carregar video -->
-            <div class="card m-2 p-2 bg-light"> 
-               <div class="card-header p-0 m-0  bg-light">
-                   <div class="p-0 m-0" id="div_video_tit_1"></div>
-               </div>
-               <div class="card-body p-0 m-0 " id="div_video_link_1">
-                </div>
-            </div>  
+            
             
 
             <div class="container mt-3 p-0">
@@ -338,11 +322,7 @@
             <a href="/refletir/frases_para_refletir.html?modo=1" class="nav-link d-inline link_1">Refletir</a> 
          </div>
       </div>
-      <div class="container-fluid text-info mt-3 mb-4  ">
-         <div class="h5 text-center mt-2 mb-2 font_size_1"   > 
-            <span><button class="btn btn_youtube" onclick="window.open('https://www.youtube.com/@VersosColoridos', '_blank')"><img src="/images/logo-youtube.png" alt="Logo do YouTube">@VersosColoridos</button></span>            
-          </div>
-      </div>
+       
       <footer class="p-20 ">
          <div class="container-fluid">      
             <div class="row ">
@@ -366,22 +346,11 @@
     <script src="/js/scripts.js"></script>
     <script src="/js/mens.js"></script>
     <script src="/js/frases_poeticas.js"></script>
-    <script src="/js/carregar_videos.js"></script> 
-    
+     
    <script>
 
       document.addEventListener("DOMContentLoaded", function() { 
-         var div_video_tit_1  = document.getElementById("div_video_tit_1"); 
-         var div_video_link_1 = document.getElementById("div_video_link_1"); 
-         var video = obterVideo_1(); 
-         div_video_tit_1.innerHTML = video.autor; 
-         div_video_link_1.innerHTML= video.link;
-         //----------
-         var div_video_tit_2  = document.getElementById("div_video_tit_2"); 
-         var div_video_link_2 = document.getElementById("div_video_link_2"); 
-         var video = obterVideo_2(); 
-         div_video_tit_2.innerHTML = video.autor; 
-         div_video_link_2.innerHTML= video.link;
+         
 
       });
 

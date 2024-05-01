@@ -503,16 +503,7 @@
                         <div class="h5 text-center mt-2 mb-2" id="div_frase"></div>
                      </div>
          
-                      <!-- Carregar video -->
-                      <div class="container-fluid bg-light mt-2 mb-2 border-0 text-center">    
-                        <div class="card m-2 p-2 bg-light  border-0"> 
-                           <div class="card-header p-0 m-0 bg-light  border-0">
-                              <div class="p-0 m-0" id="div_video_tit_2"></div>
-                           </div>
-                           <div class="card-body p-0 m-0 border-0" id="div_video_link_2">
-                           </div>
-                        </div> 
-                     </div>
+                      
                      <!-- link apos ultimo poema -->
                      <br> 
                      <div class="border-0 p-0 m-0">
@@ -537,14 +528,7 @@
          <!-- Conteúdo da coluna da direita -->
          <div class="col-md-4 d-none d-lg-block"> <!-- Dispositvos - GRANDES -->
            
-             <!-- Carregar video -->
-             <div class="card m-2 p-2 bg-light"> 
-               <div class="card-header p-0 m-0  bg-light">
-                   <div class="p-0 m-0" id="div_video_tit_1"></div>
-               </div>
-               <div class="card-body p-0 m-0 " id="div_video_link_1">
-                </div>
-            </div>   
+             
 
             <div class="card bg-white mt-2 mb-0">
                <div class="card-body m-0 p-3">
@@ -673,21 +657,10 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <script src="/js/scripts.js"></script>
    <script src="/js/mens.js"></script>
-   <script src="/js/carregar_videos.js"></script> 
-
+ 
    <script> 
       document.addEventListener("DOMContentLoaded", function() {
-         var div_video_tit_1  = document.getElementById("div_video_tit_1"); 
-         var div_video_link_1 = document.getElementById("div_video_link_1"); 
-         var video = obterVideo_fernando_pessoa(); 
-         div_video_tit_1.innerHTML = video.autor; 
-         div_video_link_1.innerHTML= video.link;
-         //----------
-         var div_video_tit_2  = document.getElementById("div_video_tit_2"); 
-         var div_video_link_2 = document.getElementById("div_video_link_2"); 
-         var video = obterVideo_fernando_pessoa(); 
-         div_video_tit_2.innerHTML = video.autor; 
-         div_video_link_2.innerHTML= video.link;
+          
          
          //-------------
          var divFrase = document.getElementById("div_frase"); 
